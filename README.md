@@ -18,13 +18,14 @@
 ### 독서
 학창시절에 공부해왔듯 무엇을 하든지 항상 애용했던 방법인데 처음 IT를 배울 때는 책을 사놓고도 읽기 쉽지 않았습니다. 개념의 전후 관계, IT적으로 생각하는 틀이 없었기 때문이라고 생각합니다. 조금씩 이해를 넓혀 가는 중 입니다.  
 
-* 자바 개념서
-	* [이것이 자바다](https://github.com/nara1030/ThisIsJava)
-	* [THINKING IN JAVA](https://github.com/nara1030/thinkingInJava)
-* 알고리즘
-	*
-* SQL
-	* [오라클 SQL과 PL/SQL을 다루는 기술](https://github.com/nara1030/pl-sql)
+* [분류](https://github.com/nara1030/portfolio/blob/master/docs/reading_list.md)
+	* 자바 개념서
+		* [이것이 자바다](https://github.com/nara1030/ThisIsJava)
+		* [THINKING IN JAVA](https://github.com/nara1030/thinkingInJava)
+	* 알고리즘
+		* [자료구조와 함께 배우는 알고리즘 입문](https://github.com/nara1030/Algorithm/tree/master/doIt_AlgorithmWithDataStructure)
+	* SQL
+		* [오라클 SQL과 PL/SQL을 다루는 기술](https://github.com/nara1030/pl-sql)
 
 ### 스터디
 일종의 강제성을 공부하기 위함이라고 생각했지 효율적으로 이용하진 못했던 방법입니다. 최근 스터디를 다시 시작하면서 책도 책이지만, 교류가 목적임을 알게 되었습니다. 특정 언어, 혹은 개념을 공부할 때 그 개념을 스터디를 통해 완전히 이해하진 못하더라도 관련 개념 등을 통해서 좀 더 다가갈 수 있습니다. 또한 같은 업계 사람들끼리의 교류는 서로에게 도움이 되고, 회사 외에 사람을 만날 수 있단 점이 좋은 자극이 되었습니다.  
@@ -53,14 +54,21 @@
 ### 블로그 및 유투브
 유투브 및 블로그는 스터디나 세미나로 부족한 부분을 채울 수 있는 훌륭한 강의로 활용했습니다. 이용한 사이트는 아래와 같습니다. 
 
+* 개인
+	* [조영호 개발자님](https://www.slideshare.net/baejjae93?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
+	* [OKKY 창천향로님](https://jojoldu.tistory.com/)
 * 기술 블로그
 	* [우아한 형제들](http://woowabros.github.io/)
 	* [카카오](http://tech.kakao.com/)
+	* [네이버](https://d2.naver.com/home)
 * 강의형 유투브
 	* [코드스피츠](https://www.youtube.com/channel/UCKXBpFPbho1tp-Ntlfc25kA)
-	* []()
+	* [승지니어](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg/videos)
 
 	
 ## 실습
 
 ### 토이 프로젝트
+
+
+### 오픈소스
