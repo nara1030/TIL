@@ -64,6 +64,7 @@
 	* [조영호 개발자님](https://www.slideshare.net/baejjae93?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
 	* [OKKY 창천향로님](https://jojoldu.tistory.com/)
 * 기술 블로그
+	* [자바 튜토리얼 - HowToDoInJava.com](https://howtodoinjava.com/)
 	* [우아한 형제들](http://woowabros.github.io/)
 	* [카카오](http://tech.kakao.com/)
 	* [네이버](https://d2.naver.com/home)
