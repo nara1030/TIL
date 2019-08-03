@@ -60,18 +60,23 @@
 ### 블로그 및 유투브
 유투브 및 블로그는 스터디나 세미나로 부족한 부분을 채울 수 있는 훌륭한 강의로 활용했습니다. 이용한 사이트는 아래와 같습니다. 
 
-* 개인
+* 튜토리얼
+	* [자바 튜토리얼 - HowToDoInJava.com](https://howtodoinjava.com/)
+* 개인 기술 블로그
 	* [조영호 개발자님](https://www.slideshare.net/baejjae93?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
 	* [OKKY 창천향로님](https://jojoldu.tistory.com/)
-* 기술 블로그
-	* [자바 튜토리얼 - HowToDoInJava.com](https://howtodoinjava.com/)
-	* [우아한 형제들](http://woowabros.github.io/)
-	* [카카오](http://tech.kakao.com/)
-	* [네이버](https://d2.naver.com/home)
-	* [TOAST](https://meetup.toast.com/)
-* 강의형 유투브
+* 기업 기술 블로그
+	* 서비스
+		* [우아한 형제들](http://woowabros.github.io/)
+		* [카카오](http://tech.kakao.com/)
+		* [네이버](https://d2.naver.com/home)
+		* [TOAST](https://meetup.toast.com/)
+	* SI
+		* [LG CNS](https://blog.lgcns.com/1201?category=515147) 
+* 강의
 	* [코드스피츠](https://www.youtube.com/channel/UCKXBpFPbho1tp-Ntlfc25kA)
 	* [승지니어](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg/videos)
+	* 인프런
 
 ##### [목차로 이동](#목차)
 	
