@@ -22,14 +22,18 @@
 	
 ### 개인
 * [조영호 개발자님](https://www.slideshare.net/baejjae93?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
+	* [객체지향: 의존성을 이용해 설계 진화시키기](https://www.youtube.com/watch?v=dJ5C4qRqAgA)
 * [OKKY 창천향로님](https://jojoldu.tistory.com/)
+* [자바지기 박재성님](https://github.com/slipp/jwp-slipp)
+	* [TDD 리팩토링](https://www.youtube.com/watch?v=bIeqAlmNRrA)
 
 ##### [목차로 이동](#목차)
 
 ## 강의
 * 유튜브
 	* [승지니어](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg/videos)
-	* [코드스피츠](https://www.youtube.com/channel/UCKXBpFPbho1tp-Ntlfc25kA) 
+	* [코드스피츠](https://www.youtube.com/channel/UCKXBpFPbho1tp-Ntlfc25kA)
+		* [오브젝트](https://www.youtube.com/watch?v=sWyZUzQW3IM&t=8s)
 * 인프런
 	* [객체지향 프로그래밍 입문 - 최범균](https://www.inflearn.com/course/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9E%85%EB%AC%B8/)
 	* [자바 ORM 표준 JPA 프로그래밍 기본편 - 김영한](https://www.inflearn.com/course/ORM-JPA-Basic#description)
