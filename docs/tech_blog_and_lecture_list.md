@@ -27,8 +27,9 @@
 ##### [목차로 이동](#목차)
 
 ## 강의
-* [코드스피츠](https://www.youtube.com/channel/UCKXBpFPbho1tp-Ntlfc25kA)
-* [승지니어](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg/videos)
+* 유튜브
+	* [승지니어](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg/videos)
+	* [코드스피츠](https://www.youtube.com/channel/UCKXBpFPbho1tp-Ntlfc25kA) 
 * 인프런
 	* [객체지향 프로그래밍 입문 - 최범균](https://www.inflearn.com/course/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9E%85%EB%AC%B8/)
 	* [자바 ORM 표준 JPA 프로그래밍 기본편 - 김영한](https://www.inflearn.com/course/ORM-JPA-Basic#description)
