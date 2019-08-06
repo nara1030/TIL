@@ -7,13 +7,13 @@
 	* 개념
 		*
 	* 도서
-		1. Thinking in Java, Bruce Eckel 저
+		1. [Thinking in Java, Bruce Eckel 저](https://github.com/nara1030/thinkingInJava/blob/master/README.md)
 		2. JAVA 객체지향 디자인패턴, 정인상/채홍석 지음
 		3. 오브젝트(코드로 이해하느느 객체지향 설계), 조영호 지음
 			* 코드스피츠 강의
-		4. 리팩토링, 마틴 파울러
-		5. 자료구조와 함께 배우는 알고리즘 입문(자바 편), Bohyoh Shibata 지음
-		6. 이것이 자바다, 신용권 저
+		4. [리팩토링, 마틴 파울러](https://github.com/nara1030/Refactoring/blob/master/README.md)
+		5. [자료구조와 함께 배우는 알고리즘 입문(자바 편), Bohyoh Shibata 지음](https://github.com/nara1030/Algorithm/blob/master/doIt_AlgorithmWithDataStructure/README.md)
+		6. [이것이 자바다, 신용권 저](https://github.com/nara1030/ThisIsJava/blob/master/README.md)
 
 - - - -
 
@@ -57,7 +57,7 @@
 		* 아키텍처
 			1. 그림으로 공부하는 오라클 구조, 오다 케이지 저
 		* 쿼리
-			1. 오라클 SQL과 PL/SQL을 다루는 기술
+			1. [오라클 SQL과 PL/SQL을 다루는 기술](https://github.com/nara1030/pl-sql/blob/master/README.md)
 
 - - - -
 
