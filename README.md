@@ -21,7 +21,7 @@
 * [분류](https://github.com/nara1030/portfolio/blob/master/docs/reading_list.md)
 	* 자바 개념서
 		* [이것이 자바다](https://github.com/nara1030/ThisIsJava)
-		* [THINKING IN JAVA](https://github.com/nara1030/thinkingInJava)
+		* [THINKING IN JAVA - Bruce Eckel](https://github.com/nara1030/thinkingInJava)
 		* 오브젝트
 	* 알고리즘
 		* [자료구조와 함께 배우는 알고리즘 입문](https://github.com/nara1030/Algorithm/tree/master/doIt_AlgorithmWithDataStructure)
@@ -30,6 +30,8 @@
 		* [모던 웹을 위한 HTML5 + CSS3 입문](https://www.youtube.com/watch?v=XMipmINnMwI)
 	* SQL
 		* [오라클 SQL과 PL/SQL을 다루는 기술](https://github.com/nara1030/pl-sql)
+	* 고전
+		* [리팩토링 - 마틴 파울러](https://github.com/nara1030/Refactoring/blob/master/README.md)
 
 ##### [목차로 이동](#목차)
 		
