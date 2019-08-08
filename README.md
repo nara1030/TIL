@@ -26,7 +26,7 @@
 	* 알고리즘
 		* [자료구조와 함께 배우는 알고리즘 입문](https://github.com/nara1030/Algorithm/blob/master/doIt_AlgorithmWithDataStructure/README.md)
 	* 프론트
-		* [모던 웹을 위한 JavaScript + jQuery 입문](https://www.youtube.com/watch?v=4hCiz6aU-7Q&list=PLBXuLgInP-5kLy13XLuK8iBWVFDBJygYr&index=2)
+		* [모던 웹을 위한 JavaScript + jQuery 입문](https://github.com/nara1030/javascript_for_modern_web/blob/master/README.md)
 		* [모던 웹을 위한 HTML5 + CSS3 입문](https://www.youtube.com/watch?v=XMipmINnMwI)
 	* SQL
 		* [오라클 SQL과 PL/SQL을 다루는 기술](https://github.com/nara1030/pl-sql/blob/master/README.md)
