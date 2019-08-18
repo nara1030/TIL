@@ -26,6 +26,7 @@
 * [OKKY 창천향로님](https://jojoldu.tistory.com/)
 * [자바지기 박재성님](https://github.com/slipp/jwp-slipp)
 	* [TDD 리팩토링](https://www.youtube.com/watch?v=bIeqAlmNRrA)
+	* [오브젝트](https://www.youtube.com/watch?v=dJ5C4qRqAgA)
 
 ##### [목차로 이동](#목차)
 
