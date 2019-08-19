@@ -32,6 +32,7 @@
 
 ## 강의
 * 유튜브
+	* [생활코딩](https://github.com/nara1030/portfolio/blob/master/docs/living_coding.md)
 	* [승지니어](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg/videos)
 	* [코드스피츠](https://www.youtube.com/channel/UCKXBpFPbho1tp-Ntlfc25kA)
 		* 객체지향: [오브젝트](https://www.youtube.com/watch?v=sWyZUzQW3IM&t=8s)
