@@ -32,7 +32,7 @@
 * 유튜브
 	* [생활코딩](https://github.com/nara1030/portfolio/blob/master/docs/living_coding.md)
 	* [승지니어](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg/videos)
-	* [코드스피츠](https://www.youtube.com/channel/UCKXBpFPbho1tp-Ntlfc25kA)
+	* [코드스피츠](https://github.com/nara1030/portfolio/blob/master/docs/code_spitz.md)
 
 * 인프런
 	* 객제지향
