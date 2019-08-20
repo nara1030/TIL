@@ -22,7 +22,7 @@
 	* 자바 개념서
 		* [이것이 자바다](https://github.com/nara1030/ThisIsJava/blob/master/README.md)
 		* [THINKING IN JAVA](https://github.com/nara1030/thinkingInJava/blob/master/README.md)
-		* 오브젝트
+		* [오브젝트](https://github.com/nara1030/portfolio/blob/master/docs/book/object.md)
 	* 알고리즘
 		* [자료구조와 함께 배우는 알고리즘 입문](https://github.com/nara1030/Algorithm/blob/master/doIt_AlgorithmWithDataStructure/README.md)
 	* 프론트
