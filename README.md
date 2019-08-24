@@ -20,7 +20,7 @@
 2017년 말에 [남세동](http://www.thisisgame.com/webzine/community/nboard/11/?n=71970&fbclid=IwAR1DBVMRyBA0xc4lgjO8S9vtx1KO49bWonoZuajWk1cWMqmyWKJs7IcuYLk)님의 페이스북에서 발췌한 내용입니다. 원문에 공유 및 카피 가능하다고 하셨기에 공부 목적으로 적어봅니다.
 
 * 웹
-	1. 웹브라우저 URL에 www.naver.com을 치고 나서 네이버 첫 페이지가 표시되기까지 일어나는 과정에 대해 설명하라.
+	1. 웹브라우저 URL에 `www.naver.com`을 치고 나서 네이버 첫 페이지가 표시되기까지 일어나는 과정에 대해 설명하라.
 	2. 한국의 gmail 사용자가 미국의 gmail 사용자에게 메일을 보냈다. 어떤 과정을 거쳐, 얼마만에 도착할까?
 * 프로그램
 	* 프로토 타입
