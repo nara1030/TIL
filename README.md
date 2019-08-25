@@ -20,7 +20,7 @@
 2017년 말에 [남세동](http://www.thisisgame.com/webzine/community/nboard/11/?n=71970&fbclid=IwAR1DBVMRyBA0xc4lgjO8S9vtx1KO49bWonoZuajWk1cWMqmyWKJs7IcuYLk)님의 페이스북에서 발췌한 내용입니다. 원문에 공유 및 카피 가능하다고 하셨기에 공부 목적으로 적어봅니다.
 
 * 웹
-	1. 웹브라우저 URL에 `www.naver.com`을 치고 나서 네이버 첫 페이지가 표시되기까지 일어나는 과정에 대해 설명하라.
+	1. [웹브라우저 URL에 `www.naver.com`을 치고 나서 네이버 첫 페이지가 표시되기까지 일어나는 과정](https://github.com/nara1030/portfolio/blob/master/docs/thinking_list/process_when_typing_a_url.md)에 대해 설명하라.
 	2. 한국의 gmail 사용자가 미국의 gmail 사용자에게 메일을 보냈다. 어떤 과정을 거쳐, 얼마만에 도착할까?
 * 프로그램
 	* 프로토 타입
@@ -64,7 +64,7 @@
 	* 플랫폼
 		1. Windows 또는 Linux와 다른 Android 또는 iOS의 특징에 대해서 상세히 설명하라.
 	* 트렌드
-		1. NoSQL, NodeJJS 중 아는 것에 대해 상세히 설명하라.
+		1. NoSQL, NodeJS 중 아는 것에 대해 상세히 설명하라.
 		2. jQuery, AngularJS, React Native 중 자신있는 것에 대해 상세히 설명하라.
 
 ##### [목차로 이동](#목차)
@@ -112,7 +112,7 @@
 * 기만콘
 	* 주제: 개발 직군 종사자간 정보 공유
 	* 회차
-		* 제 1회 기만콘: 2019.07.20(토), 오후 1시
+		* [제 1회 기만콘](https://github.com/nara1030/portfolio/blob/master/docs/seminar_list/developer/dev_star_league_1st.md): 2019.07.20(토), 오후 1시
 
 ##### [목차로 이동](#목차)
 		
@@ -128,8 +128,9 @@
 ## 실습
 
 ### 토이 프로젝트
-1. [게시판](./docs/toy_project/notice_board.md)
-2. .
+1. [게시판 - Java](./docs/toy_project/notice_board.md)
+2. [헥스볼 API - JavaScript](./docs/toy_project/haxball_api.md)
+3.
 
 ##### [목차로 이동](#목차)
 
