@@ -36,7 +36,7 @@
 
 * 인프런
 	* 객제지향
-		* [객체지향 프로그래밍 입문 - 최범균](https://www.inflearn.com/course/%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9E%85%EB%AC%B8/)
+		* [객체지향 프로그래밍 입문 - 최범균](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/oop_basic_choi.md)
 		* [자바 ORM 표준 JPA 프로그래밍 기본편 - 김영한](https://www.inflearn.com/course/ORM-JPA-Basic#description)
 	* 백엔드
 		* [테스트주도개발로 만드는 NodeJS API 서버 - 김정환](https://www.inflearn.com/course/%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%A3%BC%EB%8F%84%EA%B0%9C%EB%B0%9C-tdd-nodejs-api#)
