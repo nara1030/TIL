@@ -59,10 +59,10 @@
 				if(mode != 10) {
 					// ...
 				}
-				```  
-					* 이 경우 변경된 코드 때문에 아래 if문이 실행되는 문제가 있음
-						* 코드 분석 및 변경 시간 증가
-					* if문 2개를 사용하는 것보다 if-else문을 사용하는 것이 낫다고 판단됨
+				```
+				* 이 경우 변경된 코드 때문에 아래 if문이 실행되는 문제가 있음
+					* 코드 분석 및 변경 시간 증가
+				* if문 2개를 사용하는 것보다 if-else문을 사용하는 것이 낫다고 판단됨
 	* 소프트웨어의 가치: 변화  
 		> Software maintenance is not "keep it working like before".  
 		> It is "keep being useful in a changing world".
