@@ -128,8 +128,8 @@
 						}
 						```
 						* 개선점
-							*
-							*
+							* 조건을 변수로 정의함으로써..
+							* 객체지향적으로..
 	* 객체
 		* 객체의 핵심 → 기능 제공
 			* 객체는 제공하는 기능으로 정의(객체를 사용하는 입장에서 생각)
@@ -185,9 +185,35 @@
 				* 객체와 객체 상호작용: **메시지**를 주고 받는다고 표현
 					* 메서드를 호출하는 메시지, 리턴하는 메시지, 익셉션 메시지
 				* 다이어그램  
-					<img src="./img/oop_diagram.png" width="450" height="250"></br>
+					<img src="./img/oop_diagram.png" width="600" height="250"></br>
 			* 객체?
-	*
+				* 데이터에 접근하는 것 외에 특별한 기능이 없는 클래스  
+					```java
+					public class Member {
+						private String name;
+						private String id;
+						
+						public void setName(String name) {
+							this.name = name;
+						}
+						
+						public String getName() {
+							return name;
+						}
+						
+						public void setId(String id) {
+							this.id;
+						}
+						
+						public String getId() {
+							return id;
+						}
+					}
+					```
+				* 객체라기보단 **데이터**에 더 가까움
+					* 데이터 클래스, 구조체라는 표현도 사용
+	* 캡슐화
+		* .
 
 ##### [목차로 이동](#목차)
 
