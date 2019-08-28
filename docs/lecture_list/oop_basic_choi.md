@@ -12,7 +12,7 @@
 
 ### 강의 목차
 1. 들어가며
-	* 비용
+	* 비용 증가
 		* x-axis: Major release
 		* y-axis
 			* Cost/LOC(Lines of Code): x^2
@@ -34,10 +34,56 @@
 				long elapsednano = end - start;
 				```
 		* 조건 추가
-
+			* 레거시  
+				```java
+				int mode = 10;
+				if(mode == 10) {
+					// ...
+				}
+				
+				if(mode != 10) {
+					// ...
+				}
+				```
+			* 개선  
+				```java
+				int mode = 10;
+				if(mode == 10) {
+					// ...
+					if(조건) {
+						mode = 20;
+					}
+					// ...
+				}
+				
+				if(mode != 10) {
+					// ...
+				}
+				```
+					* 이 경우 변경된 코드 때문에 아래 if문이 실행되는 문제가 있음
+						* 코드 분석 및 변경 시간 증가
+					* if문 2개를 사용하는 것보다 if-else문을 사용하는 것이 낫다고 판단됨
+	* 소프트웨어의 가치: 변화  
+		> Software maintenance is not "keep it working like before".  
+		> It is "keep being useful in a changing world".
+	* 비용과 변화
+		* 낮은 비용으로 변화할 수 있어야 함
+		* 해결방안
+			* 패러다임
+				* 객체지향, 함수형, 리액티브, ...
+			* 코드, 설계, 아키텍처
+				* DRY, TDD, SOLID, DDD, ...
+				* 클린 아키텍처, MSA, ...
+			* 업무 프로세스/문화
+				* 애자일, DevOps, ...
+		* 이 중 **객체지향**이 비용을 낮춰주는 방법
+			* 캡슐화 + 다형성(추상화)
+					
 ##### [목차로 이동](#목차)
 		
 2. 객체
+	* 절차지향 vs 객체지향
+	* 
 
 ##### [목차로 이동](#목차)
 
