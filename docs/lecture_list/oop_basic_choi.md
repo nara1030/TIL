@@ -83,7 +83,111 @@
 		
 2. 객체
 	* 절차지향 vs 객체지향
-	* 
+		* 개념
+			* 절차지향: 데이터를 여러 프로시저가 공유하는 방식
+			* 객체지향
+				* 데이터와 프로시저를 객체라는 단위로 묶는 방식
+				* 특정 객체가 갖고 있는 데이터는 그 객체의 프로시저만 접근할 수 있도록 함
+					* 따라서 다른 객체에서는 해당 객체의 데이터에 바로 접근 불가
+					* 이것이 **캡슐화**이고, 시간이 지나도 유지봏수(변경)가 쉬운 이유
+				* 객체는 프로시저를 이용해 외부에 기능을 제공함
+					* 즉 객체와 객체는 다른 객체의 프로시저를 호출하는 방식으로 서로 상호작용
+		* 비교
+			* 시간이 흘러갈수록 데이터를 공유하는 방식(절차지향)은 유지보수가 힘듦
+				* 절차지향과 비용
+					* 레거시  
+						```java
+						// 인증 API
+						Account account = findOne(id);
+						if(account.getState() == DELETED) {
+						
+						}
+						
+						// 암호 변경 API
+						Account account = findOne(id);
+						if(account.getState() == DELETED) {
+						
+						}
+						```
+						* 인증 API 코드와 암호 변경 API 코드에서 state 데이터(상태)를 공유하고 있음
+					* 시간이 지남에 따라 변경된 코드  
+						```java
+						Account account = findOne(id);
+						if(account.getState() == DELETED || 
+							account.getBlockCount() > 0 ||
+							account.getEmailVerifyStatus() == 0) {
+						
+						}
+						
+						// 암호 변경 API
+						Account account = findOne(id);
+						if(account.getState() == DELETED || 
+							account.getBlockCount() > 0 ||
+							account.getActiveStatus() == ENABLE) {
+						
+						}
+						```
+						* 개선점
+							*
+							*
+	* 객체
+		* 객체의 핵심 → 기능 제공
+			* 객체는 제공하는 기능으로 정의(객체를 사용하는 입장에서 생각)
+			* 내부적으로 가진 필드(데이터)로 정의하지 않음
+		* 예
+			* 회원 객체
+				* 암호 변경하기 기능
+				* 차단 여부 확인하기 기능
+			* 소리 제어기 객체
+				* 소리 크기 증가하기 기능
+				* 소리 크기 감소하기 기능
+		* 기능 명세
+			* 제공하는 기능을 어떻게 사용하는지 알려주는 것
+				* cf. [메서드 시그니처](https://github.com/nara1030/ThisIsJava/blob/master/docs/etc/polymorphism.md)
+			* 메서드(오퍼레이션)를 이용해서 기능 명세
+				* 이름, 파라미터, 결과로 구성
+			* 예
+				* 회원 객체  
+					```java
+					public class Member {
+						public void changePassword(String curPw, String newPw) {
+							// ...
+						}
+					}
+					```
+				* 소리 제어기 객체  
+					```java
+					public class VolumeController {
+						public void increase(int inc) {
+							// ...
+						}
+						
+						public void decrease(int dec) {
+							// ...
+						}
+						public int volume() {
+							// ...
+						}
+					}
+					```
+		* 객체와 객체
+			* 객체와 객체는 기능을 사용해서 연결
+				* 기능 사용 = 메서드 호출
+			* 예  
+				```java
+				VolumeController volCont = new VolumeController();
+				volCont.increase(4);
+				volCont.decrease(3);
+				int currentVol = volCont.volume();
+				```
+			* 용어: 메시지
+				* 객제지향에서 종종 사용하는 용어
+				* 객체와 객체 상호작용: **메시지**를 주고 받는다고 표현
+					* 메서드를 호출하는 메시지, 리턴하는 메시지, 익셉션 메시지
+				* 다이어그램  
+					<img src="./img/oop_diagram.png" width="450" height="250"></br>
+			* 객체?
+	*
 
 ##### [목차로 이동](#목차)
 
