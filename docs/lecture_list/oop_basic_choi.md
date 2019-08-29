@@ -223,7 +223,7 @@
 		* 데이터 + 관련 기능 묶기
 		* 객체가 기능을 어떻게 구현했는지 외부에 감추는 것
 			* 구현에 사용된 데이터의 상세 내용을 외부에 감춤
-				* 결과적으로 외부에 영향 없이 객체 내부 구현 변경 가능
+				* 결과적으로 외부(사용하는 코드)에 영향 없이(또는 최소화) 객체 내부 구현 변경 가능
 			* 정보 은닉(Information Hiding) 의미 포함
 	* 필요성
 		* 캡슐화하지 않는다면
@@ -308,10 +308,54 @@
 				* 파라미터로 받은 객체의 메서드만 호출
 				* 필드로 참조하는 객체의 메서드만 호출  
 				<img src="./img/encapsulate_rule_2.png" width="600" height="150"></br>
-
+* 캡슐화 예제
+	* .
+				
 ##### [목차로 이동](#목차)
 
 ### 추상화
+* 다형성과 추상화
+	* 다형성(Polymorphism)
+		* 개념
+			* 여러(poly) 모습(morph)을 갖는 것
+			*  객체 지향에서는 한 객체가 여러 타입을 갖는 것
+				* 즉 한 객체가 여러 타입의 기능을 제공
+				* 타입 상속으로 다형성 구현(하위 타입은 상위 타입도 됨)
+		* 예
+			* 부모 클래스  
+				```java
+				public class Timer {
+					public void start() { ... }
+					public void stop() { ... }
+				}
+				
+				public interface Rechargeable {
+					void charge();
+				}
+				```
+			* 자식(구현) 클래스  
+				```java
+				public class IotTimer extends Timer implements Rechargeable {
+					public void charge() {
+						// ...
+					}
+				}
+				```
+			* 사용 클래스  
+				```java
+				IotTimer it = new IotTimer();
+				it.start();
+				it.stop();
+				
+				Timer t = it;
+				t.start();
+				t.stop();
+				
+				Rechargeable r = it;
+				r.charge();
+				```
+	* 추상화(Abstraction)
+		* .
 
 ##### [목차로 이동](#목차)
 
