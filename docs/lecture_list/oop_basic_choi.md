@@ -5,13 +5,19 @@
 - - -
 ## 목차
 1. [요약](#요약)
-	* [강의 목차](#강의-목차)
+	* [들어가며](#들어가며)
+	* [객체](#객체)
+	* [추상화](#추상화)
+	* [상속보단 조립](#상속보단-조립)
+	* [기능과 책임 분리](#기능과-책임-분리)
+	* [의존과 DI](#의존과-DI)
+	* [정리](#정리)
+	* [부록](#부록)
 2. [참고](#참고)
 
 ## 요약
 
-### 강의 목차
-1. 들어가며
+### 들어가며
 	* 비용 증가
 		* x-axis: Major release
 		* y-axis
@@ -19,14 +25,14 @@
 			* Product Size(KLOC): x^1/2
 	* 원인
 		* 버전 업데이트
-			* 레거시  
+			* 초기  
 				```java
 				long start = System.currentTimeMillis();
 				// ...
 				long end = System.currentTimeMillis();
 				long elapsed = end - start;
 				```
-			* 개선  
+			* 변경  
 				```java
 				long start = System.nanoTime();
 				// ...
@@ -34,7 +40,7 @@
 				long elapsednano = end - start;
 				```
 		* 조건 추가
-			* 레거시  
+			* 초기  
 				```java
 				int mode = 10;
 				if(mode == 10) {
@@ -45,7 +51,7 @@
 					// ...
 				}
 				```
-			* 개선  
+			* 변경  
 				```java
 				int mode = 10;
 				if(mode == 10) {
@@ -81,7 +87,7 @@
 					
 ##### [목차로 이동](#목차)
 		
-2. 객체
+### 객체
 	* 절차지향 vs 객체지향
 		* 개념
 			* 절차지향: 데이터를 여러 프로시저가 공유하는 방식
@@ -95,7 +101,7 @@
 		* 비교
 			* 시간이 흘러갈수록 데이터를 공유하는 방식(절차지향)은 유지보수가 힘듦
 				* 절차지향과 비용
-					* 레거시  
+					* 초기  
 						```java
 						// 인증 API
 						Account account = findOne(id);
@@ -128,8 +134,8 @@
 						}
 						```
 						* 개선점
-							* 조건을 변수로 정의함으로써..
-							* 객체지향적으로..
+							* 조건을 변수로 정의함으로써 가독성 향상
+							* 객체지향적으로 리팩토링함으로써 유지보수 수월하게 수정
 	* 객체
 		* 객체의 핵심 → 기능 제공
 			* 객체는 제공하는 기능으로 정의(객체를 사용하는 입장에서 생각)
@@ -212,32 +218,120 @@
 					```
 				* 객체라기보단 **데이터**에 더 가까움
 					* 데이터 클래스, 구조체라는 표현도 사용
-	* 캡슐화
-		* .
+	* 캡슐화(Encapsulation)
+		* 두 가지 개념 포함
+			* 데이터 + 관련 기능 묶기
+			* 객체가 기능을 어떻게 구현했는지 외부에 감추는 것
+				* 구현에 사용된 데이터의 상세 내용을 외부에 감춤
+					* 결과적으로 외부에 영향 없이 객체 내부 구현 변경 가능
+				* 정보 은닉(Information Hiding) 의미 포함
+		* 필요성
+			* 캡슐화하지 않는다면
+				* 초기  
+					```java
+					if(acc.getMembership() == REGULAR && acc.getExpDate().isAfter(now())) {
+						// 정회원 기능
+					}
+					```
+				* 변경  
+					```java
+					// 5년 이상 사용자
+					// 일부 기능 정회원 혜택 1개월 무상 제공
+					if(acc.getMembership() == REGULAR &&
+						(
+							(acc.getServiceDate().isAfter(fiveYearAgo) && acc.getExpDate().isAfter(now())) ||
+							(acc/getServiceDate().isBefore(fiveYearAgo) && addMonth(acc.getExpDate()).isAfter(now()))
+						)
+					) {
+						// 정회원 기능
+					}
+					```
+				* 결론  
+					<img src="./img/do_not_encapsulate.png" width="600" height="250"></br>
+					* 요구사항 변경 예
+						* 장기 사용자에게 특정 기능 실행 권한을 연장(단, 유효 일자는 그대로 유지)
+						* 계정을 차단하면 모든 실행 권한 없음
+						* Date를 LocalDateTime으로 변경
+			* 캡슐화 한다면
+				* 기능을 제공하고 구현 상세를 감춤
+				* 초기
+					* 사용 클래스  
+						```java
+						if(acc.hasRegularPermission) {
+							// 정회원 기능
+						}
+						```
+					* 제공(구현) 클래스  
+						```java
+						public class Account {
+							private Membership membership;
+							private Date expDate;
+							
+							public boolean hasRegularPermission() {
+								return membership == REGULAR && expDate.isAfter(now());
+							}
+						}
+						```
+				* 변경
+					* 사용 클래스: 내부 구현만 변경  
+						```java
+						if(acc.hasRegularPermission()) {
+							// 정회원 기능
+						}
+						```
+					* 제공(구현) 클래스  
+						```java
+						public class Account {
+							public boolean hasRegularPermission() {
+								return membership == REGULAR &&
+									( expDate.isAfter(now()) ||
+										(
+											serviceDate.isBefore(fiveYearAgo()) &&
+											addMonth(expDate).isAfter(now())
+										)
+									);
+							}
+						}
+						```
+				* 결론
+					* 캡슐화는 연쇄적인 변경 전파를 최소화  
+					<img src="./img/do_encapsulate.png" width="600" height="250"></br>
+		* 장점 혹은 규칙
+			* 캡슐화와 기능: 캡슐화 시도 → 기능에 대한 (의도) 이해를 높임  
+				<img src="./img/encapsulate_strength.png" width="600" height="250"></br>
+			* 캡슐화를 위한 규칙
+				* Tell, Don't ask
+					* 데이터 달라 하지 말고 (데이터를 갖고 있는 객체에게) 해달라고 하기  
+					<img src="./img/encapsulate_rule_1.png" width="600" height="150"></br>
+				* Demeter's Law
+					* 메서드에서 생성한 객체의 메서드만 호출
+					* 파라미터로 받은 객체의 메서드만 호출
+					* 필드로 참조하는 객체의 메서드만 호출  
+					<img src="./img/encapsulate_rule_2.png" width="600" height="150"></br>
 
 ##### [목차로 이동](#목차)
 
-3. 추상화
+### 추상화
 
 ##### [목차로 이동](#목차)
 
-4. 상속보단 조립
+### 상속보단 조립
 
 ##### [목차로 이동](#목차)
 
-5. 기능과 책임 분리
+### 기능과 책임 분리
 
 ##### [목차로 이동](#목차)
 
-6. 의존과 DI
+### 의존과 DI
 
 ##### [목차로 이동](#목차)
 
-7. 정리
+### 정리
 
 ##### [목차로 이동](#목차)
 
-8. 부록
+### 부록
 
 ##### [목차로 이동](#목차)
 
