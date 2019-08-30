@@ -367,7 +367,7 @@
 			* 다형성은 서로 다른 구현(의 공통 성질을) 추상화  
 				<img src="./img/abstraction_ex_1.png" width="600" height="250"></br>
 			* 타입 추상화
-				*여러 구현 클래스를 대표하는 상위 타입 도출
+				* 여러 구현 클래스를 대표하는 상위 타입 도출
 					* 흔히 인터페이스 타입으로 추상화
 					* 추상화 타입과 구현은 타입 상속으로 연결  
 				<img src="./img/abstraction_ex_2.png" width="600" height="250"></br>
