@@ -372,6 +372,24 @@
 					* 흔히 인터페이스 타입으로 추상화
 					* 추상화 타입과 구현은 타입 상속으로 연결
 				* 추상 타입 사용
+					* 추상 타입을 이용한 프로그래밍  
+						```java
+						Notifier notifier = getNotifier(...);
+						notifier.notify(someNoti);
+						```
+					* 추상 타입은 구현을 감춤
+						* 기능의 구현이 아닌 의도를 더 잘 드러냄
+				* 추상 타입 사용에 따른 이점: 변경에 대해 유연함
+					* 콘크리트 클래스를 직접 사용하면  
+						<img src="./img/use_concrete_class.png" width="600" height="250"></br>
+						* 주문 취소, 즉 본질과는 상관 없는 요구사항 변경 때문에 주문 취소 코드가 함께 변경되고 있음
+						* 한글로 적힌 **주문 취소 처리** 로직은 변한 게 없음
+					* 추상 클래스를 사용하면
+						* 공통점 도출  
+							<img src="./img/use_abstract_1.png" width="400" height="200"></br>
+						* 도출한 추상 타입 사용  
+							<img src="./img/use_abstract_2.png" width="400" height="350"></br>
+					* 11:00.
 
 ##### [목차로 이동](#목차)
 
