@@ -49,12 +49,12 @@ JavaScript 핵심 개념 알아보기 - 정재남
 		* 단계: 선언 과정은 같으나 할당 과정이 기본형과 다름
 			1. 할당 과정에서 공간에 값을 할당하려고 보니 값이 기본형이 아닌 참조형임
 			2. 참조형 데이터는 키와 밸류의 쌍으로 이루어져 있는데, 이는 변수명과 실제 데이터가 주소값으로 연결되어 있는 것과 비슷함
-			3. 이후 과정은 아래 [도식화](#도식화)를 참조해서 이해하되, 정리하면 참조형 데이터는 기본형 데이터의 집합이라 볼 수 있음
+			3. 이후 과정은 아래 도식화를 참조해서 이해하되, 정리하면 참조형 데이터는 기본형 데이터의 집합이라 볼 수 있음
 		* 도식화  
 			<img src="./img/store_reference_1.png" width="600" height="250"></br>
 			<img src="./img/store_reference_2.png" width="600" height="250"></br>
-				* obj2가 obj와 다른 새로운 객체를 만든 것이 아니라 원래 obj가 바라보던 객체를 함께 바라보고 있음
-				* 즉, obj와 obj2는 완전히 동일한 객체를 참조(obj ≡ obj2)
+			* obj2가 obj와 다른 새로운 객체를 만든 것이 아니라 원래 obj가 바라보던 객체를 함께 바라보고 있음
+			* 즉, obj와 obj2는 완전히 동일한 객체를 참조(obj ≡ obj2)
 		* Nested한 객체: 참조형 데이터 안에 참조형 데이터가 있는 경우  
 			<img src="./img/store_reference_3.png" width="600" height="250"></br>
 			<img src="./img/store_reference_4.png" width="600" height="250"></br>
