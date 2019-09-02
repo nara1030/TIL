@@ -178,7 +178,7 @@ JavaScript 핵심 개념 알아보기 - 정재남
 
 ##### [목차로 이동](#목차)
 
-*함수스코프와 실행컨텍스트(Function scope and Execution context)
+* 함수스코프와 실행컨텍스트(Function scope and Execution context)
 	* 개념
 		* 스코프(SCOPE): 유효범위(변수)
 		* 실행 컨텍스트(EXECUTION CONTEXT): 실행되는 코드덩어리(추상적 개념)
