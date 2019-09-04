@@ -35,9 +35,9 @@
 ##### [목차로 이동](#목차)
 
 ## 강의
-아래에 코드스피츠에서 조영호님의 오브젝트 책을 교재로 강의한 내용을 기록한다. [본 강의](https://www.bsidesoft.com/8121?fbclid=IwAR1l1EZNkGZqZilTBJtE0eTgJNeIJsXkEOdHMzUwdOknLQP_Wx7L98PExCU)는 오브젝트 11장부터 다루고 있는데, 약간 부담스러웠지만 시간적 여유가 나서 첫 수업을 들어본 바 매우 만족스러웠다. 개발자로 누군가를 가르칠 수 있으려면 어느 정도 수준이 되어야 한다는 [글](https://docs.google.com/document/d/1_phA5XUszSmN7Ta-QHs4DxRz9_iu8YlhxpVjSGEbWcg/edit)을 본 적 있는데, 여기서 최상위에 있는 개발자가 숲과 나무를 동시에 짚어주는 듯한 느낌이었다.
+아래에 코드스피츠에서 조영호님의 오브젝트 책을 교재로 강의한 내용을 기록한다. [본 강의](https://www.bsidesoft.com/8121?fbclid=IwAR1l1EZNkGZqZilTBJtE0eTgJNeIJsXkEOdHMzUwdOknLQP_Wx7L98PExCU)는 오브젝트 11장부터 다루고 있는데, 처음부터 다루지 않아 약간 부담스러웠지만 시간적 여유가 나서 첫 수업을 들어본 바 매우 만족스러웠다. 개발자로 누군가를 가르칠 수 있으려면 어느 정도 수준이 되어야 한다는 [글](https://docs.google.com/document/d/1_phA5XUszSmN7Ta-QHs4DxRz9_iu8YlhxpVjSGEbWcg/edit)을 본 적 있는데, 여기서 최상위에 있는 개발자가 숲과 나무를 동시에 짚어주는 듯한 느낌이었다.
 
-한편 강의자는 본 강의에 대해 페북에서 이렇게 얘기했다.
+한편 강의 소개엔 객체지향 설계방법론과 기저를 이루는 이론을 공부하기에 안성 맞춤이라 이 책을 기반으로 6주간 스터디를 진행한다고 되어 있다. 이게 무슨 말인지, 좀 더 풀어 페북에서 아래와 같이 얘기했다.
 
 > 코드스피츠84에서 오브젝트 2편을 하는 이유는 책의 뒷부분이 남아서는 아닙니다. 이 책은 사실 11장을 기준으로 절반을 쪼개도 될 정도로 내용이 구분됩니다.  
 
