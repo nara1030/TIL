@@ -12,7 +12,7 @@
 
 ## 참고
 ### 관련자료
-* 유투브 강의
+* [유투브 강의](https://www.youtube.com/watch?v=vSnFC2x-RYE)
 * [강의 교안](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/reference/84_1.pdf)
 * [오브젝트 요약정리](https://github.com/nara1030/portfolio/blob/master/docs/book/object.md)
 
