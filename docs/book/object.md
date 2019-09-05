@@ -75,8 +75,12 @@
 강의 소개는 이로 갈음하고, 요약 정리는 아래 목차에서 확인 가능하다.
 
 * 목차
-	* [11장_합성과 유연한 설계](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/object2_ch11.md)
-	* 12장_다형성
-	* .
+	* 오브젝트_전반부
+		* 9장_유연한 설계
+		* 10장_상속과 코드 재사용
+	* 오브젝트_후반부
+		* [11장_합성과 유연한 설계](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/object2_ch11.md)
+		* 12장_다형성
+		* .
 
 ##### [목차로 이동](#목차)
