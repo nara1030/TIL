@@ -129,9 +129,13 @@
 ## 실습
 
 ### 토이 프로젝트
-1. [게시판 - Java](./docs/toy_project/notice_board.md)
-2. [헥스볼 API - JavaScript](./docs/toy_project/haxball_api.md)
-3.
+1. 포트폴리오
+	* [게시판 - Java](./docs/toy_project/notice_board.md)
+2. 취미
+	* [헥스볼 API - JavaScript](./docs/toy_project/haxball_api.md)
+3. 기본
+	* [직원관리 프로그램 - Java](https://github.com/nara1030/EmployeeManagementSystem)
+	* .
 
 ##### [목차로 이동](#목차)
 
