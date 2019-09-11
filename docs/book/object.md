@@ -1,7 +1,8 @@
 오브젝트
 =====
 조영호 개발자님의 오브젝트를 공부해 기록하고 조금씩 업데이트해본다.  
-책만 읽기에는 부담스러웠던 찰나, 코드스피츠에서 이 책을 교재로 [강의](https://codespitz.com/s84/list.php?fbclid=IwAR1W2Mvvt2grbKgvB4wNMOIesodzp7qdztcqtlOwn3Ugj7Iwk0ARgEBz8bk)를 진행해 신청하고 기록한다.
+책만 읽기에는 부담스러웠던 찰나, 코드스피츠에서 이 책을 교재로 [강의](https://codespitz.com/s84/list.php?fbclid=IwAR1W2Mvvt2grbKgvB4wNMOIesodzp7qdztcqtlOwn3Ugj7Iwk0ARgEBz8bk)를 진행해 신청하고 기록한다.  
+책의 [예제 코드](https://github.com/eternity-oop/object)도 확인할 수 있다.
 - - -
 ## 목차
 1. [소개](#소개)
@@ -81,6 +82,6 @@
 	* 오브젝트_후반부
 		* [11장_합성과 유연한 설계](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/object2_ch11.md)
 		* [13장_서브클래싱과 서브타이핑](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/object2_ch13.md)
-		* .
+		* .		
 
 ##### [목차로 이동](#목차)
