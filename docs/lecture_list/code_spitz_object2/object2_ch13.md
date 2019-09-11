@@ -10,8 +10,10 @@
 
 ## 참고
 ### 관련자료
-* [유투브 강의](https://www.youtube.com/watch?v=33VN-sa3s_4)
-* [강의 교안]()
+* 유투브 강의
+	* [2회차 - (1)](https://www.youtube.com/watch?v=U1vySD_wG78)
+	* [2회차 - (2)](https://www.youtube.com/watch?v=33VN-sa3s_4&t=16s)
+* [강의 교안](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/reference/84_2.pdf)
 * [오브젝트 요약정리](https://github.com/nara1030/portfolio/blob/master/docs/book/object.md)
 
 ##### [목차로 이동](#목차)
