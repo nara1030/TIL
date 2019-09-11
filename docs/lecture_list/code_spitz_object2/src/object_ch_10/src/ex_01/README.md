@@ -9,6 +9,7 @@
 2. [설계](#설계)
 3. [기타](#기타)
 	* [API](#API)
+	* [이이서](#이어서)
 
 ## 로직
 > 전화요금 = 통화 시간 / 단위 시간당 요금
@@ -42,3 +43,9 @@
 	* [BigDecimal `valueOf()` Method in Java](https://www.geeksforgeeks.org/bigdecimal-valueof-method-in-java/)
 
 ##### [목차로 이동](#목차)
+
+### 이어서
+여기서 이어지는 [예제 코드](https://github.com/nara1030/portfolio/tree/master/docs/lecture_list/code_spitz_object2/src/object_ch_10/src/ex_02)를 확인할 수 있다.
+
+##### [목차로 이동](#목차)
+
