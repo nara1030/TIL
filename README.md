@@ -84,6 +84,8 @@
 		* [모던 웹을 위한 HTML5 + CSS3 입문](https://www.youtube.com/watch?v=XMipmINnMwI)
 	* SQL
 		* [오라클 SQL과 PL/SQL을 다루는 기술](https://github.com/nara1030/pl-sql/blob/master/README.md)
+	* 웹
+		* 자바 웹 개발 워크북
 
 ##### [목차로 이동](#목차)
 		
