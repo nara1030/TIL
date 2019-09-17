@@ -34,6 +34,7 @@
 	* [승지니어](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg/videos)
 	* [코드스피츠](https://github.com/nara1030/portfolio/blob/master/docs/code_spitz.md)
 	* [제로초](https://www.zerocho.com/)
+	* [엄진영](http://blog.eomjinyoung.com/)
 
 * 인프런
 	* 객제지향
