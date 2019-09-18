@@ -1,6 +1,7 @@
 자바 웹 개발 워크북
 =====
-특정 기술에 국한되지 않고 `자바` 그리고 `웹` 개발의 공통 분모를 가진 기술들을 포괄적으로 다룬 기본서다.
+특정 기술에 국한되지 않고 `자바` 그리고 `웹` 개발의 공통 분모를 가진 기술들을 포괄적으로 다룬 기본서다.  
+저자의 [강의](https://freelec.co.kr/lecture/%ec%b5%9c%ec%8b%a0-%ed%91%9c%ec%a4%80-c%eb%a1%9c-%ec%89%bd%ea%b3%a0-%eb%b9%a0%eb%a5%b4%ea%b2%8c-%ec%95%88%eb%82%b4%ed%95%98%eb%8a%94/) 및 [예제 소스](https://github.com/eomjinyoung/JavaWebProgramming)가 공개되어 있다.
 - - -
 ## 목차
 1. [요약](#요약)
