@@ -85,7 +85,7 @@
 	* SQL
 		* [오라클 SQL과 PL/SQL을 다루는 기술](https://github.com/nara1030/pl-sql/blob/master/README.md)
 	* 웹
-		* 자바 웹 개발 워크북
+		* [자바 웹 개발 워크북](https://github.com/nara1030/portfolio/blob/master/docs/book/java_web_eomjinyoung.md)
 
 ##### [목차로 이동](#목차)
 		
