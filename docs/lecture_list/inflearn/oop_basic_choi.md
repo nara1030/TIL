@@ -191,7 +191,7 @@
 			* 객체와 객체 상호작용: **메시지**를 주고 받는다고 표현
 				* 메서드를 호출하는 메시지, 리턴하는 메시지, 익셉션 메시지
 			* 다이어그램  
-				<img src="./img/oop_diagram.png" width="600" height="250"></br>
+				<img src="../img/oop_diagram.png" width="600" height="250"></br>
 		* 객체?
 			* 데이터에 접근하는 것 외에 특별한 기능이 없는 클래스  
 				```java
@@ -247,7 +247,7 @@
 				}
 				```
 			* 결론  
-				<img src="./img/do_not_encapsulate.png" width="600" height="250"></br>
+				<img src="../img/do_not_encapsulate.png" width="600" height="250"></br>
 				* 요구사항 변경 예
 					* 장기 사용자에게 특정 기능 실행 권한을 연장(단, 유효 일자는 그대로 유지)
 					* 계정을 차단하면 모든 실행 권한 없음
@@ -295,19 +295,19 @@
 					```
 			* 결론
 				* 캡슐화는 연쇄적인 변경 전파를 최소화  
-				<img src="./img/do_encapsulate.png" width="600" height="250"></br>
+				<img src="../img/do_encapsulate.png" width="600" height="250"></br>
 	* 장점 혹은 규칙
 		* 캡슐화와 기능: 캡슐화 시도 → 기능에 대한 (의도) 이해를 높임  
-			<img src="./img/encapsulate_strength.png" width="600" height="250"></br>
+			<img src="../img/encapsulate_strength.png" width="600" height="250"></br>
 		* 캡슐화를 위한 규칙
 			* Tell, Don't ask
 				* 데이터 달라 하지 말고 (데이터를 갖고 있는 객체에게) 해달라고 하기  
-				<img src="./img/encapsulate_rule_1.png" width="600" height="150"></br>
+				<img src="../img/encapsulate_rule_1.png" width="600" height="150"></br>
 			* Demeter's Law
 				* 메서드에서 생성한 객체의 메서드만 호출
 				* 파라미터로 받은 객체의 메서드만 호출
 				* 필드로 참조하는 객체의 메서드만 호출  
-				<img src="./img/encapsulate_rule_2.png" width="600" height="150"></br>
+				<img src="../img/encapsulate_rule_2.png" width="600" height="150"></br>
 * 캡슐화 예제
 	* .
 				
@@ -365,10 +365,10 @@
 				* 지포스, 라데온 → GPU
 		* 다형성: 위 분류 중 공통 성질을 뽑아내는 추상화와 관련
 			* 다형성은 서로 다른 구현(의 공통 성질을) 추상화  
-				<img src="./img/abstraction_ex_1.png" width="600" height="250"></br>
+				<img src="../img/abstraction_ex_1.png" width="600" height="250"></br>
 			* 타입 추상화
 				* 여러 구현 클래스를 대표하는 상위 타입 도출  
-				<img src="./img/abstraction_ex_2.png" width="600" height="250"></br>
+				<img src="../img/abstraction_ex_2.png" width="600" height="250"></br>
 					* 흔히 인터페이스 타입으로 추상화
 					* 추상화 타입과 구현은 타입 상속으로 연결
 				* 추상 타입 사용
@@ -381,14 +381,14 @@
 						* 기능의 구현이 아닌 의도를 더 잘 드러냄
 				* 추상 타입 사용에 따른 이점: 변경에 대해 유연함
 					* 콘크리트 클래스를 직접 사용하면  
-						<img src="./img/use_concrete_class.png" width="600" height="250"></br>
+						<img src="../img/use_concrete_class.png" width="600" height="250"></br>
 						* 주문 취소, 즉 본질과는 상관 없는 요구사항 변경 때문에 주문 취소 코드가 함께 변경되고 있음
 						* 한글로 적힌 **주문 취소 처리** 로직은 변한 게 없음
 					* 추상 클래스를 사용하면
 						* 공통점 도출  
-							<img src="./img/use_abstract_1.png" width="400" height="200"></br>
+							<img src="../img/use_abstract_1.png" width="400" height="200"></br>
 						* 도출한 추상 타입 사용  
-							<img src="./img/use_abstract_2.png" width="400" height="350"></br>
+							<img src="../img/use_abstract_2.png" width="400" height="350"></br>
 					* 11:00.
 
 ##### [목차로 이동](#목차)
