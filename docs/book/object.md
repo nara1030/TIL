@@ -82,6 +82,6 @@
 	* 오브젝트_후반부
 		* [11장_합성과 유연한 설계](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/object2_ch11.md)
 		* [13장_서브클래싱과 서브타이핑](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/object2_ch13.md)
-		* .		
+		* [14장_일관성 있는 협력](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/object2_ch14.md)
 
 ##### [목차로 이동](#목차)
