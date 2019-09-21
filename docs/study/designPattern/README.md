@@ -16,6 +16,6 @@
 ##### [목차로 이동](#목차)
 
 ## 주차별 요약
-* [1주차 - Strategy Pattern](./designpattern_week_1.md)
+* [1주차 - Strategy Pattern](designPattern_week_1.md)
 
 ##### [목차로 이동](#목차)
