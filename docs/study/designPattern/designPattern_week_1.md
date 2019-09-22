@@ -87,7 +87,7 @@
 이러한 예로 **변수를 선언할 때는 보통 추상 클래스나 인터페이스 같은 상위 형식으로 선언**해야 한다는 말이 있다.
 
 * 설계  
-	<img src="./img/duck_hierarhcy_6.jpg" width="400" height="350"></br>
+	<img src="./img/duck_hierarhcy_6.jpg" width="300" height="250"></br>
 * 코드
 	* X  
 		```java
