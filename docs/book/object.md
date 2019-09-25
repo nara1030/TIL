@@ -79,9 +79,10 @@
 	* 오브젝트_전반부
 		* 9장_유연한 설계
 		* 10장_상속과 코드 재사용
-	* 오브젝트_후반부
+	* [오브젝트_후반부](https://codespitz.com/s84/list.php?fbclid=IwAR0EtyO3oufqcMr5Ryc9bvP6N72WFbPTGE0u2YV9rk7RW5tjSZKbiy6P_Aw)
 		* [11장_합성과 유연한 설계](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/object2_ch11.md)
 		* [13장_서브클래싱과 서브타이핑](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/object2_ch13.md)
 		* [14장_일관성 있는 협력](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/object2_ch14.md)
+		* [15장_디자인 패턴과 프레임워크](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz_object2/object2_ch15.md)
 
 ##### [목차로 이동](#목차)
