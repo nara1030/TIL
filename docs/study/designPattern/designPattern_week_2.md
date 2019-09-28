@@ -40,14 +40,14 @@
 
 > 그리고 이 스테이션은 `확장 가능한` 스테이션입니다. 저희 회사에서는 다른 개발자들이 직접 날씨 표시 장치를 만들고 거기에 우리 회사에서 개발한 것을 그대로 가져다 쓸 수 있도록 API를 발표할 예정입니다.
 
-<img src="./img/observer_outline.jpg" width="600" height="350"></br>
+<img src="./img/observer_outline.jpg" width="600" height="300"></br>
 
 ##### [목차로 이동](#목차)
 
 #### 개략적인 코드
 다음은 발주사인 `Weather-O-Rama`가 보내온 `WeatherData` 객체의 규격이다.
 
-<img src="./img/observer_standard.jpg" width="250" height="250"></br>
+<img src="./img/observer_standard.jpg" width="250" height="200"></br>
 
 위를 정리해보면 아래와 같다.
 
@@ -60,11 +60,14 @@
 
 <img src="./img/observer_measurementsChanged_1.jpg" width="600" height="450"></br>
 
+코드를 보면 update()의 `메소드 시그니처`가 같음을 확인할 수 있다. 이는 쉽게 말해 메서드 오버로딩이 되는 기준이다(`접근 제어자`, `반환 타입`는 해당 안되므로 메소드 선언부 아님).
+
 ##### [목차로 이동](#목차)
 
 ### 개념
 
 #### 정의
+
 
 ##### [목차로 이동](#목차)
 
