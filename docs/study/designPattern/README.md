@@ -17,5 +17,6 @@
 
 ## 주차별 요약
 * [1주차 - Strategy Pattern](./designPattern_week_1.md)
+* [2주차 - Observer Pattern](./designPattern_week_2.md)
 
 ##### [목차로 이동](#목차)
