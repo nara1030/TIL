@@ -60,7 +60,9 @@
 
 <img src="./img/observer_measurementsChanged_1.jpg" width="600" height="450"></br>
 
-코드를 보면 update()의 `메소드 시그니처`가 같음을 확인할 수 있다. 이는 쉽게 말해 메서드 오버로딩이 되는 기준이다(`접근 제어자`, `반환 타입`는 해당 안되므로 메소드 선언부 아님).
+코드를 보면 update()의 `메소드 시그니처`가 같음을 확인할 수 있다. 이는 쉽게 말해 메서드 오버로딩이 되는 기준이다(`접근 제어자`, `반환 타입`는 해당 안되므로 메소드 선언부 아님). 즉 `캡슐화`, 인터페이스를 추출해 `유연성을 확보`할 필요가 있다(인터페이스 추출 여부는 이 코드만으로는 확인 불가).
+
+<img src="./img/capsulation_java9.png" width="800" height="600"></br>
 
 ##### [목차로 이동](#목차)
 
@@ -79,5 +81,9 @@
 ## 기타
 ### 참고
 * [Observer pattern - LichKing](https://multifrontgarden.tistory.com/257?category=471239)
+* Java 9
+	* [변화와 특징 정리](https://medium.com/@goinhacker/java-9%EC%9D%98-%EB%B3%80%ED%99%94%EC%99%80-%ED%8A%B9%EC%A7%95-%EB%8C%80%EC%B6%A9-%EC%A0%95%EB%A6%AC-fca77cee88f2)
+	* [불변 컬렉션 생성](https://www.daleseo.com/java9-immutable-collections/)
+* [Guid to the Java 8 forEach](https://www.baeldung.com/foreach-java) 
 
 ##### [목차로 이동](#목차)
