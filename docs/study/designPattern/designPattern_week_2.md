@@ -94,15 +94,31 @@
 ##### [목차로 이동](#목차)
 
 ## 예제 완성 코드
-완성 코드는 [링크]를 클릭하면 확인할 수 있다. 예제 코드에서 생각했던 점은 아래와 같다.
+완성 코드는 [링크](./src/observer_pattern)를 클릭하면 확인할 수 있다. 예제 코드에서 생각했던 점은 아래와 같다.
 
-* .  
+* 컬렉션 선언 시 제네릭 필수  
 	```java
-	private ArrayList<Observer> observers;
+	private ArrayList observers; 	// x
+	
+	private ArrayList<Observer> observers; // o
 	```
-*
+	* 책에서 `WeatherData` 클래스에서 Observer 리스트를 선언할 때 제네릭을 사용하지 않아 수정
+* `List` vs. `Set`
+	* WeatherData 클래스에서 List(`ArrayList` 클래스) 인터페이스를 이용해서 옵저버를 저장
+	* 등록/삭제 시 인자로 `Observer` 객체를 받음
+		* `등록` 시는 간단하지만, `삭제` 시 코드가 약간 조잡
+		* `List` 대신 `Set`을 사용하면 어땠을까?
+* `notifyObservers()`
+	* `notify()`는 Observer에게 위임하고, WeatherData는 `제어(for문)`에 집중하는 것으로 이해
 
 ### 추가 구현 사항
+
+#### POJO
+
+##### [목차로 이동](#목차)
+
+#### Generics
+[관련 자료](https://slides.com/changyong/generics#/)
 
 ##### [목차로 이동](#목차)
 
