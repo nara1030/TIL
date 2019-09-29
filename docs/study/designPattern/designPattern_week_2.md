@@ -78,7 +78,7 @@
 ##### [목차로 이동](#목차)
 
 ### 클래스 다이어그램
-<img src="./img/observer_class_diagram.jpg" width="250" height="250"></br>
+<img src="./img/observer_class_diagram.jpg" width="300" height="250"></br>
 
 위 클래스 다이어그램에서 두 가지 생각을 했다.
 
@@ -106,7 +106,7 @@
 * `List` vs. `Set`
 	* WeatherData 클래스에서 List(`ArrayList` 클래스) 인터페이스를 이용해서 옵저버를 저장
 	* 등록/삭제 시 인자로 `Observer` 객체를 받음
-		* `등록` 시는 간단하지만, `삭제` 시 코드가 약간 조잡
+		* `등록` 시는 간단하지만, `삭제` 시 코드가 약간 조잡([코드 확인](./src/observer_pattern/concrete_/WeatherData.java))
 		* `List` 대신 `Set`을 사용하면 어땠을까?
 * `notifyObservers()`
 	* `notify()`는 Observer에게 위임하고, WeatherData는 `제어(for문)`에 집중하는 것으로 이해
