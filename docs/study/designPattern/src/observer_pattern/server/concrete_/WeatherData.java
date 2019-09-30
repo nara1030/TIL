@@ -1,9 +1,9 @@
-package observer_pattern.concrete_;
+package observer_pattern.server.concrete_;
 
 import java.util.ArrayList;
 
-import observer_pattern.interface_.Observer;
-import observer_pattern.interface_.Subject;
+import observer_pattern.server.interface_.Observer;
+import observer_pattern.server.interface_.Subject;
 
 public class WeatherData implements Subject {
 	private ArrayList<Observer> observers;

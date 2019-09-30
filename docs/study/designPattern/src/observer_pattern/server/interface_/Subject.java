@@ -1,4 +1,4 @@
-package observer_pattern.interface_;
+package observer_pattern.server.interface_;
 
 public interface Subject {
 	public void registerObserver(Observer o);

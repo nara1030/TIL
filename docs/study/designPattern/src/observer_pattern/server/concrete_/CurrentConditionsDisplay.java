@@ -1,8 +1,8 @@
-package observer_pattern.concrete_;
+package observer_pattern.server.concrete_;
 
-import observer_pattern.interface_.DisplayElement;
-import observer_pattern.interface_.Observer;
-import observer_pattern.interface_.Subject;
+import observer_pattern.server.interface_.DisplayElement;
+import observer_pattern.server.interface_.Observer;
+import observer_pattern.server.interface_.Subject;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 	private float temperature;

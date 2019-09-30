@@ -1,4 +1,4 @@
-package observer_pattern.interface_;
+package observer_pattern.server.interface_;
 
 public interface Observer {
 	public void update(float temp, float humidity, float pressure);
