@@ -18,9 +18,9 @@
 	* [자바 내장 옵저버 패턴](#자바-내장-옵저버-패턴)
 2. [자바 관련]
 	* [POJO](#POJO)
+		* [스프링과 POJO](#스프링과 POJO)
 	* [Generics](#Generics)
 3. [기타](#기타)
-	* Javadoc
 	* +, -
 	* [참고](#참고)
 
@@ -93,7 +93,7 @@
 
 ##### [목차로 이동](#목차)
 
-## 예제 완성 코드
+### 예제 완성 코드
 완성 코드는 [링크](./src/observer_pattern)를 클릭하면 확인할 수 있다. 예제 코드에서 생각했던 점은 아래와 같다.
 
 * 컬렉션 선언 시 제네릭 필수  
@@ -111,18 +111,35 @@
 * `notifyObservers()`
 	* `notify()`는 Observer에게 위임하고, WeatherData는 `제어(for문)`에 집중하는 것으로 이해
 
-### 추가 구현 사항
-
-#### POJO
-
 ##### [목차로 이동](#목차)
+	
+#### 추가 구현 사항
 
-#### Generics
-[관련 자료](https://slides.com/changyong/generics#/)
+
+### 자바 내장 옵저버 패턴
+
+
+API 사용한 것과 사용하지 않은 것을 같이 사용하고 싶을 때 패키지 구성을 어떻게 해야 하는지 고민해볼 필요가 있다.
 
 ##### [목차로 이동](#목차)
 
 ## 자바 관련
+### POJO
+위에서 `java.util.Observable` 클래스를 상속(`확장`)해 주제 객체를 만들었다. 이 경우 발생하는 문제 중 하나가 재사용성에 제약이 걸린다는 점이다(이미 다른 수퍼클래스를 확장하고 있는 클래스에 Observable의 기능을 추가할 수 없기 때문). 이와 비슷한 예로 `Servlet`을 들 수 있다(`HttpServlet` 상속받음). 이처럼 개발자가 그 의미(`Is-a`)대로 사용한 경우가 아니라 프레임워크 기술을 구현하기 위해 `상속`을 써버린 경우, `POJO`가 아니게 된다.
+
+`POJO`의 정의는 [다음](https://ko.wikipedia.org/wiki/Plain_Old_Java_Object)과 같은데, 스프링은 이를 위해 어노테이션을 도입했다고 한다(`Servlet` → `Spring MVC Controller`). 
+
+#### 스프링과 POJO
+OKKY에서 POJO에 대해 언급한 부분을 발췌한다.
+
+<img src="./img/pojo_def.png" width="500" height="400"></br>
+
+추가로 다음 [링크](https://limmmee.tistory.com/8)를 확인하면 스프링에 대해 더 잘 이해할 수 있다.
+
+##### [목차로 이동](#목차)
+
+### Generics
+[관련 자료](https://slides.com/changyong/generics#/)
 
 ##### [목차로 이동](#목차)
 
@@ -132,6 +149,7 @@
 * Java 9
 	* [변화와 특징 정리](https://medium.com/@goinhacker/java-9%EC%9D%98-%EB%B3%80%ED%99%94%EC%99%80-%ED%8A%B9%EC%A7%95-%EB%8C%80%EC%B6%A9-%EC%A0%95%EB%A6%AC-fca77cee88f2)
 	* [불변 컬렉션 생성](https://www.daleseo.com/java9-immutable-collections/)
-* [Guid to the Java 8 forEach](https://www.baeldung.com/foreach-java) 
+* [Guid to the Java 8 forEach](https://www.baeldung.com/foreach-java)
+* [이클립스에서 자바 API 문서 확인하는 법](https://fors.tistory.com/112)
 
 ##### [목차로 이동](#목차)
