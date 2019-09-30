@@ -30,7 +30,7 @@
 
 1. [템플릿 메소드 패턴](object1_ch10.md): 상속(`좋은 상속`)
 2. 전략 패턴: 구성(조립)
-3. 컴포지트 패턴: 파일 탐색기
+3. [컴포지트 패턴](https://github.com/nara1030/portfolio/blob/master/docs/study/designPattern/temp/composite_pattern.md): 파일 탐색기
 	* 비지터 패턴: 제어 위임
 4. 데코레이터 패턴
 5. Chain of Responsebility
