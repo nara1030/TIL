@@ -90,7 +90,7 @@
 		* 접근 제한자는 약속(`프로토콜`)임
 			* 부모와 통신을 할 때는 부모의 지식을 함부로 사용하지 않고 미리 확정되어 있는 프로토콜(`protected abstract`)만을 이용해서 대화
 			* `private`이 아닌 `protected`, `default` 같은 속성들 혹은 그에 준하는 getter 및 setter가 부모에 있다면 그 클래스는 건들지 말란 소리
-		* Tell, Don't ask
+		* [할리우드 원칙](https://johngrib.github.io/wiki/spring-ioc/#hollywood-principle): `Tell, Don't ask`
 			* 자식이 부모의 지식을 getter로 읽어들여서 하지 않고(그 반대도 마찬가지), 서로 시킬 뿐임
 * 장점
 	* 의존성 역전되므로 자식의 수정이 부모에게 영향을 끼치지 않을 뿐더러, **부모의 수정도 자식에게 영향을 미치지 않음**
