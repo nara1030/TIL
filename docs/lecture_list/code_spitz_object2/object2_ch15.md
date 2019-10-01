@@ -16,7 +16,7 @@
 * [유투브 강의](https://www.youtube.com/watch?v=2fdwzbSnqZc)
 * [소스 코드](https://github.com/step4me/codespitz-s84-4?fbclid=IwAR2BYXQWWGG_9euHFqfKCnBtsgZFpFbcguvZZfRVPDUGadN7WP9U28vMOAk)
 * [오브젝트 요약정리](https://github.com/nara1030/portfolio/blob/master/docs/book/object.md)
-* 레퍼런스
+* 기타
 	* [IoC - 기계인간](https://johngrib.github.io/wiki/spring-ioc/)
 
 ##### [목차로 이동](#목차)
