@@ -105,7 +105,7 @@
 					* 외부에서 `Task`를 받을 수 있는 경우(`public void addTask(Task task)`)
 						* 즉, `Task`의 생성자를 `외부`에 공개한 경우
 							* 외부에서 `Task`를 만들게 할지는(`new 호출`) 모르겠으나 확실한 것은 `Task` 변경의 권한을 외부에 푸는 순간 `Task` 생성자 함부로 수정 불가
-						* 따라서 Task`를 `Tasks`만 만들 수 있게 수정해야지만 `Task` 수정 가능
+						* 따라서 `Task`를 `Tasks`만 만들 수 있게 수정해야지만 `Task` 수정 가능
 							* 그럼에도 불구하고 만약 인자로 `Task`를 받는다면 프로젝트 초창기엔 상당한 비용 감수해야 `Task` 수정 가능
 					* 외부에서 `Task`를 받지 못하게 하는 경우(`public void addTask(String title, LocalDateTime date)`)
 						* 어쩔 수 없이 `Task`를 외부에 공개해야 하는 시점까진 `primitive`로 Task 추가
@@ -114,7 +114,13 @@
 							* 이것만으로 `Task` 수정의 여파는 `Tasks`까지만 미침
 							* public 객체지만 생성자가 public이 아닌 건 당연한 거고 맞는 것임(외부에서 `new`할 수 있는 객체를 최소화)
 				2. remove
-					* 
+					* add와 달리 remove는 외부에서 `Task`를 받아야 함(`public void removeTask(Task task)`)
+						* 존재해야지만 지울 수 있음
+							* `Task`는 public 클래스(생성자가 `default`인 것과 무관)
+						* ∵ 객체지향에서 객체는 `값`이 아닌 `메모리 주소`로 식별
+							* ∴ 만약 `값`으로 지운다면 같은 `title`을 갖고 있는 다른 객체가 지워질 가능성 존재
+							* list의 타입이 `List`가 아닌 `Set`인 이유 역시 마찬가지
+			* .
 3.
 
 ##### [목차로 이동](#목차)
