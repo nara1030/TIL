@@ -83,7 +83,7 @@
 		* [1주차 - 합성과 유연한 설계](../lecture_list/code_spitz_object2/object2_week1_ch11.md)
 		* [2주차 - 서브클래싱과 서브타이핑](../lecture_list/code_spitz_object2/object2_week2_ch13.md)
 		* [3주차 - 일관성 있는 협력](../lecture_list/code_spitz_object2/object2_week3_ch14.md)
-		* [4주차 - 디자인 패턴과 프레임워크(`컴포지트`)](../lecture_list/code_spitz_object2/object2_week4_ch15_composite.md)
-		* [5주차 - 디자인 패턴과 프레임워크(`비지터`)](../lecture_list/code_spitz_object2/object2_week5_ch15_command.md)
+		* [4주차 - 디자인 패턴과 프레임워크(`컴포지트 & 비지터`)](../lecture_list/code_spitz_object2/object2_week4_ch15_composite_visitor.md)
+		* [5주차 - 디자인 패턴과 프레임워크(`커맨드`)](../lecture_list/code_spitz_object2/object2_week5_ch15_command.md)
 		
 ##### [목차로 이동](#목차)
