@@ -74,6 +74,9 @@
 				* ∴ `toggle()` 메소드를 `public`으로 노출
 			* 객체는 본인의 상태를 스스로 관리하는, `state management`의 책임 있음
 		3. 아직 좋은 클래스는 아님(ex. `final` 미선언)
+		
+##### [목차로 이동](#목차)
+		
 2. Tasks
 	* [소스 확인](./src/codespitz_s84_4/Tasks.java)
 	* 생각의 흐름
@@ -119,9 +122,27 @@
 							* `Task`는 public 클래스(생성자가 `default`인 것과 무관)
 						* ∵ 객체지향에서 객체는 `값`이 아닌 `메모리 주소`로 식별
 							* ∴ 만약 `값`으로 지운다면 같은 `title`을 갖고 있는 다른 객체가 지워질 가능성 존재
-							* list의 타입이 `List`가 아닌 `Set`인 이유 역시 마찬가지
-			* .
-3.
+			* getList 메소드 생성  
+				`Tasks`만 list(`Set`)를 갖고 있는데 외부에서도 list를 갖고 있어야 렌더링 가능하므로 공개 필요
+				* 얕은 복사  
+					```java
+					public List<Task> getList() {
+						List<Task> tasks = new ArrayList<>(list);
+						return tasks;
+					}
+					```
+					* 외부에 출력할 때 원본이 아닌 사본 정책 사용(`얕은 복사`)
+						* 외부에 객체 공개하면 객체의 메소드 호출, 즉 원본 조작
+						* `Task`는 원래 public, 즉 조작 가능 의도(∴ `깊은 복사` 무의미)
+					* 이렇게(`?`) 하면 메모리 부하를 신경쓸 필요 없음
+
+##### [목차로 이동](#목차)
+					
+3. SortType
+	* [소스 확인](./src/codespitz_s84_4/SortType.java)
+	* 생각의 흐름
+		* 34:30
+4.
 
 ##### [목차로 이동](#목차)
 
