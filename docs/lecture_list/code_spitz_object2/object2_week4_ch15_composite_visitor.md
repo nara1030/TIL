@@ -87,7 +87,7 @@
 			* `list`: task들을 갖고 있는 List(변동 가능성이 없으므로 `final` 선언)
 		3. 행위 제약
 			* `title` 변수에 대한 setter 생성(∵변동 가능성)
-				* 코드 중복 제거  
+				* 코드 중복 제거(`?`)  
 					```java
 					public class Tasks {
 						private String title;
