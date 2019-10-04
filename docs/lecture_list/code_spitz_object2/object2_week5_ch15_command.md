@@ -10,7 +10,7 @@
 
 ## 참고
 ### 관련자료
-* 유투브 강의
+* [유투브 강의](https://www.youtube.com/watch?v=Y1toxgno8t8)
 * 강의 교안
 * [오브젝트 요약정리](https://github.com/nara1030/portfolio/blob/master/docs/book/object.md)
 
