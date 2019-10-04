@@ -135,13 +135,27 @@
 						* 외부에 객체 공개하면 객체의 메소드 호출, 즉 원본 조작
 						* `Task`는 원래 public, 즉 조작 가능 의도(∴ `깊은 복사` 무의미)
 					* 이렇게(`?`) 하면 메모리 부하를 신경쓸 필요 없음
+				* Sort  
+					```java
+					public List<Task> getList(SortType type) {
+						List<Task> tasks = new ArrayList<>(list);
+						tasks.sort(type);	// 예상
+						return tasks;
+					}
+					```
+					* 보통 List는 `Sort`해서 리턴(ex. `가나다`, `날짜순`, `체크별(?)` 등)
+					* 이때 `Sort`하는 방법은 외부에서 받음
+						* 정적으로 관리 위해 Enum(`SortType`) 생성
+					* 객체지향은 `위임`하기 때문에 switch문(if문) 사용 안함
+						* `tasks.sort(type);`
+						* 즉, `type`을 전략 객체로 보면 됨
 
 ##### [목차로 이동](#목차)
 					
 3. SortType
 	* [소스 확인](./src/codespitz_s84_4/SortType.java)
 	* 생각의 흐름
-		* 34:30
+		* 37:00
 4.
 
 ##### [목차로 이동](#목차)
