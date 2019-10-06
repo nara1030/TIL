@@ -161,8 +161,46 @@
 				* 언제 만들어줘? `static 초기화` 전에 생성
 					* 즉 스레드가 시작(생성)되기 전에 만들기 때문에 스레드 동기화 문제도 없음
 			* 단지 자바의 Enum은 `Generics`이 반영되지 않았으나 코틀린 등 현대 언어들은 반영되어 있음
-		* 38:00
-4.
+		* 그런 관점에서 Enum을 `Class`로 생각해줄 수 있음  
+			```java
+			public enum SortType {
+				TITLE_DESC,
+				TITLE_ASC,
+				DATE_ASC,
+				DATE_DESC;
+			}
+			```
+			* (클래스로 생각한다면) 네 개의 인스턴스를 만들겠다는 선언으로 볼 수 있음
+				* 즉 JVM이 발동할 때 `SortType` 타입으로 네 개의 `인스턴스`를 생성
+			* 즉, Enum은 내부적으로 `추상 클래스`임
+				* 따라서 세미콜론 이후에 추상 메소드 추가  
+					```java
+					abstract int compare(Task a, Task b);
+					```
+		* 마치 익명 클래스로 인스턴스 만들어주는 것과 같은 과정(단, 스레드 문제가 생기기 전에 JVM 수준에서 실행)
+			* 결과적으로 네 개의 `전략 객체`를 얻게 되었으므로 switch문(`Tasks 클래스`) 제거 가능
+			* 우리가 클래스를 만드는 건 인스턴스가 n개 이상임을 확신했기 때문
+				* 만약 인스턴스가 확정이라면 클래스를 만들면 안됨(∵ 우리가 원하는 인스턴스보다 더 많이 만들어냄)
+		* `Tasks` 클래스의 getList 메소드 수정  
+			```java
+			public List<Task> getList(SortType type) {
+				List<Task> tasks = new ArrayList<>(list);
+				// tasks.sort(type);
+				tasks.sort((a, b) -> type.compare(a, b));
+				return tasks;
+			}
+			```
+			* 인자로 type 대신 comparable을 받음(`전략 패턴`)
+			* 람다 활용
+
+##### [목차로 이동](#목차)
+
+지금까지 만들었던 `Task`와 `Tasks`를 하나로 합친 Composite 객체를 만들 필요가 있다.
+
+4. CompositeTask
+	* [소스 확인](./src/codespitz_s84_4/CompositeTask.java)
+	* 생각의 흐름
+		* 45:20
 
 ##### [목차로 이동](#목차)
 
