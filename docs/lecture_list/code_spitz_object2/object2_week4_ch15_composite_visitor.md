@@ -200,9 +200,17 @@
 4. CompositeTask
 	* [소스 확인](./src/codespitz_s84_4/CompositeTask.java)
 	* 생각의 흐름
-		* 45:20
+		* 45:20(51:00)
 
 ##### [목차로 이동](#목차)
+
+5. TaskReport
+	* [소스 확인](./src/codespitz_s84_4/TaskReport.java)
+	* 생각의 흐름
+		* .
+
+##### [목차로 이동](#목차)
+
 
 #### Visitor
 
