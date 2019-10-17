@@ -18,5 +18,7 @@
 ## 주차별 요약
 * [1주차 - Strategy Pattern](./designPattern_week_1.md)
 * [2주차 - Observer Pattern](./designPattern_week_2.md)
+* [3주차 - Decorator Pattern(불참)](./designPattern_week_3.md)
+* 4주차 - Factory Pattern
 
 ##### [목차로 이동](#목차)
