@@ -34,7 +34,7 @@
 ### 디자인 패턴 개요
 보통 책에서 언급하는 디자인 패턴은 아래와 같고, 이외에는 곁가지라 해도 무방하다.
 
-1. [템플릿 메소드 패턴](object1_ch10.md): 상속(`좋은 상속`)
+1. [템플릿 메소드 패턴](../s83_object1/object1_ch10.md): 상속(`좋은 상속`)
 2. 전략 패턴: 구성(조립)
 3. [컴포지트 패턴](https://github.com/nara1030/portfolio/blob/master/docs/study/designPattern/temp/composite_pattern.md): 파일 탐색기
 	* 비지터 패턴: 제어 위임
@@ -62,7 +62,7 @@
 `Todo` 앱을 코딩한다.
 
 1. Task
-	* [소스 확인](./src/codespitz_s84_4/Task.java)
+	* [소스 확인](./src/s84_4/Task.java)
 	* 생각의 흐름
 		1. 필드 초기화 선택
 			* `기본값 넣기` 혹은 `외부에서 받기`
@@ -78,7 +78,7 @@
 ##### [목차로 이동](#목차)
 		
 2. Tasks
-	* [소스 확인](./src/codespitz_s84_4/Tasks.java)
+	* [소스 확인](./src/s84_4/Tasks.java)
 	* 생각의 흐름
 		1. `Task`는 하나의 task일 뿐이고, task를 담을 그릇이 필요
 			* Todo 앱을 보면 `폴더` 안에 `todo`가 존재
@@ -153,7 +153,7 @@
 ##### [목차로 이동](#목차)
 					
 3. SortType
-	* [소스 확인](./src/codespitz_s84_4/SortType.java)
+	* [소스 확인](./src/s84_4/SortType.java)
 	* 생각의 흐름
 		* Enum: OS가 보장하는 인스턴스
 			* Enum은 언어 차원에서 인스턴스를 확정해주는 클래스(cf. 싱글톤)
@@ -198,14 +198,14 @@
 지금까지 만들었던 `Task`와 `Tasks`를 하나로 합친 Composite 객체를 만들 필요가 있다.
 
 4. CompositeTask
-	* [소스 확인](./src/codespitz_s84_4/CompositeTask.java)
+	* [소스 확인](./src/s84_4/CompositeTask.java)
 	* 생각의 흐름
 		* 45:20(51:00)
 
 ##### [목차로 이동](#목차)
 
 5. TaskReport
-	* [소스 확인](./src/codespitz_s84_4/TaskReport.java)
+	* [소스 확인](./src/s84_4/TaskReport.java)
 	* 생각의 흐름
 		* .
 
