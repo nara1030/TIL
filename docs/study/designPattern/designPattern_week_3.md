@@ -8,6 +8,7 @@
 2. [전달과 위임](#전달과-위임)
 	* [공통점과 차이점](#공통점과-차이점)
 	* [예시](#예시)
+3. [참고](#참고)
 	
 ## 데코레이터 패턴
 
@@ -33,5 +34,10 @@
 > * 명시적으로 `this`를 인자로 보냄
 
 * [추후 정리](https://github.com/LichKing-lee/designpattern/issues/3)
+
+##### [목차로 이동](#목차)
+
+## 참고
+* [Decorator Pattern - LichKing](https://multifrontgarden.tistory.com/259?category=471239)
 
 ##### [목차로 이동](#목차)
