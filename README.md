@@ -76,7 +76,7 @@
 	* 자바 개념서
 		* [이것이 자바다](https://github.com/nara1030/ThisIsJava/blob/master/README.md)
 		* [THINKING IN JAVA](https://github.com/nara1030/thinkingInJava/blob/master/README.md)
-		* [오브젝트](https://github.com/nara1030/portfolio/blob/master/docs/book/object.md)
+		* [오브젝트](./docs/book/object/README.md)
 	* 알고리즘
 		* [자료구조와 함께 배우는 알고리즘 입문](https://github.com/nara1030/Algorithm/blob/master/doIt_AlgorithmWithDataStructure/README.md)
 	* 프론트
@@ -96,7 +96,7 @@
 * [알고리즘 스터디](https://github.com/bulkwang-study/algol): 2019.05.24 ~ 2019.07.06
 * 사내 스터디: 2019.06.24 ~ 2019.08.02
 	* 주제: 자바, 스프링 등
-* [코드스피츠 - 오브젝트](https://github.com/nara1030/portfolio/blob/master/docs/book/object.md): 2019.09.03 ~ 2019.10.08
+* [코드스피츠 - 오브젝트](./docs/book/object/README.md): 2019.09.03 ~ 2019.10.08
 * [디자인패턴 스터디](./docs/study/designPattern): 2019.09.21 ~
 
 ##### [목차로 이동](#목차)
