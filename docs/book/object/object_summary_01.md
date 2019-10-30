@@ -37,6 +37,7 @@
 ### Theater의 결합도를 낮춘 설계
 * UML  
 	<img src="./img/01_img03.jpg" width="600" height="450"></br>
+	* `Theater`의 로직을 `TicketSeller`로 이동시킨 결과, `Theater`에서 `TicketOffice`로의 의존성이 제거됨
 * 문제점
 	* .
 
