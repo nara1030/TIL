@@ -30,7 +30,17 @@
 * UML  
 	<img src="./img/01_img02.jpg" width="600" height="400"></br>
 * 문제점
-	* .
+	* 변경 어려움  
+	(`Audience`와 `TicketSeller`를 변경할 경우 `Theater`도 함께 번경해야 함)
+	* 가독성 낮음: 코드를 이해하기 위해 여러 세부적인 내용 기억 필요  
+	(`Theater`의 enter 메서드를 이해하기 위해서는 `Audience`가 Bag을 가지고 있고, Bag 안에는 현금과 티켓이 들어 있으며 `TicketSeller`가 TicketOffice에서 티켓을 판매하고, `TicketOffice` 안에 돈과 티켓이 보관돼 있다는 모든 사실 기억 필요)
+
+----
+로버트 마틴은 <클린 소프트웨어: 애자일 원칙과 패턴, 그리고 실천 방법>에서 소프트웨어 모듈이 가져야 하는 세 가지 기능(목적)에 관하여 설명한다.
+
+> * 첫 번째 목적은 실행 중에 제대로 동작하는 것이다.
+> * 두 번째 목적은 변경을 위해 존재하는 것이다.
+> * 세 번째 목적은 코드를 읽는 사람과 의사소통하는 것이다.
 
 ##### [목차로 이동](#목차)
 
@@ -39,8 +49,8 @@
 	<img src="./img/01_img03.jpg" width="600" height="400"></br>
 	* `Theater`의 로직을 `TicketSeller`로 이동시킨 결과, `Theater`에서 `TicketOffice`로의 의존성이 제거됨  
 	(즉, `TicketOffice`와 협력하는 `TicketSeller`의 내부 구현이 성공적으로 캡슐화됨)
-	* `Theater`는 오직 `TicketSeller`의 *인터페이스*에만 의존함
-		* `Ticket`
+	* `Theater`는 오직 `TicketSeller`의 **인터페이스**(interface)에만 의존함
+		* `TicketSeller`가 내부에 `TicketOffice` 인스턴스를 포함하고 있다는 사실은 구현(implementation)의 영역
 		* 여기서 인터페이스는 타입(형)으로 이해
 * 문제점
 	* .
