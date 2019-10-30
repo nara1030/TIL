@@ -28,7 +28,7 @@
 
 ### 너무 많은 클래스에 의존하는 Theater
 * UML  
-	<img src="./img/01_img02.jpg" width="600" height="450"></br>
+	<img src="./img/01_img02.jpg" width="600" height="400"></br>
 * 문제점
 	* .
 
@@ -36,8 +36,12 @@
 
 ### Theater의 결합도를 낮춘 설계
 * UML  
-	<img src="./img/01_img03.jpg" width="600" height="450"></br>
-	* `Theater`의 로직을 `TicketSeller`로 이동시킨 결과, `Theater`에서 `TicketOffice`로의 의존성이 제거됨
+	<img src="./img/01_img03.jpg" width="600" height="400"></br>
+	* `Theater`의 로직을 `TicketSeller`로 이동시킨 결과, `Theater`에서 `TicketOffice`로의 의존성이 제거됨  
+	(즉, `TicketOffice`와 협력하는 `TicketSeller`의 내부 구현이 성공적으로 캡슐화됨)
+	* `Theater`는 오직 `TicketSeller`의 *인터페이스*에만 의존함
+		* `Ticket`
+		* 여기서 인터페이스는 타입(형)으로 이해
 * 문제점
 	* .
 
@@ -47,7 +51,7 @@
 
 
 * UML  
-	<img src="./img/01_img04.jpg" width="600" height="450"></br>
+	<img src="./img/01_img04.jpg" width="600" height="400"></br>
 
 #### 책임의 이동
 
