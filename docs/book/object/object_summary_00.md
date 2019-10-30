@@ -15,11 +15,11 @@
 ## 참고
 ### 책에서 사용한 표기법
 * 클래스 다이어그램  
-	<img src="./img/class_diagram.jpg" width="700" height="400"></br>
+	<img src="./img/00_class_diagram.jpg" width="700" height="400"></br>
 	* [클래스 다이어그램 작성법](https://gmlwjd9405.github.io/2018/07/04/class-diagram.html)
 * 커뮤니케이션 다이어그램  
-	<img src="./img/communication_diagram.jpg" width="550" height="300"></br>
+	<img src="./img/00_communication_diagram.jpg" width="550" height="300"></br>
 * 패키지 다이어그램  
-	<img src="./img/package_diagram.jpg" width="600" height="400"></br>
+	<img src="./img/00_package_diagram.jpg" width="600" height="400"></br>
 
 ##### [목차로 이동](#목차)
