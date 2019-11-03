@@ -28,7 +28,14 @@
 	* Idiom
 	* 직렬화/역직렬화
 	* Enum
-		* [참고](https://limkydev.tistory.com/67)
+		* [싱글톤 고도화 - Limky](https://limkydev.tistory.com/67)
+		* 참고
+			* [Enum 사용법 - Limky](https://limkydev.tistory.com/66)
+			* [Enum - 생활코딩](https://www.opentutorials.org/module/1226/8025)
+			* [Enum - HowToDoInJava](https://howtodoinjava.com/java/enum/enum-tutorial/)
+			* [Enum 활용 - 기억보단 기록을](https://jojoldu.tistory.com/122)
+			* [Enum 활용기 - 우아한 형제들](http://woowabros.github.io/tools/2017/07/10/java-enum-uses.html)
+	* 스프링 싱글톤 레지스트리(`bean` 등록 후 사용)
 
 ##### [목차로 이동](#목차)
 
@@ -42,11 +49,28 @@
 ##### [목차로 이동](#목차)
 
 ### SOLID
-* DIP(추상)가 OCP(구체)의 전제조건
-
+* 구분
+	1. `SRP`: Single responsibility principle(단일 책임 원칙)
+		* 하나의 책임은 어디까지인가에 대한 고민 필요(ex. `밥을 먹는다`)
+	2. `OCP`: Open/closed principle(개방-폐쇄 원칙)
+	3. `LSP`: Liskov substitution principle(리스코프 치환 원칙)
+		* 추상 메소드 오버라이딩 금지(∵ 레거시 맥락 파악 힘듦)
+	4. `ISP`: Interface segregation principle(인터페이스 분리 원칙)
+	5. `DIP`: Dependency inversion principle(의존관계 역전 원칙)
+* 팁: 주관적 이해 반영
+	* DIP(`추상`)가 OCP(`구체`)의 전제조건
+	* SRP는 `제공`의 관점, LSP/ISP는 `소비`의 관점에서 이해(ex. `복합기`)
+	* LSP: [참고](http://wonwoo.ml/index.php/post/1780)  
+		> 상위 타입의 객체를 하위 타입의 객체로 치환해도 상위 타입을 사용하는 프로그램은 정상적으로 동작해야 함
+		* 해석1: 추상 메소드 오버라이딩 금지
+		* 해석2: 추상 메소드 오버라이딩을 **어떻게** 하느냐가 관건
+	* [??](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz/s83_object1/object1_ch10.md)
+	
 ##### [목차로 이동](#목차)
 
 ## 참고
 * [Singleton Pattern - LichKing](https://multifrontgarden.tistory.com/260?category=471239)
+* [스터디 요약정리 - Phang's IT Blog](https://jihyehwang09.github.io/2019/11/03/design-pattern-singleton/)
+* [SOLID - 객체지향 설계 원칙](https://ko.wikipedia.org/wiki/SOLID_(%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84))
 
 ##### [목차로 이동](#목차)
