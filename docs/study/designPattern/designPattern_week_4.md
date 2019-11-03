@@ -10,7 +10,7 @@
 		* [팩토리 메소드](#팩토리-메소드)
 		* [프레임워크 vs 라이브러리](#프레임워크-vs-라이브러리)
 		* [오브젝트](#오브젝트)
-	* [의존성 뒤집기 원칙](#의존성-뒤집기-원칙)
+	* [실시간 변경인가(#실시간-변경인가)
 2. [기타](#기타)
 	* [LocalDate](#LocalDate)
 	* 제어의 역전
@@ -173,7 +173,32 @@ public abstract class PizzaStore {
 
 ##### [목차로 이동](#목차)
 
-### 의존성 뒤집기 원칙
+### 실시간 변경인가
+orderPizza() 메소드는 서브클래스가 아닌 `PizzaStore` 추상클래스에서 정의한다. 따라서 이 메소드에서는 실제로 어떤 서브클래스에서 코드를 실행시키고 피자를 만드는지 알 수가 없다고 했다.
+
+이 말은 서브클래스에서 뭔가를 실시간으로 변경, 즉 동적 바인딩하는 것일까? 그렇지 않다. 피자가 주문에 따라 만들어지는 과정을 한 번 살펴보자.
+
+1. 에단이 주문을 한다. 우선 NYPizzaStore가 필요하다.  
+	```java
+	PizzaStore nyPizzaStore = new NYPizzaStore();
+	```
+2. 피자 가게가 확보됐으니 주문을 받을 수 있다.  
+	```java
+	nyPizzaStore.orderPizza("cheese");
+	```
+3. orderPizza() 메소드에서 createPizza() 메소드를 호출한다.  
+	```java
+	Pizza pizza = createPizza("cheese");
+	```
+4. 아직 준비가 되지 않은 피자를 받았다. 피자 만드는 작업을 마무리 짓는다.  
+	```java
+	pizza.prepare();
+	pizza.bake();
+	pizza.cut();
+	pizza.box();
+	```
+
+즉, 1단계에서 이미 피자의 종류는 결정되지만 그것을 `PizzaStore`에서 모를 뿐이다. 하지만 피자라는 것은 알고 있기에 이후 4단계를 진행한다.
 
 ##### [목차로 이동](#목차)
 
