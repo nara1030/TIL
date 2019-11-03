@@ -6,9 +6,11 @@
 1. [팩토리 메소드 패턴](#팩토리-메소드-패턴)
 	* [인터페이스와 구현부의 분리](#인터페이스와-구현부의-분리)
 	* [객체 생성부 캡슐화](#객체-생성부-캡슐화)
-	* [팩토리 메소드](#팩토리-메소드)
-	* [의존성 뒤집기 원칙](#의존성-뒤집기-원칙)
 	* [피자 가게 프레임워크](#피자-가게-프레임워크)
+		* [팩토리 메소드](#팩토리-메소드)
+		* [프레임워크 vs 라이브러리](#프레임워크-vs-라이브러리)
+		* [오브젝트](#오브젝트)
+	* [의존성 뒤집기 원칙](#의존성-뒤집기-원칙)
 2. [기타](#기타)
 	* [프레임워크 vs 라이브러리](#프레임워크-vs-라이브러리)
 	* [LocalDate](#LocalDate)
@@ -98,15 +100,64 @@
 	
 ##### [목차로 이동](#목차)
 
-### 팩토리 메소드
+### 피자 가게 프레임워크
+피자 가게(`PizzaStore`)가 큰 성공을 거둬 이를 타지역으로 확장하려 한다. 하지만 지역마다 다른 특성을 어떻게 반영할 수 있을까? 아래와 같은 방법을 생각해볼 수 있다.
+
+```java
+NYPizzaFactory nyFactory = new NYPizzaFactory();
+PizzaStore nyStore = new PizzaStore(nyFactory);
+nyStore.order("Veggie");
+
+ChicagoPizzaFactory chicagoFactory = new ChicagoPizzaFactory();
+PizzaStore chicagoStore = new PizzaStore(chicagoFactory);
+chicagoStore.order("Veggie");
+```
+
+즉 `생성 과정`(Factory)과 `만드는 과정`(Store)을 분리했기 때문에 가능한 방법이었다. 하지만 만드는 과정 역시 프랜차이즈마다 다를 수 있다. 이때 피자를 만드는(파는: X) 활동 자체는 전부 `PizzaStore` 클래스에 국한시키면서도 분점마다 고유의 스타일을 살릴 수 있는 방법이 있다.
+
+```java
+public abstract class PizzaStore {
+	public Pizza orderPizza(String type) {
+		Pizza pizza;
+		
+		pizza = createPizza(type);
+		
+		pizza.prepare();
+		pizza.bake();
+		pizza.cut();
+		pizza.box();
+		
+		return pizza;
+	}
+	
+	abstract Pizza createPizza(String type);
+}
+```
+
+위에서 보듯 createPizza(), 즉 `객체 생성` 메소드를 `PizzaStore`에 다시 집어넣는다. 하지만 이번에는 이 메소드를 **추상 메소드**로 선언하고, 각 지역마다 고유의 스타일에 맞게 `PizzaStore`의 서브클래스를 만들도록 한다.
+
+##### [목차로 이동](#목차)
+
+#### 팩토리 메소드
+`PizzaStore`의 orderPizza() 메소드에 이미 주문 시스템이 잘 갖춰져 있다. 이 주문 시스템 자체는 모든 분점에서 똑같이 진행되어야 한다. 각 분점마다 달라지는 것은 피자의 스타일 뿐이다. 즉 서브클래스에서 결정, 즉 책임지는 것은 createPizza() 메소드의 구현부이다.
+
+<img src="./img/factory_method_1.jpg" width="400" height="300"></br>
+
+위와 같은 설계라면 `PizzaStore` 프레임워크에 충실하면서도 각각의 스타일을 제대로 구현할 수 있는 orderPizza() 메소드를 가지고 있는 `PizzaStore` 서브 클래스들을 구비할 수 있다.
+
+##### [목차로 이동](#목차)
+
+#### 프레임워크 vs 라이브러리
+
+
+##### [목차로 이동](#목차)
+
+#### 오브젝트
+
 
 ##### [목차로 이동](#목차)
 
 ### 의존성 뒤집기 원칙
-
-##### [목차로 이동](#목차)
-
-### 피자 가게 프레임워크
 
 ##### [목차로 이동](#목차)
 
