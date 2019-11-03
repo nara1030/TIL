@@ -113,7 +113,7 @@ PizzaStore chicagoStore = new PizzaStore(chicagoFactory);
 chicagoStore.order("Veggie");
 ```
 
-즉 `생성 과정`(Factory)과 `만드는 과정`(Store)을 분리했기 때문에 가능한 방법이었다. 하지만 만드는 과정 역시 프랜차이즈마다 다를 수 있다. 이때 피자를 만드는(파는: X) 활동 자체는 전부 `PizzaStore` 클래스에 국한시키면서도 분점마다 고유의 스타일을 살릴 수 있는 방법이 있다.
+즉 `생성 과정`(Factory)과 `파는 과정`(Store)을 분리했기 때문에 가능한 방법이었다. 하지만 ~~만드는 과정 역시 프랜차이즈마다 다를 수 있다. 이때 피자를 파는(만드는: X) 활동 자체는 전부 `PizzaStore` 클래스에 국한시키면서도 분점마다 고유의 스타일을 살릴 수 있는 방법이 있다.~~ 이 경우 중복이 많이 생기게 된다.
 
 ```java
 public abstract class PizzaStore {
@@ -130,7 +130,7 @@ public abstract class PizzaStore {
 		return pizza;
 	}
 	
-	abstract Pizza createPizza(String type);
+	protected abstract Pizza createPizza(String type);
 }
 ```
 
@@ -144,6 +144,8 @@ public abstract class PizzaStore {
 <img src="./img/factory_method_1.jpg" width="400" height="300"></br>
 
 위와 같은 설계라면 `PizzaStore` 프레임워크에 충실하면서도 각각의 스타일을 제대로 구현할 수 있는 orderPizza() 메소드를 가지고 있는 `PizzaStore` 서브 클래스들을 구비할 수 있다.
+
+이때 Pizza 인스턴스를 만드는, 팩토리 역할을 하는 createPizza() 메소드를 `팩토리 메소드`라 부른다.
 
 ##### [목차로 이동](#목차)
 
