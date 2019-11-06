@@ -56,11 +56,12 @@
 ##### [목차로 이동](#목차)
 
 ### 스터디 언급
-이 부분은 LickKing님의 의견을 토대로 적는다. 전달(`forwarding`)과 위임(`delegation`)은 매우 유사하지만 정확하게 표현하면 다르다. 
+이 부분은 LickKing님의 의견을 토대로 적는다. 
 
-둘 다 겉 객체(오늘 공부한 내용에서는 decorator 객체)가 요청을 받고, 그 요청을 내부 객체를 호출해서 처리한다는 점에서는 같다.
+전달(`forwarding`)과 위임(`delegation`)은 매우 유사하지만 정확하게 표현하면 다르다. 
 
-다만 forwarding은 데코레이터 패턴처럼 단순히 요청을 다시 내부 객체에 전달하는 걸 의미하고, delegation은 현재 자신의 컨텍스트(`this`)를 전달한다는 점에서 forwarding가 차이가 있다.
+> * 둘 다 겉 객체(오늘 공부한 내용에서는 decorator 객체)가 요청을 받고, 그 요청을 내부 객체를 호출해서 처리한다는 점에서는 같다.
+> * 다만 forwarding은 데코레이터 패턴처럼 단순히 요청을 다시 내부 객체에 전달하는 걸 의미하고, delegation은 현재 자신의 컨텍스트(`this`)를 전달한다는 점에서 forwarding가 차이가 있다.
 
 * [참고 후 추후 정리](https://github.com/LichKing-lee/designpattern/issues/3)
 
