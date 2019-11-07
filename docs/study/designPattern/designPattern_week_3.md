@@ -26,8 +26,6 @@
 ## 전달과 위임
 한 번에 이해가 잘 안 되는데, 이해하는대로 수정해나갈 예정이다.
 
-[참고](#참고) 목록 중 `Delegation vs Forwarding in Java`를 참고해서 적는다.
-
 ### Forwarding
 #### 정의
 > In object-oriented programming, **forwarding** means that using a member of an object(either a property or a method) results in actually using the corresponding member of a different object, notably in the context of the receiving object.
@@ -56,7 +54,7 @@
 
 ~~Forwarding과 비교해 차이점이 아직 이해 안 가서 이 부분은 추후 작성한다.~~ 
 
-**위키**에 위임(`Delegation`)을 하기 위한 방법으로 명시적(`explicitly`), 암묵적(`implicitly`) 두 가지가 언급되어 있다. 이때 암묵적 방법으로 상속이 언급되는데, **GeeksforGeeks**에서 위임과 상속을 비교한다. 따라서 상속은 위임과 같은 효과를 내지만 구분할 필요가 있는 것으로 이해한다. 아래 위임과 상속을 비교 내용을 일부 발췌한다.
+**위키**에 위임(`Delegation`)을 하기 위한 방법으로 명시적(`explicitly`), 암묵적(`implicitly`) 두 가지가 언급되어 있다. 이때 암묵적 방법으로 상속이 언급되는데, **GeeksforGeeks**에서 위임과 상속을 비교한다. 따라서 상속은 위임과 같은 효과를 내지만 구분할 필요가 있는 것으로 이해한다. 아래 위임과 상속을 비교한 내용을 일부 발췌한다.
 
 * `Delegation` can be an alternative to `inheritance`.
 * The primary advantage of `delegation` is run-time flexibility - the delegate can easily be changed at run-time. But unlike `inheritance`, delegation is not directly supported by most popular object-oriented languages, and it doesn't facilitate [dynamic polymorphism](https://www.geeksforgeeks.org/dynamic-method-dispatch-runtime-polymorphism-java/).
@@ -145,7 +143,7 @@
 ## 참고
 * [Decorator Pattern - LichKing](https://multifrontgarden.tistory.com/259?category=471239)
 * Delegation vs Forwarding in Java
-	* [Delegation vs Inheritance in Java - GeeksforGeeks]
+	* [Delegation vs Inheritance in Java - GeeksforGeeks](https://www.geeksforgeeks.org/delegation-vs-inheritance-java/)
 	* [Forwarding(object-orient programming) - 위키백과](https://en.wikipedia.org/wiki/Forwarding_(object-oriented_programming))
 	* [Delegation(object-orient programming) - 위키백과](https://en.wikipedia.org/wiki/Delegation_(object-oriented_programming))
 	* [Delegate vs Forwarding in Java OOP - StackExchange](https://softwareengineering.stackexchange.com/questions/399361/delegate-vs-forwarding-in-java-oop)
