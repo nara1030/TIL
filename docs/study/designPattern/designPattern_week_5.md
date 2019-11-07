@@ -5,10 +5,11 @@
 ## 목차
 1. [추상 팩토리 패턴](#추상-팩토리-패턴)
 2. [싱글톤 패턴](#싱글톤-패턴)
-	* [교재 외](#교재-외)
+	* [고도화](#고도화)
 3. [기타](#기타)
 	* [면접 문제](#면접-문제)
 	* [SOLID](#SOLID)
+	* [Enum](#Enum)
 4. [참고](#참고)
 	
 ## 추상 팩토리 패턴
@@ -23,15 +24,13 @@
 
 ##### [목차로 이동](#목차)
 
-### 교재 외
-* 싱글톤 고도화 - `Double-checked` 이후
+### 고도화
+* `Double-checked` 이후(여기까진 교재 언급)
 	* Idiom
 	* 직렬화/역직렬화
 	* Enum
 		* [싱글톤 고도화 - Limky](https://limkydev.tistory.com/67)
 		* 참고
-			* [Enum 사용법 - Limky](https://limkydev.tistory.com/66)
-			* [Enum - 생활코딩](https://www.opentutorials.org/module/1226/8025)
 			* [Enum - HowToDoInJava](https://howtodoinjava.com/java/enum/enum-tutorial/)
 			* [Enum 활용 - 기억보단 기록을](https://jojoldu.tistory.com/122)
 			* [Enum 활용기 - 우아한 형제들](http://woowabros.github.io/tools/2017/07/10/java-enum-uses.html)
@@ -66,6 +65,17 @@
 		* 해석2: 추상 메소드 오버라이딩을 **어떻게** 하느냐가 관건
 	* [??](https://github.com/nara1030/portfolio/blob/master/docs/lecture_list/code_spitz/s83_object1/object1_ch10.md)
 	
+##### [목차로 이동](#목차)
+
+### Enum
+* [Enum 클래스의 사용과 이해 - 생활코딩](https://www.opentutorials.org/module/1226/8025)
+	* 생성자를 `private`로 제한해야 다른 곳에서 newInstance로 생성 불가
+* [Enum이란 - Limky](https://limkydev.tistory.com/50)
+	* Enum의 등장 배경(cf. `final static`)
+* [Enum의 사용법 - Limky](https://limkydev.tistory.com/66)
+	* Static method
+	* Non-static method: 헷갈리네!??
+
 ##### [목차로 이동](#목차)
 
 ## 참고
