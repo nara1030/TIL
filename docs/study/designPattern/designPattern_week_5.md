@@ -30,10 +30,6 @@
 	* 직렬화/역직렬화
 	* Enum
 		* [싱글톤 고도화 - Limky](https://limkydev.tistory.com/67)
-		* 참고
-			* [Enum - HowToDoInJava](https://howtodoinjava.com/java/enum/enum-tutorial/)
-			* [Enum 활용 - 기억보단 기록을](https://jojoldu.tistory.com/122)
-			* [Enum 활용기 - 우아한 형제들](http://woowabros.github.io/tools/2017/07/10/java-enum-uses.html)
 	* 스프링 싱글톤 레지스트리(`bean` 등록 후 사용)
 
 ##### [목차로 이동](#목차)
@@ -68,6 +64,7 @@
 ##### [목차로 이동](#목차)
 
 ### Enum
+#### 기본
 * [Enum 클래스의 사용과 이해 - 생활코딩](https://www.opentutorials.org/module/1226/8025)
 	* 생성자를 `private`로 제한해야 다른 곳에서 newInstance로 생성 불가
 * [Enum이란 - Limky](https://limkydev.tistory.com/50)
@@ -75,7 +72,14 @@
 * [Enum의 사용법 - Limky](https://limkydev.tistory.com/66)
 	* Static method
 	* Non-static method: 헷갈리네!??
+* [Java Enum - HowToDoInJava](https://howtodoinjava.com/java/enum/enum-tutorial/)
 
+##### [목차로 이동](#목차)
+	
+#### 심화
+* [Enum 활용 - 기억보단 기록을](https://jojoldu.tistory.com/122)
+* [Enum 활용기 - 우아한 형제들](http://woowabros.github.io/tools/2017/07/10/java-enum-uses.html)
+	
 ##### [목차로 이동](#목차)
 
 ## 참고
