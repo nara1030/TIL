@@ -21,11 +21,12 @@
 ##### [목차로 이동](#목차)
 	
 ### 개인
-* [개발자 조영호님](https://github.com/nara1030/portfolio/blob/master/docs/book/object.md)
+* [개발자 조영호님](./book/object/README.md)
 * [OKKY 창천향로님](https://jojoldu.tistory.com/)
 * [자바지기 박재성님](https://github.com/slipp/jwp-slipp)
 	* [TDD 리팩토링](https://www.youtube.com/watch?v=bIeqAlmNRrA)
-
+* [개발자 강대명님](https://www.slideshare.net/charsyam2)
+	
 ##### [목차로 이동](#목차)
 
 ## 강의
