@@ -90,5 +90,10 @@
 * [Singleton Pattern - LichKing](https://multifrontgarden.tistory.com/260?category=471239)
 * [스터디 요약정리 - Phang's IT Blog](https://jihyehwang09.github.io/2019/11/03/design-pattern-singleton/)
 * [SOLID - 객체지향 설계 원칙](https://ko.wikipedia.org/wiki/SOLID_(%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%EC%84%A4%EA%B3%84))
+- - -
+* [Java Singletons Using Enum - DZone](https://dzone.com/articles/java-singletons-using-enum)
+* [Singletons in Java - Baeldung](https://www.baeldung.com/java-singleton)
+* [Why Enum Singleton are better in Java - Javarevisited](https://javarevisited.blogspot.com/2012/07/why-enum-singleton-are-better-in-java.html)
+* [How to create thread safe Singleton in Java - Javarevisited](https://javarevisited.blogspot.com/2012/12/how-to-create-thread-safe-singleton-in-java-example.html)
 
 ##### [목차로 이동](#목차)
