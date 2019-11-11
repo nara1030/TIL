@@ -64,9 +64,11 @@
 ##### [목차로 이동](#목차)
 
 ### Enum
-`스터디 코드 복구`
+스터디에서 다뤘던 코드.
 
-추후 따로 정리할 필요가 있는데 우선 자료만 정리해놓는다.
+
+
+아래 자료 등을 바탕으로 [여기](../../../../../workspace-thisIsJava/ThisIsJava/docs/etc/java_enum.md)에 추후 정리해나갈 예정.
 
 #### 기본
 * [Enum 클래스의 사용과 이해 - 생활코딩](https://www.opentutorials.org/module/1226/8025)
