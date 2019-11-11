@@ -17,7 +17,9 @@
 	* [TOAST](https://meetup.toast.com/)
 * SI
 	* [LG CNS](https://blog.lgcns.com/1201?category=515147) 
-
+* 영문
+	* [JetBrains Academy](https://www.jetbrains.com/academy/)
+	
 ##### [목차로 이동](#목차)
 	
 ### 개인
