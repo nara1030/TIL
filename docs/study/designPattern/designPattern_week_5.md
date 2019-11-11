@@ -66,7 +66,7 @@
 ### Enum
 스터디에서 다뤘던 코드. `1 -> 2 -> 3` 순으로 최신 코드.
 
-1. 방법1  
+1. `1`  
 	```java
 	import lombok.AllArgsConstructor;
 	
@@ -94,11 +94,11 @@
 		private String name;
 	}
 	```
-2. 방법2  
+2. `2`  
 	```java
 	// 기억이..
 	```
-3. 방법3  
+3. `3`  
 	```java
 	import lombok.AllArgsConstructor;
 	
@@ -122,6 +122,8 @@
 	}
 	```
 
+##### [목차로 이동](#목차)
+	
 아래 자료 등을 바탕으로 [여기](https://github.com/nara1030/ThisIsJava/blob/master/docs/etc/java_enum.md)에 추후 정리해나갈 예정.
 
 #### 기본
@@ -134,8 +136,6 @@
 	* Non-static method: 헷갈리네!??
 * [Java Enum - HowToDoInJava](https://howtodoinjava.com/java/enum/enum-tutorial/)
 
-##### [목차로 이동](#목차)
-	
 #### 심화
 * [Enum 활용 - 기억보단 기록을](https://jojoldu.tistory.com/122)
 * [Enum 활용기 - 우아한 형제들](http://woowabros.github.io/tools/2017/07/10/java-enum-uses.html)
