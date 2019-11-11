@@ -64,11 +64,65 @@
 ##### [목차로 이동](#목차)
 
 ### Enum
-스터디에서 다뤘던 코드.
+스터디에서 다뤘던 코드. `1 -> 2 -> 3` 순으로 최신 코드.
 
+1. 방법1  
+	```java
+	import lombok.AllArgsConstructor;
+	
+	@AllArgsConstructor
+	public enum Code1 implements Runnable {
+		A("a") {
+			@Override
+			public void run() {
+				System.out.println("hello");
+			}
+		},
+		B("b") {
+			@Override
+			public void run() {
+				System.out.println("hi");
+			}
+		},
+		C("c") {
+			@Override
+			public void run() {
+				System.out.println("dobrizen");
+			}
+		};
+		
+		private String name;
+	}
+	```
+2. 방법2  
+	```java
+	// 기억이..
+	```
+3. 방법3  
+	```java
+	import lombok.AllArgsConstructor;
+	
+	@AllArgsConstructor
+	public enum Code3 {
+		A("a", () -> System.out.println("hello"),
+		B("b", () -> System.out.println("hi"),
+		C("c", () -> System.out.println("dobrizen"));
+		
+		private String name;
+		private Runnable runnable;
+		
+		public void run() {
+			this.run();
+		}
+		
+	//	확인
+	//	private Code3(String name, Runnable runnable) {
+	//		this.name = name;
+	//	}
+	}
+	```
 
-
-아래 자료 등을 바탕으로 [여기](../../../../../ThisIsJava/docs/etc/java_enum.md)에 추후 정리해나갈 예정.
+아래 자료 등을 바탕으로 [여기](https://github.com/nara1030/ThisIsJava/blob/master/docs/etc/java_enum.md)에 추후 정리해나갈 예정.
 
 #### 기본
 * [Enum 클래스의 사용과 이해 - 생활코딩](https://www.opentutorials.org/module/1226/8025)
