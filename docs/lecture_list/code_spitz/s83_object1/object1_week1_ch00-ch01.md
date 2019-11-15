@@ -9,10 +9,10 @@
 2. [요약](#요약)
 	* [들어가며](#들어가며)
 		* [역할 모델을 통한 로직의 격리](#역할-모델을-통한-로직의-격리)
-		* [Program & Timing](#Program-&-Timing)
+		* [Program과 Timing](#Program과-Timing)
 		* [Pointer of Pointer](#Pointer-of-Pointer)
-		* [Value & Identifier](#Value-&-Identifier)
-	* [객체, 설계](#객체,-설계)
+		* [Value와 Identifier](#Value와-Identifier)
+	* [객체와 설계](#객체와-설계)
 		* .
 
 ## 참고
@@ -49,7 +49,7 @@
 	
 ##### [목차로 이동](#목차)
 
-#### Program & Timing
+#### Program과 Timing
 프로그램을 어떻게 정의할 수 있을까? 컴파일한 파일을 프로그램이라고 할 수 있을까? 메모리에 적재돼서 실행될 때부터 프로그램이다. 이렇게 협소한 의미에서 프로그램의 생명주기, Timing을 살펴볼 필요가 있다.
 
 추후 추가
@@ -70,12 +70,12 @@
 
 ##### [목차로 이동](#목차)
 
-#### Value & Identifier
+#### Value와 Identifier
 
 
 ##### [목차로 이동](#목차)
 
-### 객체, 설계
+### 객체와 설계
 
 
 ##### [목차로 이동](#목차)
