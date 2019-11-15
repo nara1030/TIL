@@ -57,6 +57,7 @@
 
 * 목차
 	* 오브젝트_전반부
+		* [1주차 - 프로그래밍 패러다임](../../lecture_list/code_spitz/s83_object1/object1_week1_ch01.md)
 		* 9장_유연한 설계
 		* [10장_상속과 코드 재사용](../../lecture_list/code_spitz/s83_object1/object1_ch10.md)
 	* [오브젝트_후반부](https://codespitz.com/s84/list.php?fbclid=IwAR0EtyO3oufqcMr5Ryc9bvP6N72WFbPTGE0u2YV9rk7RW5tjSZKbiy6P_Aw)
