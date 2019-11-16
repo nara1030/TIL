@@ -96,7 +96,33 @@
 	```
 2. `2`  
 	```java
-	// 기억이..
+	// 기억이 살려 하긴 했으나 추후 확인 필요
+	import lombok.AllArgsConstructor;
+	@AllArgsConstructor
+	public enum Code2 {
+		A("a") {
+			@Override
+			void run() {
+				System.out.println("hello");
+			}
+		},
+		B("b") {
+			@Override
+			void run() {
+				System.out.println("hi");
+			}
+		},
+		C("c") {
+			@Override
+			void run() {
+				System.out.println("dobrizen");
+			}
+		};
+		
+		private String name;
+		
+		abstract void run();
+	}
 	```
 3. `3`  
 	```java
