@@ -27,7 +27,10 @@
 * [OKKY 창천향로님](https://jojoldu.tistory.com/)
 * [자바지기 박재성님](https://github.com/slipp/jwp-slipp)
 	* [TDD 리팩토링](https://www.youtube.com/watch?v=bIeqAlmNRrA)
+	* [우아한 테크러닝](https://edu.nextstep.camp/)
+		* [NextStep이 걸어온 길](https://brunch.co.kr/@javajigi/11)
 * [개발자 강대명님](https://www.slideshare.net/charsyam2)
+* [Github Gist - 김지훈](https://gist.github.com/ihoneymon?direction=desc&sort=updated)
 	
 ##### [목차로 이동](#목차)
 
