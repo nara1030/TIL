@@ -15,7 +15,7 @@
 		* [Polymorphism](#Polymorphism)
 	* [객체와 설계](#객체와-설계)
 		* [Object](#Object)
-		* 21:25
+		* [Theater](#Theater)
 
 ## 참고
 ### 관련자료
@@ -154,5 +154,10 @@ println(worker.print())	// HardWorkering
 * Maintenance of State: `상태의 관리`
 	* `관리`라 함은 `은닉`, `(자율적) 갱신`, `알림` 등 포함
 	* 객체지향이 `포인터의 포인터`를 쓰는 이유이기도 함
+
+##### [목차로 이동](#목차)
+
+#### Theater
+
 
 ##### [목차로 이동](#목차)
