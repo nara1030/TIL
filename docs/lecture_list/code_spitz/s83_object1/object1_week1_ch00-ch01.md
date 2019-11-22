@@ -172,7 +172,9 @@ println(worker.print())	// HardWorkering
 ##### [목차로 이동](#목차)
 
 ##### 다이어그램
-.
+책의 `Theater` 예제는 절차지향으로부터 객체지향까지 가는 과정을 설명하기 위해 만들었기 때문에 정교한 역할모델이 지정되어 있지 않다(`역할모델`이 아니라 `프로시저`를 옮겨놨을 뿐).
+
+초기 버전의 클래스간 의존성을 나타내는 UML이다.
 
 <img src="./img/theater_diagram_1.png" width="600" height="300"></br>
 
