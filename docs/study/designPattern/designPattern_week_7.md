@@ -57,7 +57,7 @@ GoF의 디자인 패턴을 보면 위 내용은 다음과 같다([헐리우드 �
 * 제어의 역전  
 	<img src="./img/IoC.png" width="400" height="250"></br>
 * 의존성 뒤집기 원칙(Dependency Inversion Principle: DIP)  
-	<img src="./img/DIP.png" width="400" height="250"></br>
+	<img src="./img/DIP.png" width="400" height="200"></br>
 
 ##### [목차로 이동](#목차)
 
