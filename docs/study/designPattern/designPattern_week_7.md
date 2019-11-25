@@ -168,5 +168,7 @@ public boolean customerWantsCondiments() {
 		* [IoC? DIP? IoC Container? DI? DI Framework? 도대체 그게 뭔데? - wickedev](https://velog.io/@wickedev/IoC-DIP-IoC-Container-DI-DI-Framework-%EB%8F%84%EB%8C%80%EC%B2%B4-%EA%B7%B8%EA%B2%8C-%EB%AD%94%EB%8D%B0)
 		* [IoC의 이해](http://wiki.gurubee.net/pages/viewpage.action?pageId=26740787)
 * [Java - static method dispatch, dynamic method dispatch, double dispatch](https://defacto-standard.tistory.com/413)
-		
+- - -
+* [템플릿 메소드 패턴 - 꿈꾸는 지구별 개발자](https://jihyehwang09.github.io/2019/11/24/design-pattern-template-method/)
+	
 ##### [목차로 이동](#목차)
