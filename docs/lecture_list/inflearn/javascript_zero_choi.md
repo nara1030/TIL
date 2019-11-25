@@ -73,10 +73,15 @@
 		NaN === NaN // false
 		```
 * `undefined` 대신 `null`을 사용하라
-	* 둘의 의도가 미묘하게 다르다.
-	* `undefined`: 컴퓨터가 default로 넣어준 값  
-	  `null`: 개발자가 넣어준 값
-* 문자열을 만드는 방법엔 세 가지가 있음(`'`, `"`, ```)
+	* 자료형 비교  
+		```javascript
+		null == undefined	// true
+		null === undefined	// false
+		```
+	* 의도 차이  
+	`undefined`: 컴퓨터가 default로 넣어준 값  
+	`null`: 개발자가 넣어준 값
+* 문자열을 만드는 방법엔 세 가지가 있음(', ", `)
 
 참고로 제곱 연산자는 `**`이다(ex. 3`**`2 `===` 9).
 	
