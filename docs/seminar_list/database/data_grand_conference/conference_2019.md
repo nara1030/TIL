@@ -12,7 +12,7 @@
 	* [발표 참가기업](#발표-참가기업)
 
 ## 행사일정
-<img src="./img/schedule_2019.jpg" width="500" height="800"></br>
+<img src="./img/schedule_2019.jpg" width="400" height="700"></br>
 
 ##### [목차로 이동](#목차로-이동)
 
@@ -28,6 +28,6 @@
 ### 발표 참가기업
 ~~잘 안 보이면 확대해서 보면 됨~~
 
-<img src="./img/theater_diagram_1.png" width="300" height="600"></br>
+<img src="./img/company_2019.jpg" width="400" height="600"></br>
 
 ##### [목차로 이동](#목차로-이동)
