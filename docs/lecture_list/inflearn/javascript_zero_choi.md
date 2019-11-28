@@ -17,6 +17,8 @@
 	* [window 객체](#window-객체)
 	* [document 객체와 DOM](#document-객체와-DOM)
 	* [script 태그 사용법](#script-태그-사용법)
+	* JS로 HTML 태그 만들기
+	* 이벤트 리스너 맛보기
 3. [심화](#심화)
 	* .
 	* .
@@ -301,13 +303,16 @@ window.몸무게			// undefined
 window.document		// document
 document		// window는 전역 객체이므로 생략 가능
 
+console.dir(document.body)	// DOM 객체 확인 가능
+console.log(document.body)	// 태그 확인
+
 // 추후 작성
 ```
 
 ##### [목차로 이동](#목차)
 
 ### script 태그 사용법
-지금까지는 REPL을 이용 코딩했으나 이제는 파일(`.js`)로 저장하여 브라우저가 불러와 실행시키도록 한다. 예를 들어 `끝말잇기.js`로 스크립트 코드를 저장했다고 가정한다. 그렇다면 이를 실행시키기 위해 아래와 같은 `html` 파일이 필요하다.
+지금까지는 REPL을 이용 코딩했으나 이는 브라우저가 꺼지면 지워진다는 단점이 있다. 따라서 이제는 파일(`.js`)로 저장하여 브라우저가 불러와 실행시키도록 한다. 예를 들어 `끝말잇기.js`로 스크립트 코드를 저장했다고 가정한다. 그렇다면 이를 실행시키기 위해 아래와 같은 `html` 파일이 필요하다.
 
 ```html
 <!DOCTYPE html>
@@ -317,12 +322,67 @@ document		// window는 전역 객체이므로 생략 가능
 		<title>끝말잇기</title>
 	</head>
 	<body>
+		<!--<div>제로초</div>-->
+		<!--<input type = 'text' />-->
+		<!--<button>입력</button>-->
 		<script src = "끝말잇기.js"></script>
 	</body>
 </html>
 ```
 
 이 `html` 파일을 실행하면 브라우저가 이 파일을 순차적으로 읽으면서 `끝말잇기.js` 파일을 불러와 읽는다. 이때 브라우저의 URL은 `HTML` 파일명이다. 
+
+##### [목차로 이동](#목차)
+
+### JS로 HTML 태그 만들기
+이전에 `HTML` 파일에서 `JS` 파일을 불러왔던 것과 반대로 이젠 `JS` 파일에서 `HTML`을 조작하는 방법이다(비효율적).
+
+```javascript
+// HTML 파일 주석 라인 생성
+var 바디 = document.body;
+var 단어 = document.createElement('div');
+단어.textContent = '제로초';
+document.body.append(단어);
+var 입력창 = document.createElement('input');
+document.body.append(입력창);
+var 버튼 = document.createElement('button');
+버튼.textContent = '입력';
+document.body.append(버튼);
+var 결과창 = document.createElement('div');
+document.body.append(결과창);
+
+버튼.addEventListener('click', function() {
+	if(단어.textContent[단어.textContent.length - 1] === 입력창.value[0]) {
+	
+	} else {
+	
+	}
+});
+
+// 이하 기존 코드
+/*
+var word = '제로초'
+
+while(true) {
+	var answer = prompt(word);
+	if(word[word.length - 1] === answer[0]) {
+		alert('딩동댕');
+		word = answer;
+	} else {
+		alert('땡');
+	}
+}
+*/
+```
+
+* 반복문(기존 코드)을 이벤트리스너로 대체
+	* addEventListener 안에 들어가는 함수가 **콜백함수**
+* 추후 살펴볼 내용으로 HTML을 생성하는 JS 코드를 `jQuery`를 사용하면 효율적
+
+##### [목차로 이동](#목차)
+
+### 이벤트 리스너 맛보기
+
 
 ##### [목차로 이동](#목차)
 
