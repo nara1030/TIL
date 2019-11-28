@@ -17,8 +17,9 @@
 	* [window 객체](#window-객체)
 	* [document 객체와 DOM](#document-객체와-DOM)
 	* [script 태그 사용법](#script-태그-사용법)
-	* JS로 HTML 태그 만들기
-	* 이벤트 리스너 맛보기
+	* [JS로 HTML 태그 만들기](#JS로-HTML-태그-만들기)
+		* 이벤트 리스너 맛보기
+	* [사용자 경험 반영](#사용자-경험-반영)
 3. [심화](#심화)
 	* .
 	* .
@@ -351,11 +352,14 @@ document.body.append(버튼);
 var 결과창 = document.createElement('div');
 document.body.append(결과창);
 
+// addEventListener 함수의 인자가 2개라고 생각
 버튼.addEventListener('click', function() {
 	if(단어.textContent[단어.textContent.length - 1] === 입력창.value[0]) {
-	
+		결과창.textContent = '딩동댕';	// append 함수 뒤에 해줘야 하는 거 아닌가?
+		단어.textContent = 입력창.value;
+		입력창.value = '';
 	} else {
-	
+		결과창.textContent = '땡';
 	}
 });
 
@@ -381,8 +385,9 @@ while(true) {
 
 ##### [목차로 이동](#목차)
 
-### 이벤트 리스너 맛보기
-
+### 사용자 경험 반영
+* 입력 시 마우스 이동 없이 엔터 사용
+* 입력 후 커서 자동 이동
 
 ##### [목차로 이동](#목차)
 
