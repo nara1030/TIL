@@ -12,7 +12,7 @@
 	* [개념](#개념)
 2. [이터레이터 패턴](#이터레이터-패턴)
 	* [개념](#개념)
-		* [Iterator와 Iterable](#Iterator와 Iterable)
+		* [Iterator와 Iterable](#Iterator와-Iterable)
 	* [내부 반복자와 외부 반복자](#내부-반복자와-외부-반복자)
 		* 반대 방향 순회
 	* [자바 반복자 인터페이스](#자바-반복자-인터페이스)
