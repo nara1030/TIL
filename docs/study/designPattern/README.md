@@ -23,5 +23,6 @@
 * [5주차 - Abstract Factory Pattern & Singleton Pattern](./designPattern_week_5.md)
 * [6주차 - Command Pattern & Adapter/Facade Pattern](./designPattern_week_6.md)
 * [7주차 - Template Method Pattern & Iterator](./designPattern_week_7.md)
+* [8주차 - Composite Pattern](./designPattern_week_8.md)
 
 ##### [목차로 이동](#목차)
