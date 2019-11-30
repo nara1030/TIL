@@ -236,7 +236,7 @@ public class Waitress {
 ##### [목차로 이동](#목차)
 
 #### Iterator와 Iterable
-[링크 1](https://92bluemoon.netlify.com/posts/iterator-iterable/)
+[링크 1](https://92bluemoon.netlify.com/posts/iterator-iterable/)  
 [링크 2](https://wedul.site/459)
 
 ##### [목차로 이동](#목차)
