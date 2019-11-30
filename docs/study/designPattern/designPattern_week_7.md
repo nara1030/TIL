@@ -12,6 +12,7 @@
 	* [개념](#개념)
 2. [이터레이터 패턴](#이터레이터-패턴)
 	* [개념](#개념)
+		* Iterator와 Iterable
 	* [내부 반복자와 외부 반복자](#내부-반복자와-외부-반복자)
 		* 반대 방향 순회
 	* [자바 반복자 인터페이스](#자바-반복자-인터페이스)
@@ -115,12 +116,116 @@ abstract class AbstractClass {
 
 ## 이터레이터 패턴
 ### 개념
+책에 나와 있는 예는 아래 UML과 같다.
+
+<img src="./img/iterator_1.png" width="400" height="250"></br>
+
+즉, 두 식당의 메뉴 구현(`컬렉션`과 `배열`)이 다른데 주문은 한 곳에서 통합하려는 상황이다. 따라서 웨이트리스가 두 식당의 메뉴를 출력할 수 있어야 한다(`Waitress` 클래스의 `printMenu()` 메소드). 하지만 각 메뉴가 똑같은 인터페이스를 구현하고 있지 않아서 불편하다(사실 `getMenuItems()` 메소드의 리턴 형식을 제외하면 동일).
+
+* 구상 객체에 직접 의존(`DIP` 위반)
+* 코드 중복
+* 코드 관리 및 확장 어려움(`OCP` 위반)
+
+간단히 `Waitress` 클래스의 코드를 살펴보면 이를 알 수 있다.
+
+```java
+// 클래스 선언부 생략
+PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();	// 생성 동시 addItem() 메소드 이용 초기화
+ArrayList<MenuItem> breakfastItems = pancakeHouseMenu.getMenuItems();	// 책 집필 이후 제네릭 도입
+
+DinerMenu dinerMenu = new DinerMenu();	// 생성 동시 addItem() 메소드 이용 초기화
+MenuItem[] lunchItems = dinerMenu.getMenuItems();
+
+for(int i = 0; i < breakfastItems.size(); i++) {
+	MenuItem menuItem = breakfastItems.get(i);
+	System.out.print(menuItem.getName() + " ");
+	System.out.println(menuItem.getPrice() + " ");
+	System.out.println(menuItem.getDescription());
+}
+
+for(int i = 0; i < lunchItems.length; i++) {
+	MenuItem menuItem = lunchItems[i];
+	System.out.print(menuItem.getName() + " ");
+	System.out.println(menuItem.getPrice() + " ");
+	System.out.println(menuItem.getDescription());	
+}
+```
+
+객체지향의 설계 원칙 중 가장 중요한 것이 `바뀌는 부분을 캡슐화하라`라는 내용이었다. 그리고 위 코드에서 바뀌는 부분은 (메뉴에서 리턴되는 컬렉션 객체의 형식으로 인한) 반복 작업이다. 이는 **이터레이터 패턴**으로 반복 작업을 캡슐화함으로써 리팩토링할 수 있다. 먼저 이터레이터(`Iterator`), 즉 반복자 패턴을 사용하면 예제의 UML이 어떻게 변화되는지 살펴본다.
+
+<img src="./img/iterator_2.png" width="600" height="280"></br>
+
+* `컬렉션 관리`와 `반복 작업` 분리
+	* 컬렉션 관리 클래스(`DinerMenu`)는 `Iterator` 인터페이스 리턴 기능만 있으면 됨(`createIterator()` 메소드)  
+	  구상 Iterator 클래스(`DinerMenuIterator`)에서 반복 작업 처리  
+	* 컬렉션 관리 객체 혹은 클라이언트(`Waitress`)에서는 반복 작업에 대해 알 필요가 없음  
+	  비슷한 맥락에서 내부 구조를 드러내는 `getMenuItems()` 메소드를 컬렉션 관리 클래스에서 제거
+* Iterator 인터페이스는 임의의 컬렉션 객체에 대해 반복자(Concrete) 구현 가능
+
+이후 `Waitress` 코드는 아래와 같이 변한다.
+
+```java
+public class Waitress {
+	PancakeHouseMenu pancakeHouseMenu;
+	DinerMenu dinerMenu;
+	
+	public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+		this.pancakeHouseMenu = pancakeHouseMenu;
+		this.dinerMenu = dinerMenu;
+	}
+	
+	public void printMenu() {
+		Iterator pancakeIterator = pancakeHouseMenu.createIterator();
+		Iterator dinerIterator = dinerMenu.createIterator();
+		System.out.println("메뉴\n---\n아침메뉴");
+		printMenu(pancakeIterator);
+		System.out.println("\n점심메뉴");
+		printMenu(dinerIterator);
+	}
+	
+	private void printMenu(Iterator iterator) {
+		while(iterator.hasNext()) {
+			MenuItem menuItem = iterator.next();	// 형 변환 불필요(∵ 제네릭)
+			System.out.print(menuItem.getName() + ", ");
+			System.out.print(menuItem.getPrice() + " -- ");
+			System.out.println(menuItem.getDescription());
+		}
+	}
+}
+```
+
+추후 추가.
+
+##### [목차로 이동](#목차)
+
+#### Iterator와 Iterable
 
 
 ##### [목차로 이동](#목차)
 
 ### 내부 반복자와 외부 반복자
 
+
+```java
+import java.util.List;
+import java.util.ListIterator;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+public class First {
+	Iterable<Integer> iterable1 = IntStream.iterate(0, n -> n + 1)
+			.limit(10)
+			.boxed()
+			.collect(Collectors.toList());
+	
+	List<Integer> iterable2 = IntStream.iterate(0, n -> n + 1)
+			.limit(10)
+			.boxed()
+			.collect(Collectors.toList());
+	
+	ListIterator<Integer> iterator = iterable2.listIterator();
+}
+```
 
 ##### [목차로 이동](#목차)
 
