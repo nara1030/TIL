@@ -12,7 +12,7 @@
 	* [개념](#개념)
 2. [이터레이터 패턴](#이터레이터-패턴)
 	* [개념](#개념)
-		* Iterator와 Iterable
+		* [Iterator와 Iterable](#Iterator와 Iterable)
 	* [내부 반복자와 외부 반복자](#내부-반복자와-외부-반복자)
 		* 반대 방향 순회
 	* [자바 반복자 인터페이스](#자바-반복자-인터페이스)
@@ -22,6 +22,7 @@
 	* [this vs super](#this-vs-super)
 	* RestTemplate
 	* 테스트
+	* 
 4. [참고](#참고)
 	
 ## 템플릿 메소드 패턴
@@ -194,17 +195,54 @@ public class Waitress {
 }
 ```
 
-추후 추가.
+기존에 반복 작업을 처리하기 위해 순환문 두 개가 필요했었는데 Iterator를 구현했기에 어떠한 컬렉션이 추가되든지 하나의 순환문으로 처리할 수 있다. 하지만 맨 처음에 문제점으로 지적했던 구상 객체에 대한 직접 의존성이 제거되지 않았다(`DIP` 위반). 다시 말해 `PancakeHouseMenu`와  `DinerMenu`의 인터페이스가 완전히 똑같음에도 불구하고 아직 인터페이스를 통일시키지 않았다. 이를 통일시키면 아래와 같다.
+
+<img src="./img/iterator_3.png" width="1000" height="400"></br>
+
+즉, 아래와 같이 `Waitress` 클래스와 구상 클래스 사이의 의존성을 줄일 수 있다.
+
+```java
+public class Waitress {
+	Menu pancakeHouseMenu;
+	Menu dinerMenu;
+	
+	public Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
+		this.pancakeHouseMenu = pancakeHouseMenu;
+		this.dinerMenu = dinerMenu;
+	}
+	
+	public void printMenu() {
+		Iterator pancakeIterator = pancakeHouseMenu.createIterator();
+		Iterator dinerIterator = dinerMenu.createIterator();
+		System.out.println("메뉴\n---\n아침메뉴");
+		printMenu(pancakeIterator);
+		System.out.println("\n점심메뉴");
+		printMenu(dinerIterator);
+	}
+	
+	private void printMenu(Iterator iterator) {
+		while(iterator.hasNext()) {
+			MenuItem menuItem = iterator.next();	// 형 변환 불필요(∵ 제네릭)
+			System.out.print(menuItem.getName() + ", ");
+			System.out.print(menuItem.getPrice() + " -- ");
+			System.out.println(menuItem.getDescription());
+		}
+	}
+}
+```
+
+정리하면. p373-4.
 
 ##### [목차로 이동](#목차)
 
 #### Iterator와 Iterable
-
+[링크 1](https://92bluemoon.netlify.com/posts/iterator-iterable/)
+[링크 2](https://wedul.site/459)
 
 ##### [목차로 이동](#목차)
 
 ### 내부 반복자와 외부 반복자
-
+p376-7.
 
 ```java
 import java.util.List;
@@ -227,10 +265,12 @@ public class First {
 }
 ```
 
+[예제 관련 링크](https://2018-start.tistory.com/30)
+
 ##### [목차로 이동](#목차)
 
 ### 자바 반복자 인터페이스
-
+p370-1.
 
 ##### [목차로 이동](#목차)
 
@@ -286,9 +326,9 @@ public boolean customerWantsCondiments() {
 * 헐리우드 원칙 vs 의존성 뒤집기 원칙
 	* [헐리우드 원칙 - 기계인간](https://johngrib.github.io/wiki/hollywood-principle/)
 	* [의존성 뒤집기 원칙 - 제타위키](https://zetawiki.com/wiki/%EC%9D%98%EC%A1%B4%EC%84%B1_%EB%92%A4%EC%A7%91%EA%B8%B0_%EC%9B%90%EC%B9%99)
-	* [용어 정리 - IoC, DI, DIP](https://black-jin0427.tistory.com/194)
-	* [제어의 역전(IoC)이란 무엇인가](https://vandbt.tistory.com/43)
+	* [DI는 IoC를 사용하지 않아도 된다 by Jin-Wook Chung](https://jwchung.github.io/DI%EB%8A%94-IoC%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EC%A7%80-%EC%95%8A%EC%95%84%EB%8F%84-%EB%90%9C%EB%8B%A4)
 	* 스프링과 IoC
+		* [제어의 역전(IoC)이란 무엇인가](https://vandbt.tistory.com/43)
 		* [오브젝트 설계와 제어의 역전 - 주토피아](https://joooootopia.tistory.com/19)
 		* [IoC - 제어의 역전](https://choiwy.tistory.com/38)
 		* [IoC? DIP? IoC Container? DI? DI Framework? 도대체 그게 뭔데? - wickedev](https://velog.io/@wickedev/IoC-DIP-IoC-Container-DI-DI-Framework-%EB%8F%84%EB%8C%80%EC%B2%B4-%EA%B7%B8%EA%B2%8C-%EB%AD%94%EB%8D%B0)
