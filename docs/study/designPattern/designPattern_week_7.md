@@ -118,7 +118,7 @@ abstract class AbstractClass {
 ### 개념
 책에 나와 있는 예는 아래 UML과 같다.
 
-<img src="./img/iterator_1.png" width="400" height="250"></br>
+<img src="./img/iterator_1.png" width="600" height="350"></br>
 
 즉, 두 식당의 메뉴 구현(`컬렉션`과 `배열`)이 다른데 주문은 한 곳에서 통합하려는 상황이다. 따라서 웨이트리스가 두 식당의 메뉴를 출력할 수 있어야 한다(`Waitress` 클래스의 `printMenu()` 메소드). 하지만 각 메뉴가 똑같은 인터페이스를 구현하고 있지 않아서 불편하다(사실 `getMenuItems()` 메소드의 리턴 형식을 제외하면 동일).
 
@@ -130,7 +130,7 @@ abstract class AbstractClass {
 
 ```java
 // 클래스 선언부 생략
-PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();	// 생성 동시 addItem() 메소드 이용 초기화
+PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();		// 생성 동시 addItem() 메소드 이용 초기화
 ArrayList<MenuItem> breakfastItems = pancakeHouseMenu.getMenuItems();	// 책 집필 이후 제네릭 도입
 
 DinerMenu dinerMenu = new DinerMenu();	// 생성 동시 addItem() 메소드 이용 초기화
@@ -151,9 +151,9 @@ for(int i = 0; i < lunchItems.length; i++) {
 }
 ```
 
-객체지향의 설계 원칙 중 가장 중요한 것이 `바뀌는 부분을 캡슐화하라`라는 내용이었다. 그리고 위 코드에서 바뀌는 부분은 (메뉴에서 리턴되는 컬렉션 객체의 형식으로 인한) 반복 작업이다. 이는 **이터레이터 패턴**으로 반복 작업을 캡슐화함으로써 리팩토링할 수 있다. 먼저 이터레이터(`Iterator`), 즉 반복자 패턴을 사용하면 예제의 UML이 어떻게 변화되는지 살펴본다.
+객체지향의 설계 원칙 중 가장 중요한 것이 `바뀌는 부분을 캡슐화하라`라는 내용이었다. 그리고 위 코드에서 바뀌는 부분은 (메뉴에서 리턴되는 컬렉션 객체의 형식의 차이로 인한) 반복 작업이다. 이는 **이터레이터 패턴**으로 반복 작업을 캡슐화함으로써 리팩토링할 수 있다. 먼저 이터레이터(`Iterator`), 즉 반복자 패턴을 사용하면 예제의 UML이 어떻게 변화되는지 살펴본다.
 
-<img src="./img/iterator_2.png" width="600" height="280"></br>
+<img src="./img/iterator_2.png" width="800" height="400"></br>
 
 * `컬렉션 관리`와 `반복 작업` 분리
 	* 컬렉션 관리 클래스(`DinerMenu`)는 `Iterator` 인터페이스 리턴 기능만 있으면 됨(`createIterator()` 메소드)  
