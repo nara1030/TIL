@@ -241,7 +241,7 @@ public class Waitress {
 
 #### Iterator와 Iterable
 [링크 1](https://92bluemoon.netlify.com/posts/iterator-iterable/)  
-[링크 2](https://wedul.site/459)
+[링크 2](https://wedul.site/459)  
 [링크 3](http://wonwoo.ml/index.php/post/1812)
 
 ##### [목차로 이동](#목차)
@@ -255,14 +255,14 @@ p370-1.
 * 외부 반복자(external iterator)
 	* 개발자가 코드로 직접 컬렉션의 요소를 반복해서 가져오는 코드 패턴  
 	  (클라이언트에서 `next()`를 호출해서 다음 항목을 가져오기 때문에, 클라이언트가 반복작업을 제어)  
-	  <img src="./img/external_iterator.png" width="150" height="300"></br>
+	  <img src="./img/external_iterator.png" width="200" height="250"></br>
 	* 예
 		* index를 사용하는 for문
 		* Iterator를 이용하는 while문
 * 내부 반복자(internal iterator)
 	* 컬렉션 내부에서 요소들을 반복시키고, 개발자는 요소당 처리해야 할 코드만 제공하는 코드 패턴  
 	  (클라이언트가 반복작업을 마음대로 제어할 수 없기 때문에 외부 반복자를 사용하는 경우에 비해 유연성 감소)  
-	  <img src="./img/internal_iterator.png" width="150" height="300"></br>
+	  <img src="./img/internal_iterator.png" width="200" height="250"></br>
 	* 예
 		* Java8의 Stream(Java I/O Stream과 무관)  
 
