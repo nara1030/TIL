@@ -242,12 +242,19 @@ public class Waitress {
 #### Iterator와 Iterable
 [링크 1](https://92bluemoon.netlify.com/posts/iterator-iterable/)  
 [링크 2](https://wedul.site/459)  
-[링크 3](http://wonwoo.ml/index.php/post/1812)
+[링크 3](http://wonwoo.ml/index.php/post/1812)  
+[링크 4](https://stackabuse.com/java-iterable-interface-iterator-listiterator-and-spliterator/)
 
 ##### [목차로 이동](#목차)
 
 #### 자바 반복자 인터페이스
-p370-1.
+책에서처럼 직접 Iterator 인터페이스를 만들 수 있지만 이왕이면 자바(`java.util.Iterator`)에 있는 것을 사용하는 것이 좋다.
+
+<img src="./img/iterator_4.png" width="300" height="150"></br>
+
+하지만 배열과는 달리 ArrayList에서는 반복자를 리턴하는 `iterator()` 메소드가 있기 때문에 별도로 Iterator를 구현할 필요도 없다.
+
+`remove()` 메소드 관련 추후 추가. p370.
 
 ##### [목차로 이동](#목차)
 
