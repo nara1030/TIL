@@ -13,9 +13,9 @@
 2. [이터레이터 패턴](#이터레이터-패턴)
 	* [이터레이터 패턴이란](#이터레이터-패턴이란)
 		* [Iterator와 Iterable](#Iterator와-Iterable)
+		* [자바 반복자 인터페이스](#자바-반복자-인터페이스)
 	* [내부 반복자와 외부 반복자](#내부-반복자와-외부-반복자)
-		* 반대 방향 순회
-	* [자바 반복자 인터페이스](#자바-반복자-인터페이스)
+		* [반대 방향 순회](#반대-방향-순회)
 	* [자바 Enumeration 인터페이스](#자바-Enumeration-인터페이스)
 3. [기타](#기타)
 	* [반환형이 boolean인 메소드 구현부](#반환형이-boolean인-메소드-구현부)
@@ -116,6 +116,10 @@ abstract class AbstractClass {
 
 
 ## 이터레이터 패턴
+처음 접했을 때는 컬렉션의 요소를 꺼내는 방법이 어렵게 다가왔었는데, 이것이 이터레이터 패턴이라는 하나의 패턴임을 알게 되어서 조금은 눈을 뜬 느낌이다.
+
+이 패턴의 필요성에 대해 간단하게 소개하면, Iterator를 매개변수로 받아들이는 메소드를 만들면 다형적인 반복작업을 사용할 수 있게 된다. 컬렉션의 구현 방식과는 무관하게 Iterator를 지원(직접 구현 아님)하는 어떠한 컬렉션에 대해서도 반복작업을 할 수 있기 때문이다.
+
 ### 이터레이터 패턴이란
 책에 나와 있는 예는 아래 UML과 같다.
 
@@ -238,11 +242,64 @@ public class Waitress {
 #### Iterator와 Iterable
 [링크 1](https://92bluemoon.netlify.com/posts/iterator-iterable/)  
 [링크 2](https://wedul.site/459)
+[링크 3](http://wonwoo.ml/index.php/post/1812)
+
+##### [목차로 이동](#목차)
+
+#### 자바 반복자 인터페이스
+p370-1.
 
 ##### [목차로 이동](#목차)
 
 ### 내부 반복자와 외부 반복자
-p376-7.
+* 외부 반복자(external iterator)
+	* 개발자가 코드로 직접 컬렉션의 요소를 반복해서 가져오는 코드 패턴  
+	  (클라이언트에서 `next()`를 호출해서 다음 항목을 가져오기 때문에, 클라이언트가 반복작업을 제어)  
+	  <img src="./img/external_iterator.png" width="150" height="300"></br>
+	* 예
+		* index를 사용하는 for문
+		* Iterator를 이용하는 while문
+* 내부 반복자(internal iterator)
+	* 컬렉션 내부에서 요소들을 반복시키고, 개발자는 요소당 처리해야 할 코드만 제공하는 코드 패턴  
+	  (클라이언트가 반복작업을 마음대로 제어할 수 없기 때문에 외부 반복자를 사용하는 경우에 비해 유연성 감소)  
+	  <img src="./img/internal_iterator.png" width="150" height="300"></br>
+	* 예
+		* Java8의 Stream(Java I/O Stream과 무관)  
+
+부연하자면 자바 7 이전까지는 `List<String>` 컬렉션에서 요소를 순차적으로 처리하기 위해 `Iterator` 반복자를 사용해왔다. 헌데 자바 8부터 스트림(Stream)이라는 반복자를 지원해줌으로써 컬렉션(배열 포함)의 저장 요소를 하나씩 참조해서 람다식(함수적 스타일)으로 처리할 수 있게 되었다. 즉 **Stream**은 Iterator와 비슷한 역할을 하는 반복자이지만, 람다식으로 요소 처리 코드를 제공하는 점과 내부 반복자를 사용하므로 병렬 처리가 쉽다는 점 그리고 중간 처리와 최종 처리 작업을 수행하는 점에서 차이가 있다. 아래 코드에서 그 차이를 살펴볼 수 있다.
+
+```java
+// 선언부 생략
+List<String> list = Arrays.asList("홍길동", "신용권", "감자바");
+
+// Iterator 이용
+Iterator<String> iterator = list.iterator();
+while(iterator.hasNext()) {
+	String name = iterator.next();
+	System.out.println(name);
+}
+
+// Stream 이용
+Stream<String> stream = list.stream();
+stream.forEach(name -> System.out.println(name));
+```
+
+스트림 및 람다식에 대해서는 따로 깊이 공부(-> [스트림과 병렬처리](https://github.com/nara1030/ThisIsJava/blob/master/docs/%EC%8A%A4%ED%8A%B8%EB%A6%BC%EA%B3%BC%20%EB%B3%91%EB%A0%AC%EC%B2%98%EB%A6%AC.md))할 필요가 있어 보인다.
+
+##### [목차로 이동](#목차)
+
+#### 반대 방향 순회
+단방향(순방향)이 아닌 양방향으로 움직이는 반복자를 만들 수도 있다. 이 경우 두 가지 메소드를 추가해주어야 한다.
+
+* 이전 항목으로 가기 위한 메소드
+* 원소 컬렉션에서 첫 번째 원소 위치에 있는지를 알려주는 메소드
+
+자바의 컬렉션 프레임워크에서는 `ListIterator`라는 반복자 인터페이스를 제공하는데, 이 인터페이스에는 표준 `Iterator` 인터페이스에 있는 메소드 외에도 `previous()`를 비롯한 몇 개의 인터페이스가 추가되어 있다.
+
+추후 추가.
+
+- - -
+이에 대해 얘기하다가 [`대중교통 노선 관련`](https://v4.map.naver.com/local/siteview.nhn?stationId=140&theme=subway) 코드 역순회 코드 구현 경험이 언급됐다(~~코드의 미학적 측면이 마음에 들지 않아 롤백했다고~~). 그에 대한 예로 간단한 코드가 언급됐다.
 
 ```java
 import java.util.List;
@@ -265,12 +322,7 @@ public class First {
 }
 ```
 
-[예제 관련 링크](https://2018-start.tistory.com/30)
-
-##### [목차로 이동](#목차)
-
-### 자바 반복자 인터페이스
-p370-1.
+위 코드 추후 수정.
 
 ##### [목차로 이동](#목차)
 
