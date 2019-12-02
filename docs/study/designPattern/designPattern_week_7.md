@@ -292,9 +292,9 @@ Stream<String> stream = list.stream();
 stream.forEach(name -> System.out.println(name));
 ```
 
-스트림 및 람다식에 대해서는 따로 깊이 공부(-> [스트림과 병렬처리](https://github.com/nara1030/ThisIsJava/blob/master/docs/%EC%8A%A4%ED%8A%B8%EB%A6%BC%EA%B3%BC%20%EB%B3%91%EB%A0%AC%EC%B2%98%EB%A6%AC.md))할 필요가 있어 보인다.
-
 forEach 비권장. 추후 추가. [링크](https://blog.outsider.ne.kr/847)
+
+스트림 및 람다식에 대해서는 따로 깊이 공부(-> [스트림과 병렬처리](https://github.com/nara1030/ThisIsJava/blob/master/docs/%EC%8A%A4%ED%8A%B8%EB%A6%BC%EA%B3%BC%20%EB%B3%91%EB%A0%AC%EC%B2%98%EB%A6%AC.md))할 필요가 있어 보인다.
 
 ##### [목차로 이동](#목차)
 
@@ -392,7 +392,7 @@ void method(List<String> param) {
 }
 ```
 
-위 코드에서 사실 매개변수로 들어오는 객체는 항상 `ArrayList`지만 다형적인 코드를 위해 `List`를 받았다고 한다. 하지만 여기서 다음과 같은 지적을 받았다고 한다. 만약 `LinkedList`가 들어오게 되면 의도(`ArrayList`)와는 다르게 공간복잡도가 O(n²)이 되므로 코드 수정이 필요하다.
+위 코드에서 사실 매개변수로 들어오는 객체는 항상 `ArrayList`지만 다형적인 코드를 위해 `List`를 받았다고 한다. 하지만 만약 `LinkedList`가 들어오게 되면 의도(`ArrayList`)와는 다르게 공간복잡도가 O(n²)이 되므로 코드 수정이 필요하다는 지적을 받았다고 한다.
 
 ##### [목차로 이동](#목차)
 
