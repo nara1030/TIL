@@ -72,21 +72,22 @@
 ### 독서
 학창시절에 공부해왔듯 무엇을 하든지 항상 애용했던 방법인데 처음 IT를 배울 때는 책을 사놓고도 읽기 쉽지 않았습니다. 개념의 전후 관계, IT적으로 생각하는 틀이 없었기 때문이라고 생각합니다. 조금씩 이해를 넓혀 가는 중 입니다.  
 
-* 분류 → [전체](https://github.com/nara1030/portfolio/blob/master/docs/reading_list.md)
-	* 자바 개념서
-		* [이것이 자바다](https://github.com/nara1030/ThisIsJava/blob/master/README.md)
-		* [THINKING IN JAVA](https://github.com/nara1030/thinkingInJava/blob/master/README.md)
-		* [오브젝트](./docs/book/object/README.md)
-	* 알고리즘
-		* [자료구조와 함께 배우는 알고리즘 입문](https://github.com/nara1030/Algorithm/blob/master/doIt_AlgorithmWithDataStructure/README.md)
-	* 프론트
-		* [모던 웹을 위한 JavaScript + jQuery 입문](https://github.com/nara1030/javascript_for_modern_web/blob/master/README.md)
-		* [모던 웹을 위한 HTML5 + CSS3 입문](https://www.youtube.com/watch?v=XMipmINnMwI)
-	* SQL
-		* [오라클 SQL과 PL/SQL을 다루는 기술](https://github.com/nara1030/pl-sql/blob/master/README.md)
-	* 웹
-		* [자바 웹 개발 워크북](https://github.com/nara1030/portfolio/blob/master/docs/book/java_web_eomjinyoung.md)
+* 자바 개념서
+	* [이것이 자바다](https://github.com/nara1030/ThisIsJava/blob/master/README.md)
+	* [THINKING IN JAVA](https://github.com/nara1030/thinkingInJava/blob/master/README.md)
+	* [오브젝트](./docs/book/object/README.md)
+* 알고리즘
+	* [자료구조와 함께 배우는 알고리즘 입문](https://github.com/nara1030/Algorithm/blob/master/doIt_AlgorithmWithDataStructure/README.md)
+* 프론트
+	* [모던 웹을 위한 JavaScript + jQuery 입문](https://github.com/nara1030/javascript_for_modern_web/blob/master/README.md)
+	* [모던 웹을 위한 HTML5 + CSS3 입문](https://www.youtube.com/watch?v=XMipmINnMwI)
+* SQL
+	* [오라클 SQL과 PL/SQL을 다루는 기술](https://github.com/nara1030/pl-sql/blob/master/README.md)
+* 웹
+	* [자바 웹 개발 워크북](https://github.com/nara1030/portfolio/blob/master/docs/book/java_web_eomjinyoung.md)
 
+전체 독서 목록은 [여기](https://github.com/nara1030/portfolio/blob/master/docs/reading_list.md)서 확인 가능합니다.
+		
 ##### [목차로 이동](#목차)
 		
 ### 스터디
