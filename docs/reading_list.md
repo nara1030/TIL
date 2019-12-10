@@ -8,8 +8,8 @@
 	2. [Thinking in Java(2007)](https://github.com/nara1030/thinkingInJava/blob/master/README.md)
 	
 * 객체지향
-	1. [Head First Design Pattern(2005): `진행중`](https://github.com/nara1030/portfolio/blob/master/docs/study/designPattern/README.md)
-	2. [스프링 입문을 위한 자바 객체지향의 원리와 이해(2015): `진행중`](https://github.com/nara1030/spring-basic/blob/master/book/oop_for_spring_jmkim/README.md)
+	1. [Head First Design Pattern(2005)](https://github.com/nara1030/portfolio/blob/master/docs/study/designPattern/README.md): `진행중`
+	2. [스프링 입문을 위한 자바 객체지향의 원리와 이해(2015)](https://github.com/nara1030/spring-basic/blob/master/book/oop_for_spring_jmkim/README.md): `진행중`
 	3. JAVA 객체지향 디자인패턴(2014)
 	4. [리팩토링(2012)](https://github.com/nara1030/Refactoring/blob/master/README.md)
 	5. [오브젝트 - 코드로 이해하는 객체지향 설계(2019)](https://github.com/nara1030/portfolio/blob/master/docs/book/object.md)
