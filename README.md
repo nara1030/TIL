@@ -72,7 +72,7 @@
 ### 독서
 학창시절에 공부해왔듯 무엇을 하든지 항상 애용했던 방법인데 처음 IT를 배울 때는 책을 사놓고도 읽기 쉽지 않았습니다. 개념의 전후 관계, IT적으로 생각하는 틀이 없었기 때문이라고 생각합니다. 조금씩 이해를 넓혀 가는 중 입니다.  
 
-* [분류](https://github.com/nara1030/portfolio/blob/master/docs/reading_list.md)
+* 분류 → [전체](https://github.com/nara1030/portfolio/blob/master/docs/reading_list.md)
 	* 자바 개념서
 		* [이것이 자바다](https://github.com/nara1030/ThisIsJava/blob/master/README.md)
 		* [THINKING IN JAVA](https://github.com/nara1030/thinkingInJava/blob/master/README.md)
