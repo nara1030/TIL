@@ -24,6 +24,8 @@
 	2. Head First Servlet & JSP(2005)
 	3. 쉽게 따라하는 자바웹개발(2012)
 	4. RESTful Web API(2015)
+	5. [톰캣 최종분석(2005)](./book/how_tomcat_works/README.md)
+	6. HTTP 완벽 가이드(2014)
 
 * 스프링 프레임워크
 	1. 실전 스프링 부트 워크북(2017)
@@ -37,12 +39,6 @@
 	1. 모던 웹을 위한 JavaScript + jQuery 입문(2017)
 	2. 모던 웹 디자인을 위한 HTML5 + CSS3 입문(2015)
 	3. Interactive data visualization for the web(2014)
-
-- - - -
-
-* 웹
-	1. [톰캣 최종분석(2005)](./book/how_tomcat_works/README.md)
-	2. HTTP 완벽 가이드(2014)
 
 - - - -
 
@@ -64,7 +60,10 @@
 	* 형상관리
 		1. 만들면서 배우는 Git, Github 입문
 	* 리눅스
-		1. 리눅스를 활용한 회사 인프라 구축의 모든 것
+		1. 이것이 우분투 리눅스다(2017)
+		2. 리눅스를 활용한 회사 인프라 구축의 모든 것
+	* 매쉬업
+		1. 오픈 API를 활용한 매쉬업 가이드(2009)
 	* 일반
 		1. Clean Code
 		2. Code Complete
