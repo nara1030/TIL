@@ -1,4 +1,4 @@
-포트폴리오
+TIL
 =======
 어떻게 공부해왔고, 하고 있는지 기록합니다.
 - - - -
@@ -79,7 +79,7 @@
 	* [스프링 입문을 위한 자바 객체지향의 원리와 이해(2015)](https://github.com/nara1030/spring-basic/blob/master/book/oop_for_spring_jmkim/README.md)
 	* [Head First Design Pattern(2005)](https://github.com/nara1030/TIL/blob/master/docs/study/designPattern/README.md)
 * 웹
-	* [톰캣 최종분석(2005)](./book/how_tomcat_works/README.md)
+	* [톰캣 최종분석(2005)](./docs/book/how_tomcat_works/README.md)
 * 프론트
 	* [모던 웹을 위한 JavaScript + jQuery 입문](https://github.com/nara1030/javascript_for_modern_web/blob/master/README.md)
 	* [모던 웹을 위한 HTML5 + CSS3 입문](https://www.youtube.com/watch?v=XMipmINnMwI)
