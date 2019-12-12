@@ -1,6 +1,6 @@
 들어가며
 =====
-* 소스 다운로드: 저자의 웹 사이트인 [BRAINY SOFTWARE](https://brainysoftware.com/download;jsessionid=98722A5BC8F29A8B4CBA7DCB6B6B5DED)
+* 소스 다운로드: [BRAINY SOFTWARE](https://brainysoftware.com/download;jsessionid=98722A5BC8F29A8B4CBA7DCB6B6B5DED)(저자의 웹 사이트)
 * 소스 실행환경: J2SE 1.4
 * 소스 구성: 톰캣 4.1.12 및 예제 코드
 - - -
