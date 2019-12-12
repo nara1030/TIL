@@ -20,7 +20,7 @@
 2017년 말에 [남세동](http://www.thisisgame.com/webzine/community/nboard/11/?n=71970&fbclid=IwAR1DBVMRyBA0xc4lgjO8S9vtx1KO49bWonoZuajWk1cWMqmyWKJs7IcuYLk)님의 페이스북에서 발췌한 내용입니다. 원문에 공유 및 카피 가능하다고 하셨기에 공부 목적으로 적어봅니다.
 
 * 웹
-	1. [웹브라우저 URL에 `www.naver.com`을 치고 나서 네이버 첫 페이지가 표시되기까지 일어나는 과정](https://github.com/nara1030/portfolio/blob/master/docs/thinking_list/process_when_typing_a_url.md)에 대해 설명하라.
+	1. [웹브라우저 URL에 `www.naver.com`을 치고 나서 네이버 첫 페이지가 표시되기까지 일어나는 과정](https://github.com/nara1030/TIL/blob/master/docs/thinking_list/process_when_typing_a_url.md)에 대해 설명하라.
 	2. 한국의 gmail 사용자가 미국의 gmail 사용자에게 메일을 보냈다. 어떤 과정을 거쳐, 얼마만에 도착할까?
 * 프로그램
 	* 프로토 타입
@@ -72,21 +72,20 @@
 ### 독서
 학창시절에 공부해왔듯 무엇을 하든지 항상 애용했던 방법인데 처음 IT를 배울 때는 책을 사놓고도 읽기 쉽지 않았습니다. 개념의 전후 관계, IT적으로 생각하는 틀이 없었기 때문이라고 생각합니다. 조금씩 이해를 넓혀 가는 중 입니다.  
 
-* 자바 개념서
-	* [이것이 자바다](https://github.com/nara1030/ThisIsJava/blob/master/README.md)
-	* [THINKING IN JAVA](https://github.com/nara1030/thinkingInJava/blob/master/README.md)
-	* [오브젝트](./docs/book/object/README.md)
-* 알고리즘
-	* [자료구조와 함께 배우는 알고리즘 입문](https://github.com/nara1030/Algorithm/blob/master/doIt_AlgorithmWithDataStructure/README.md)
+* 자바
+	* [이것이 자바다(2015)](https://github.com/nara1030/ThisIsJava/blob/master/README.md)
+	* [THINKING IN JAVA(2007)](https://github.com/nara1030/thinkingInJava/blob/master/README.md)
+	* [오브젝트 - 코드로 이해하는 객체지향 설계(2019)](./docs/book/object/README.md)
+	* [스프링 입문을 위한 자바 객체지향의 원리와 이해(2015)](https://github.com/nara1030/spring-basic/blob/master/book/oop_for_spring_jmkim/README.md)
+	* [Head First Design Pattern(2005)](https://github.com/nara1030/TIL/blob/master/docs/study/designPattern/README.md)
+* 웹
+	* [톰캣 최종분석(2005)](./book/how_tomcat_works/README.md)
 * 프론트
 	* [모던 웹을 위한 JavaScript + jQuery 입문](https://github.com/nara1030/javascript_for_modern_web/blob/master/README.md)
 	* [모던 웹을 위한 HTML5 + CSS3 입문](https://www.youtube.com/watch?v=XMipmINnMwI)
-* SQL
-	* [오라클 SQL과 PL/SQL을 다루는 기술](https://github.com/nara1030/pl-sql/blob/master/README.md)
-* 웹
-	* [자바 웹 개발 워크북](https://github.com/nara1030/portfolio/blob/master/docs/book/java_web_eomjinyoung.md)
 
-전체 독서 목록은 [여기](https://github.com/nara1030/portfolio/blob/master/docs/reading_list.md)서 확인 가능합니다.
+
+전체 독서 목록은 [여기](https://github.com/nara1030/TIL/blob/master/docs/reading_list.md)서 확인 가능합니다.
 		
 ##### [목차로 이동](#목차)
 		
@@ -116,7 +115,7 @@
 * 기만콘
 	* 주제: 개발 직군 종사자간 정보 공유
 	* 회차
-		* [제 1회 기만콘](https://github.com/nara1030/portfolio/blob/master/docs/seminar_list/developer/dev_star_league_1st.md): 2019.07.20(토), 오후 1시
+		* [제 1회 기만콘](https://github.com/nara1030/TIL/blob/master/docs/seminar_list/developer/dev_star_league_1st.md): 2019.07.20(토), 오후 1시
 * 데이터 그랜드 컨퍼런스
 	* 주제: 데이터로 만들어가는 대한민국의 미래
 	* 회차
@@ -129,7 +128,7 @@
 
 * 튜토리얼
 	* [자바 튜토리얼 - HowToDoInJava.com](https://howtodoinjava.com/)
-* [참고한 기술 블로그 및 강의 목록](https://github.com/nara1030/portfolio/blob/master/docs/tech_blog_and_lecture_list.md)
+* [참고한 기술 블로그 및 강의 목록](https://github.com/nara1030/TIL/blob/master/docs/tech_blog_and_lecture_list.md)
 
 ##### [목차로 이동](#목차)
 	
