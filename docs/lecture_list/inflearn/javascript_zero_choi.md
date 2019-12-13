@@ -18,7 +18,7 @@
 	* [document 객체와 DOM](#document-객체와-DOM)
 	* [script 태그 사용법](#script-태그-사용법)
 	* [JS로 HTML 태그 만들기](#JS로-HTML-태그-만들기)
-		* 이벤트 리스너 맛보기
+		* [이벤트 리스너 맛보기](#이벤트-리스너-맛보기)
 	* [사용자 경험 반영](#사용자-경험-반영)
 3. [심화](#심화)
 	* .
@@ -26,6 +26,17 @@
 4. [예제](#예제)
 	* [끝말잇기](#끝말잇기)
 	* [구구단](#구구단)
+	* [숫자야구](#숫자야구)
+	* 틱택토
+	* 로또 추첨기
+	* 가위바위보
+	* 지뢰찾기
+	* 반응속도 테스트
+	* 틱택토 심화
+	* 카드 짝맞추기 게임
+	* 자스스톤
+	* 2048
+	* 테트리스
 5. [참고](#참고)
 	
 ## 기본
@@ -358,8 +369,11 @@ document.body.append(결과창);
 		결과창.textContent = '딩동댕';	// append 함수 뒤에 해줘야 하는 거 아닌가?
 		단어.textContent = 입력창.value;
 		입력창.value = '';
+		입력창.focus();
 	} else {
 		결과창.textContent = '땡';
+		입력창.value = '';
+		입력창.focus();
 	}
 });
 
@@ -385,9 +399,49 @@ while(true) {
 
 ##### [목차로 이동](#목차)
 
+#### 이벤트 리스너 맛보기
+자바스크립트에서 비동기(ex. 이벤트 리스너)는 코드 상의 순서대로 실행되지 않는 코드를 의미한다. 여기서 비동기란 위에서부터 순서대로 실행되지 않는 것을 의미한다.
+
+##### [목차로 이동](#목차)
+
 ### 사용자 경험 반영
 * 입력 시 마우스 이동 없이 엔터 사용
-* 입력 후 커서 자동 이동
+	* input 및 button 태그를 form 태그로 감싸면 됨
+		* HTML  
+			```html
+			<form>
+				<input type = 'text' />
+				<button>입력</button>
+			</form>
+			```
+		* JavaSript: 위 HTML 생성 필요  
+			```javascript
+			var 폼 = document.createElement('form');
+			document.body.append(폼);
+			// input과 button을 body가 아니라 form에 넣어줌
+			폼.append(입력창);	// document.body.append(입력창)
+			폼.append(버튼);	// document.body.append(버튼)
+			```
+	* 이벤트리스너 코드 변경  
+		```javascript
+		폼.addEventListener('submit', function(이벤트) {
+			이벤트.preventDefault();	// 새로고침 방지
+			if(단어.textContent[단어.textContent.length - 1] === 입력창.value[0]) {
+				결과창.textContent = '딩동댕';	// append 함수 뒤에 해줘야 하는 거 아닌가?
+				단어.textContent = 입력창.value;
+				입력창.value = '';
+				입력창.focus();
+			} else {
+				결과창.textContent = '땡';
+				입력창.value = '';
+				입력창.focus();
+			}
+		});
+		```
+* 입력 후 커서 자동 이동  
+	```javascript
+	입력창.focus();
+	```
 
 ##### [목차로 이동](#목차)
 
@@ -424,6 +478,11 @@ while(true) {
 구구단 맞추기 게임을 구현해보자.
 
 추후 추가.
+
+##### [목차로 이동](#목차)
+
+### 숫자야구
+게임 소개 및 방식은 다음 [링크](https://namu.wiki/w/%EC%88%AB%EC%9E%90%EC%95%BC%EA%B5%AC)를 참고한다.
 
 ##### [목차로 이동](#목차)
 
