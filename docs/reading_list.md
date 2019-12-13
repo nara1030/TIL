@@ -63,7 +63,7 @@
 		1. 이것이 우분투 리눅스다(2017)
 		2. 리눅스를 활용한 회사 인프라 구축의 모든 것
 	* 매쉬업
-		1. 오픈 API를 활용한 매쉬업 가이드(2009)
+		1. [오픈 API를 활용한 매쉬업 가이드(2009)](./book/mashup_guide_for_open_api/README.md)
 	* 일반
 		1. Clean Code
 		2. Code Complete
