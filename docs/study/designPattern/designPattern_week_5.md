@@ -177,5 +177,8 @@
 * [Singletons in Java - Baeldung](https://www.baeldung.com/java-singleton)
 * [Why Enum Singleton are better in Java - Javarevisited](https://javarevisited.blogspot.com/2012/07/why-enum-singleton-are-better-in-java.html)
 * [How to create thread safe Singleton in Java - Javarevisited](https://javarevisited.blogspot.com/2012/12/how-to-create-thread-safe-singleton-in-java-example.html)
+- - -
+* [Abstract Factory Pattern Explained - HowToDoInJava](https://howtodoinjava.com/design-patterns/creational/abstract-factory-pattern-in-java/)
+* [ABSTRACT FACTORY - CREATIONAL PATTERN](https://reactiveprogramming.io/books/design-patterns/en/catalog/abstract-factory)
 
 ##### [목차로 이동](#목차)
