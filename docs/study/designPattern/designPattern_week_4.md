@@ -178,7 +178,7 @@ public class NYPizzaStore extends PizzaStore {
 	<img src="./img/factory_method_3.jpg" width="300" height="250"></br>
 * 제품(Product) 클래스  
 	<img src="./img/factory_method_4.jpg" width="300" height="250"></br>
-* 전체 클래스 다이어그램
+* 전체 클래스 다이어그램  
 	<img src="./img/factory_method_2.jpg" width="600" height="250"></br>
 
 위 다이어그램을 보면 Creator 추상 클래스에서 객체를 만들기 위한 메소드, 즉 팩토리 메소드를 위한 인터페이스(Product, 즉 Pizza)를 제공한다는 것을 알 수 있다. Creator 추상 클래스에 구현되어 있는 다른 메소드에서는 팩토리 메소드에 의해 생산된 제품을 가지고 필요한 작업을 처리한다. 하지만 실제 팩토리 메소드를 구현하고 제품(객체 인스턴스)을 만들어내는 일은 서브클래스에서만 할 수 있다.
