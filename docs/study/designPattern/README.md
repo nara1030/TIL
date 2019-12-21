@@ -25,5 +25,6 @@
 * [6주차 - Command Pattern & Adapter/Facade Pattern](./designPattern_week_6.md)
 * [7주차 - Template Method Pattern & Iterator](./designPattern_week_7.md)
 * [8주차 - Composite Pattern](./designPattern_week_8.md)
+* [9주차 - State Pattern & Proxy Pattern](./designPattern_week_9.md)
 
 ##### [목차로 이동](#목차)
