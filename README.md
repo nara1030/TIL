@@ -80,7 +80,7 @@ TIL
 	* [Head First Design Pattern(2005)](https://github.com/nara1030/TIL/blob/master/docs/study/designPattern/README.md)
 * 웹
 	* [톰캣 최종분석(2005)](./docs/book/how_tomcat_works/README.md)
-	* 스프링 부트로 배우는 자바 웹 개발(2018)
+	* [스프링 부트로 배우는 자바 웹 개발(2018)](https://github.com/nara1030/spring-basic/blob/master/book/java_web_by_springboot_sjyoon/README.md)
 	* 실전 스프링 부트 워크북(2017)
 * 프론트
 	* [모던 웹을 위한 JavaScript + jQuery 입문](https://github.com/nara1030/javascript_for_modern_web/blob/master/README.md)
