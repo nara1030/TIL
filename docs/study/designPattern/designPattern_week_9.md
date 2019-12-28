@@ -1,4 +1,4 @@
-8주차 - State Pattern & Proxy Pattern
+9주차 - State Pattern & Proxy Pattern
 =======
 2019.12.21: 상태 패턴 및 프록시 패턴  
 추후 수정 및 추가
@@ -50,6 +50,7 @@ interface Inter {
 ##### [목차로 이동](#목차)
 
 ## 참고
-
+* [스테이트 패턴 - Phang's IT Blog](https://jihyehwang09.github.io/2019/12/22/design-pattern-state/)
+* [프록시 패턴 - Phang's IT Blog](https://jihyehwang09.github.io/2019/12/23/design-pattern-proxy/)
 
 ##### [목차로 이동](#목차)
