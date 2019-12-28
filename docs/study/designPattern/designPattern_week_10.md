@@ -38,6 +38,8 @@
 * 추천
 	* [폴리글랏 프로그래밍](https://book.naver.com/bookdb/book_detail.nhn?bid=7440444)
 	* 토비님 강의
+		* [자바 8 동시성](https://www.google.com/search?q=executorservice+java+8&oq=executeSer&aqs=chrome.3.69i57j0l7.7300j0j7&sourceid=chrome&ie=UTF-8)
+		* `ExecuteService`, `Runnable`, `Callable`, `?`
 	* [IT 개발자의 영어 필살기](https://book.naver.com/bookdb/book_detail.nhn?bid=15986525): [`박상길님 블로그?`](https://likejazz.com/)
 
 ##### [목차로 이동](#목차)
