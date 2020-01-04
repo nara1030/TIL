@@ -4,7 +4,6 @@
 예제 코드: [다운로드 링크](http://acornpub.co.kr/book/mashup)  
 저자 블로그: [블로그 링크](https://lovedev.tistory.com/)  
 커뮤니티:  [카페 링크](https://cafe.naver.com/mashupapps)  
-- - -
 [늦은 나이, 개발자로 시작해도 좋을까요](https://taegon.kim/archives/7829)
 - - -
 ## 목차
