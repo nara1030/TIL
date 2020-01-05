@@ -9,6 +9,10 @@
 	* [체크 리스트](#체크-리스트)
 2. [사례](#사례)
 3. [사전 준비사항](#사전-준비사항)
+	* [Request와 Response](#Request와-Response)
+	* [REST](#REST)
+	* AJAX
+	* JSON
 4. 참고
 
 ## 개요
@@ -38,7 +42,21 @@
 ##### [목차로 이동](#목차)
 
 ### 오픈 API
+매쉬업의 핵심은 오픈 API(Application Programming Interface)다. 웹에서의 API는 웹 서비스를 개발할 때 웹 서비스를 사용하기 위한 규약 혹은 규칙을 말한다. 쉽게 말하자면 웹 서비스를 사용하는 사용 설명서인 셈이다. 그런데 웹 2.0이라는 개념이 등장하면서 웹 서비스들이 내부적으로 혹은 제한된 사용자에게만 제공했던 API를 일반인에게도 공개하기 시작했다. 이렇게 누구나 사용할 수 있도록 공개된 API를 오픈 API라고 한다. 웹사이트가 API를 공개함으로써 얻는 이익은 생각보다 많다.
 
+* 기존 서비스의 활용도 높아지면서 서비스 활성화
+	* 오픈 API 제공으로 인해 트래픽 증가(∵ 서비스 유입채널 증가)
+	* 매쉬업 애플리케이션 통해 어떤 부분이 서비스에 도움될지 파악 가능
+* 유지보수 및 서비스 통폐합 용이(∵ 서비스 지향 구조 형성)
+
+하지만 때로 개발자는 필요하지만 기업에서는 API를 제공해주지 않는 경우가 있다. 이런 경우 직접 만들어서 해야 한다. 저자의 경우 `오픈 API 기반의 동영상 플레이어를 만들기 위해 이곳저곳의 UCC 정보로 동영상 플레이어를 만들었던` 예를 든다.
+
+> 동영상을 볼 수 있는 페이지 주소만 API로 제공해주고 해당 동영상의 경로 정보는 제공해주지 않아, 동영상 플레이어임에도 불구하고 웹 페이지를 보여줘야 하는 경우에 맞닥뜨린 적이 있었다. 나는 이를 해결하기 위해 응용프로그램에서 동영상을 보여주는 웹 페이지로 접근해 해당 페이지의 소스를 파싱한 후 동영상 플레이어의 주소를 판독해 사용했다.
+
+이처럼 웹에서 이뤄지는 대부분의 서비스는 인증과 관련되지 않은 부분이라면 접근이 가능하고 HTML 자체가 하나의 오픈 API 같은 가치가 있다고 봐야 한다. 물론 정제된 정보만 사용할 수 있다면 좋겠지만 폭넓게 생각하면 좋다. 또한 오픈 API가 반드시 XML이나 JSON이어야 한다는 고정 관념도 버려야 한다.
+
+- - -
+물론 오픈 API를 사용하지 않는, 즉 웹 페이지를 파싱해서 다룰 때 주의점이 존재한다. 오픈 API가 아니기에, 즉 약속이 아니기 때문에 웹 사이트의 소스가 변할 수 있다는 것이다. 이런 경우 기존에 잘 되던 서비스가 동작하지 않을 수 있다.
 
 ##### [목차로 이동](#목차)
 
@@ -53,6 +71,94 @@
 ##### [목차로 이동](#목차)
 
 ## 사전 준비사항
+### Request와 Response
+오픈 API를 이용하는 매쉬업의 가장 기본적인 요소는 [HTTP 프로토콜](#HTTP-프로토콜), 즉 요청(Request)과 응답(Response)이다. 이 책이 네트워크를 다루는 책은 아니지만 HTTP에 대해 알고 있어야 매쉬업 애플리케이션 개발 시에 API에 대한 활용도를 높힐 수 있다. 오픈 API를 사용하기 위해서는 요청문을 만들고 이 요청문에 대해 서버가 응답을 해주면 그 결과를 기반으로 매쉬업에 활용하게 되기 때문이다.
+
+HTTP/1.1에서는 클라이언트가 요청을 보내면 서버가 응답을 보내주는 구조이며 이를 [HTTP 메시지](https://developer.mozilla.org/ko/docs/Web/HTTP/Messages)라고 한다. HTTP 요청과 응답의 구조는 서로 닮았고, 다음과 같다.
+
+<img src="../img/ch_1_1.png" width="600" height="200"></br>
+
+1. 시작 줄(start-line)에는 실행되어야 할 요청, 또는 요청 수행에 대한 성공 또는 실패가 기록되어 있다.  
+   이 줄은 항상 한줄로 끝난다.
+2. HTTP 헤더 세트에는 요청에 대한 설명, 혹은 메시지 본문에 대한 설명이 들어간다.
+3. 요청에 대한 모든 메타 정보가 전송되었음을 알리는 빈 줄(blank line)이 삽입된다.
+4. 요청과 관련된 내용이 옵션으로 들어가거나 응답과 관련된 문서가 들어간다.
+
+* HTTP 요청
+	* 시작 줄  
+		`POST / HTTP/1.1`
+			1. HTTP 요청 메서드: 서버가 수행해야 할 동작
+				* GET: 존재하는 자원에 대한 **요청**
+				* POST: 새로운 자원을 **생성**
+				* PUT: 존재하는 자원에 대한 **변경**
+				* DELETE: 존재하는 자원에 대한 **삭제**
+			2. 요청 타겟
+			3. HTTP 버전
+	* 헤더
+	* 본문	
+* HTTP 응답
+	* 상태 줄
+	* 헤더
+	* 본문
+
+추후 정리.
+
+* [URL](https://joshua1988.github.io/web-development/http-part1/)
+* [정리](https://trustyoo86.github.io/network/2019/04/02/http-specification.html)
+	
+
+##### [목차로 이동](#목차)
+
+#### HTTP 프로토콜
+HTTP 프로토콜의 특징은 다음과 같다.
+
+* [HTTP](https://ko.wikipedia.org/wiki/HTTP)(**H**yper**T**ext **T**ransfer **P**rotocol)은 www 상에서 정보를 주고 받을 수 있는 프로토콜
+	* [www](https://ko.wikipedia.org/wiki/%EC%9B%94%EB%93%9C_%EC%99%80%EC%9D%B4%EB%93%9C_%EC%9B%B9), 즉 월드 와이드 웹(World Wide Web)은 인터넷에 연결된 컴퓨터를 통해 사람들이 정보를 공유할 수 있는 정보 공간을 지칭
+		* 흔히 인터넷과 동의어로 쓰이나 다른 개념으로 웹은 전자 메일과 같이 인터넷 상에서 동작하는 하나의 서비스일 뿐
+		* 인터넷에서 HTTP 프로토콜, 하이퍼텍스트(HTML 형식), URL(공통 형식의 주소) 등을 사용하여 그림과 문자를 교환하는 전송방식
+	* [인터넷](https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7)은 컴퓨터로 연결하여 TCP/IP(Transmission Control Protocol/Internet Protocol)라는 통신 프로토콜을 이용 정보를 주고받는 컴퓨터 네트워크
+	* [통신 프로토콜](https://ko.wikipedia.org/wiki/%ED%86%B5%EC%8B%A0_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)은 컴퓨터나 원거리 통신 장비에서 메시지를 주고 받는 양식과 규칙의 체계
+* [TCP](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EC%A0%9C%EC%96%B4_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)와 UDP를 사용하며, 80번 포트 사용
+	* 전송 제어 프로토콜(**T**ransmission **C**ontrol **P**rotocol)은 IP와 함께 TCP/IP라는 명칭으로 불림
+	* 웹 브라우저들이 www에서 서버에 연결할 때 사용(이메일 및 파일 전송에도 사용)
+* HTTP는 클라이언트와 서버 사이에 이루어지는 요청/응답(request/response) 프로토콜
+	* HTTP를 통해 전달되는 자료는 `http:`로 시작하는 URL(인터넷 주소)로 조회
+
+간략하게 정리하면 아래와 같다.
+
+| 개념 | 통신 프로토콜 |
+| -- | -- |
+| 인터넷 | TCP/IP |
+| 웹(www) | HTTP |
+
+특히 TCP와 HTTP에 관해 비교하면 아래와 같다(`HTTP가 TCP의 기반 위에 이루어지는 거 아닌가? 그래서 keep-alive로 선택 가능?`).
+
+| 통신 프로토콜 | 데이터 형태 | 연결 방식 |
+| -- | -- | -- |
+| TCP | Binary | 요청 없이 응답 발생(∵언제나 서버와 연결) |
+| HTTP | String | 요청 있어야 응답 발생(단, `keep-alive`로 지속적 연결 가능) |
+
+즉 HTTP는 인터넷에서 가장 유명한 프로토콜이겠지만 유일한 프로토콜은 아니다. 이를 테면 파일 전송을 위한 FTP 혹은 메일 전송을 위한 SMTP처럼 HTTP는 모든 웹 브라우저가 알고 있고 요청/응답 시 준수하는 프로토콜이다.
+
+좀 더 상세한 내용은 아래 링크를 참고한다.
+
+* MDN web docs
+	* [HTTP 개요](https://developer.mozilla.org/ko/docs/Web/HTTP/Overview)
+	* [웹 소켓](https://developer.mozilla.org/ko/docs/WebSockets)
+* [노엘의 브런치](https://brunch.co.kr/@wangho#articles)
+	* [개알못을 위한 TCP/IP의 개념](https://brunch.co.kr/@wangho/6)
+		* 추천 서적: `조엘 온 소프트웨어 - 유쾌한 오프라인 블로그`
+	* [HTTP가 어떤 일을 하는지 한번 열어봅시다](https://brunch.co.kr/@wangho/8)
+* [TCP와 HTTP - Hong's web Development Blog](https://sharryhong.github.io/2017/09/27/cs-tcp-http/)
+* [통신 프로토콜: TCP/IP, HTTP, 웹소켓](https://asfirstalways.tistory.com/85)
+	* HTML5에 WebSocket 포함
+	* 더 이상 Active X를 사용하지 않아도 TCP/IP 소켓 통신 구현 가능
+	* 트래픽 높고 지연시간 낮은 환경에 유용
+* [WebSocket으로 개발하기 전에 알고 있어야 할 것들 - 시나몬 브레드](https://adrenal.tistory.com/20)
+
+##### [목차로 이동](#목차)
+
+### REST
 
 
 ##### [목차로 이동](#목차)
