@@ -13,8 +13,10 @@
 ##### [목차로 이동](#목차)
 
 ## 참고
-* [발표 자료](https://docs.google.com/presentation/d/1Eb05e4tT8LqZ_szpuk69-pjwjGXHIqtCORVVo2KxYiM/edit#slide=id.p)
-* [실습 코드](https://github.com/sieunkr/spring-study-friday/tree/master/sample)
+* 1주차
+	* [발표 자료](https://docs.google.com/presentation/d/1Eb05e4tT8LqZ_szpuk69-pjwjGXHIqtCORVVo2KxYiM/edit#slide=id.p)
+	* [실습 코드](https://github.com/sieunkr/spring-study-friday)
+	* [강의 자료](https://brunch.co.kr/@springboot/199)
 * [네이버 OPEN API](https://developers.naver.com/docs/search/blog/)
 
 ##### [목차로 이동](#목차)
