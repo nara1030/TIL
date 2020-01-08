@@ -102,7 +102,7 @@ TIL
 * [코드스피츠 - 오브젝트](./docs/book/object/README.md): 2019.09.03 ~ 2019.10.08
 * [디자인패턴 스터디](./docs/study/designPattern): 2019.09.21 ~ 2019.12.28
 * [스프링부트 스터디](./docs/study/springboot): 2020.01.03 ~
-* [코드스피츠 - 객체지향 자바스크립트](https://www.bsidesoft.com/8178?fbclid=IwAR2d9F4S7wqKcxQYerVPuIJL_p9XOqbytNBcU-fv34TlwXxDeJlrFHY8dB4): 2020.01.08 ~
+* [코드스피츠 - 객체지향 자바스크립트](./docs/lecture_list/code_spitz/s86_oop_javascript): 2020.01.08 ~
 
 ##### [목차로 이동](#목차)
 	
