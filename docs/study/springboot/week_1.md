@@ -15,6 +15,7 @@
 		* [스프링부트 AutoConfiguration에 대해 샘플코드로 이해하기](https://brunch.co.kr/@springboot/199)
 		* [스프링부트 Profile 설정](https://dhsim86.github.io/web/2017/03/28/spring_boot_profile-post.html)
 		* [스프링부트 환경에서 Tomcat 설정 및 성능 검토하기](https://brunch.co.kr/@springboot/98)
+		* [스프링5 웹플럭스 정리 및 샘플코드](https://brunch.co.kr/@springboot/96)
 
 ##### [목차로 이동](#목차)
 
