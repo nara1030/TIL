@@ -8,35 +8,30 @@
 2. [진행](#진행)
 
 ## 참고
-* 1주차
-	* [발표 자료](https://docs.google.com/presentation/d/1Eb05e4tT8LqZ_szpuk69-pjwjGXHIqtCORVVo2KxYiM/edit#slide=id.p)
-	* [실습 코드](https://github.com/sieunkr/spring-study-friday)
-	* 강의 자료
-		* [스프링부트 AutoConfiguration에 대해 샘플코드로 이해하기](https://brunch.co.kr/@springboot/199)
-		* [스프링부트 Profile 설정](https://dhsim86.github.io/web/2017/03/28/spring_boot_profile-post.html)
-		* [스프링부트 환경에서 Tomcat 설정 및 성능 검토하기](https://brunch.co.kr/@springboot/98)
-		* [스프링5 웹플럭스 정리 및 샘플코드](https://brunch.co.kr/@springboot/96)
+* [발표 자료](https://docs.google.com/presentation/d/1Eb05e4tT8LqZ_szpuk69-pjwjGXHIqtCORVVo2KxYiM/edit#slide=id.p)
+* 실습
+	* [요구사항: STEP01](https://github.com/spring-basic-study/openapi)
+	* [스프링부트 AutoConfiguration에 대해 샘플코드로 이해하기](https://brunch.co.kr/@springboot/199)
+* 기타
+	* [스프링부트 Profile 설정](https://dhsim86.github.io/web/2017/03/28/spring_boot_profile-post.html)
+	* [스프링부트 환경에서 Tomcat 설정 및 성능 검토하기](https://brunch.co.kr/@springboot/98)
+	* [스프링5 웹플럭스 정리 및 샘플코드](https://brunch.co.kr/@springboot/96)
 
 ##### [목차로 이동](#목차)
 
 ## 진행
 불참한 관계로 차주 진행을 위해 준비사항을 적는다.
 
-* 인텔리제이 설치
-	* Ultimate 버전이 좋으나 Community도 무방
-	* ~~스프링부트 환경에서 `hello world` 띄워보기~~(Community 버전에서도 해볼 것)
-* 네이버 API에서 오픈 API 사용 권한 받기
-	* [API 공통 가이드](https://developers.naver.com/docs/common/openapiguide/appregister.md)
+* ~~깃 계정 생성(∵ 코드 리뷰)~~([참고](https://github.com/next-step/nextstep-docs/blob/master/codereview/review-step1.md)) 
+* 인텔리제이 설치 후 스프링부트 환경에서 `hello world` 띄워보기
+	* ~~Ultimate 버전~~
+	* Community 버전
+* 네이버 API에서 오픈 API 사용 권한 받기 및 이용 방법
+	* [API 공통 가이드](https://developers.naver.com/docs/common/openapiguide/README.md)
 	* [API 검색 > 블로그](https://developers.naver.com/docs/search/blog/)
-* ~~깃 계정 생성(∵ 코드 리뷰)~~([참고](https://github.com/next-step/nextstep-docs/tree/master/codereview)) 
-* [과제](https://github.com/nara1030/openapi/tree/master): STEP01 참고
-	* [예시답안](https://github.com/sieunkr/spring-study-friday/tree/master/day01)
-	* ~~Embedded Tomcat Port, Max Thread 설정 변경해보기~~
-		* [스프링부트 내장 서버 설정](https://www.daleseo.com/spring-boot-embedded-server-config/) 
-		* [Spring Boot - Limit on number of connections created](https://stackoverflow.com/questions/39002090/spring-boot-limit-on-number-of-connections-created)
 
 - - -
-추후 수정 및 삭제.
+진행 정리. 추후 수정 및 삭제.
 
 * 스프링 부트 기초: Packing시 War 파일 사용하지 않고 내장된 Embedded Tomcat 또는 Jetty 사용 가능
 	* [인텔리제이에서 스프링부트 프로젝트 설정하기](https://madplay.github.io/post/create-springboot-project-in-intellij)
