@@ -6,6 +6,9 @@
 ## 목차
 1. [참고](#참고)
 2. [진행](#진행)
+3. [개인공부](#개인공부)
+	* [Spring MVC vs Spring Boot](#Spring-MVC-vs-Spring-Boot)
+	* [API vs Library](#API-vs-Library)
 
 ## 참고
 * [발표 자료](https://docs.google.com/presentation/d/1Eb05e4tT8LqZ_szpuk69-pjwjGXHIqtCORVVo2KxYiM/edit#slide=id.p)
@@ -30,18 +33,42 @@
 	* [API 공통 가이드](https://developers.naver.com/docs/common/openapiguide/README.md)
 	* [API 검색 > 블로그](https://developers.naver.com/docs/search/blog/)
 
-- - -
-진행 정리. 추후 수정 및 삭제.
+##### [목차로 이동](#목차)
 
-* 스프링 부트 기초: Packing시 War 파일 사용하지 않고 내장된 Embedded Tomcat 또는 Jetty 사용 가능
-	* [인텔리제이에서 스프링부트 프로젝트 설정하기](https://madplay.github.io/post/create-springboot-project-in-intellij)
-	* [인텔리제이로 자바 프로젝트 만들기](https://alwayspr.tistory.com/18)
-	* [인텔리제이로 스프링부트 시작하기](https://softarchitecture.tistory.com/62)
+## 개인공부
+간단한 `Hello World!` 출력 웹애플리케이션을 띄워보면서 프레임워크간 차이([Spring MVC vs Spring Boot](#Spring-MVC-vs-Spring-Boot))를 확인할 필요가 있다. 또한 이에 오픈 API **호출**하는 부분을 추가해본다([API vs Library](#API-vs-Library)).	
+
+##### [목차로 이동](#목차)
+
+### Spring MVC vs Spring Boot
+도입.
+
+* [Spring Boot App의 간단한 빌드와 런](https://velog.io/@drypot/Spring-Boot-App-%EC%9D%98-%EA%B0%84%EB%8B%A8%ED%95%9C-%EB%B9%8C%EB%93%9C%EC%99%80-%EB%9F%B0-)
+
+스프링. 스프링 MVC. 스프링부트.
+
+* [Spring Boot vs. Spring MVC vs. Spring](http://blog.naver.com/PostView.nhn?blogId=sthwin&logNo=221271008423&redirect=Dlog&widgetTypeCall=true&directAccess=false)
+* [Spring Boot vs. Spring MVC vs. Spring: How Do They Compare?](https://dzone.com/articles/spring-boot-vs-spring-mvc-vs-spring-how-do-they-compare)
+* [스프링부트 관련 팁](https://jojoldu.tistory.com/43)
+
+스프링부트 시작.
+
+* [Spring Boot 개발환경 구성](https://yonguri.tistory.com/9)
+* [인텔리제이에서 스프링부트 프로젝트 설정하기](https://madplay.github.io/post/create-springboot-project-in-intellij)
+* [인텔리제이로 자바 프로젝트 만들기](https://alwayspr.tistory.com/18)
+* [인텔리제이로 스프링부트 시작하기](https://softarchitecture.tistory.com/62)
+* WAR? JAR?
 	* [스프링부트 War로 배포하기](https://4urdev.tistory.com/84)
-		* [스프링부트 War/Jar 생성시 질문](https://okky.kr/article/516604)
-	* [스프링부트 관련 팁](https://jojoldu.tistory.com/43)
-	* AutoConfiguration
-		* [스프링캠프 2016 이수홍님 발표자료](https://github.com/sbcoba/spring-camp-2016-spring-boot-autoconfiguration)
-		* [스프링부트 AutoConfiguration 개발](https://luvstudy.tistory.com/69)
+
+기타.
+
+* AutoConfiguration
+	* [스프링캠프 2016 이수홍님 발표자료](https://github.com/sbcoba/spring-camp-2016-spring-boot-autoconfiguration)
+	* [스프링부트 AutoConfiguration 개발](https://luvstudy.tistory.com/69)
+
+##### [목차로 이동](#목차)
+
+### API vs Library
+API는 명세.
 
 ##### [목차로 이동](#목차)
