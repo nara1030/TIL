@@ -20,7 +20,7 @@
 		* Inversion of Control
 
 ## 참고자료
-* 강의 영상
+* [강의 영상](https://www.youtube.com/watch?v=E9NZ0YEZrYU)
 * [강의 장표](reference/86_1.pdf)
 
 ##### [목차로 이동](#목차)
@@ -35,7 +35,7 @@
 ##### [목차로 이동](#목차)
 
 ### Value Context vs Identifier Context
-인터넷 강의로 들었던 코드스피츠 83의 도입도 이 내용이었다. 내 기억에 [그 강의](https://github.com/nara1030/TIL/blob/master/docs/lecture_list/code_spitz/s83_object1/object1_week1_ch00-ch01.md#Pointer-of-Pointer)가 좀 더 구체적으로 집어줬다면 이번엔 리마인드한다는 느낌으로 진행되었다. 이 개념이 중요한 이유는 [프로그래밍 패러다임](https://github.com/nara1030/ThisIsJava/blob/master/docs/etc/programming_paradigm.md)의 기반이 되기 때문이다.
+인터넷 강의로 들었던 코드스피츠 83의 도입도 이 내용이었다. 내 기억에 [그 강의](https://github.com/nara1030/TIL/blob/master/docs/lecture_list/code_spitz/s83_object1/object1_week1_ch00-ch01.md#Pointer-of-Pointer)가 좀 더 구체적으로 집어줬다면 이번엔 좀 더 포괄적으로 리마인드한다는 느낌으로 진행되었다. 이 개념이 중요한 이유는 [프로그래밍 패러다임](https://github.com/nara1030/ThisIsJava/blob/master/docs/etc/programming_paradigm.md)의 기반이 되기 때문이다.
 
 | 조건 | 프로그래밍 패러다임 |
 | -- | -- |
@@ -44,7 +44,7 @@
 
 참고로 여기서 Context란. 이제 구체적으로 코드를 통해 살펴보자.
 
-강의 올라오는대로 추후 추가.
+주소가 아닌 해시값. 강의 올라오는대로 추후 추가.
 
 ##### [목차로 이동](#목차)
 
