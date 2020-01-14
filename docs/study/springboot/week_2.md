@@ -24,16 +24,21 @@
 ##### [목차로 이동](#목차)
 
 ## 진행
-스프링 부트를 처음 접해보기도 하고 지식이 많지 않아 들은 내용들이 파편화되어 있는데 우선 기억나는 부분들을 기록한다(틀린 부분 있을 수 있음).
+스프링 부트를 처음 접해보기도 하고 지식이 많지 않아 들은 내용들이 파편화되어 있는데 우선 기억나는 부분들을 기록한다(틀린 부분 있을 수 있음). 추후 링크 수정 및 삭제.
 
 * Spring Boot → JAR → 설정 정보 맞춰줄 필요 없음
 	* Config 서버 따로 쓸 때 장단
 	* JAR/WAR → Active Profile?: [이건가?](https://heowc.tistory.com/38)
 * Http Client
 	* [Spring Cloud Openfeign: 개요](https://brunch.co.kr/@springboot/202)
-	* [RestTemplate](https://hoonmaro.tistory.com/46)
-	* [Microservices Communication: Feign as REST Client](https://dzone.com/articles/microservices-communication-feign-as-rest-client)
-	* [우아한 feign 적용기](http://woowabros.github.io/experience/2019/05/29/feign.html)
+	* RestTemplate
+		* [Spring RestTemplate Tutorial - appsdeveloperblog](http://www.appsdeveloperblog.com/spring-resttemplate-tutorial/)
+		* [RestTemplate - 1](https://sjh836.tistory.com/141)
+		* [RestTemplate - 2](https://hoonmaro.tistory.com/46)
+		* [Spring RestTemplate](https://vnthf.github.io/blog/Java-RestTemplate%EC%97%90-%EA%B4%80%ED%95%98%EC%97%AC/)
+	* Feign
+		* [Microservices Communication: Feign as REST Client](https://dzone.com/articles/microservices-communication-feign-as-rest-client)
+		* [우아한 feign 적용기](http://woowabros.github.io/experience/2019/05/29/feign.html)
 * 기타
 	* @Bean 로직은 @ComponentScan 실행 시 단 한번만 실행
 	* Lombok 사용 시 @DATA 비권장(대신 SETTER/GETTER 사용)
