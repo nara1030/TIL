@@ -1,0 +1,35 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.2.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+    // id 'war'
+}
+
+group = 'study.springboot'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    implementation 'org.projectlombok:lombok'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    // providedCompile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-webflux
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-webflux', version: '2.2.2.RELEASE'
+    // spring boot configuration annotation processor not configured
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    compile 'org.springframework.boot:spring-boot-configuration-processor'
+}
+
+
+test {
+    useJUnitPlatform()
+}
