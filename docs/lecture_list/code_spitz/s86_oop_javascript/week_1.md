@@ -8,7 +8,7 @@
 2. [강의 요약](#강의-요약)
 	* [Value Context vs Identifier Context](#Value-Context-vs-Identifier-Context)
 	* [Polymorphism](#Polymorphism)
-		* Polymorphism of Prototype
+		* [Polymorphism of Prototype](#Polymorphism-of-Prototype)
 	* Object essentials
 		* Isolation of change
 	* 알려진 설계요령
@@ -83,7 +83,9 @@ Value Context는 메모리 주소가 중요하지 않기 때문에 a에 있는 3
 한편 Identifier Context는 a 객체의 속성을 바꾸는, 즉 하나의 원본을 사용한다. 이는 다시 말해 값이 Mutable하기 때문에 사용 시 일관성 문제가 생긴다. 따라서 내부 상태에 대해 책임을 지도록 만들어야 한다.
 
 - -
+
 * 주소가 아닌 해시값
+	* https://okky.kr/article/611080
 * 값 객체
 * RxJava
 
@@ -91,5 +93,31 @@ Value Context는 메모리 주소가 중요하지 않기 때문에 a에 있는 3
 
 ### Polymorphism
 Polymorphism, 즉 다형성은 객체지향의 핵심으로 이미 [이전 강의](https://github.com/nara1030/TIL/blob/master/docs/lecture_list/code_spitz/s83_object1/object1_week1_ch00-ch01.md#Polymorphism)에서 언급한 바 있다. 16:15 추가.
+
+```javascript
+const Worker = class {
+	run() {
+		console.log("working");
+	}
+	print() {
+		this.run();
+	}
+};
+
+const HardWorker = class extends  Worker {
+	run() {
+		console.log("hardWorking");
+	}
+}
+
+const worker = new HardWorker();
+console.log(worker instanceof Worker); // substitution
+worker.print(); // internal identity
+```
+
+##### [목차로 이동](#목차)
+
+#### Polymorphism of Prototype
+
 
 ##### [목차로 이동](#목차)
