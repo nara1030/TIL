@@ -38,6 +38,8 @@
 	* [API 공통 가이드](https://developers.naver.com/docs/common/openapiguide/README.md)
 	* [API 검색 > 블로그](https://developers.naver.com/docs/search/blog/)
 
+##### [목차로 이동](#목차)
+	
 ### 요구사항
 
 **STEP01**
@@ -94,13 +96,18 @@
 	* 예: properties, YAML
 * 요구사항 4
 	* https://www.lesstif.com/pages/viewpage.action?pageId=18220309
+* 요구사항 6
+	* https://myjamong.tistory.com/18
+	* https://m.blog.naver.com/PostView.nhn?blogId=allkanet72&logNo=221040438527&proxyReferer=https%3A%2F%2Fwww.google.com%2F
 * 요구사항 7: Spring 4.x부터 지원하는 HTTP 통신 템플릿
 	* HTTP 요청 후 JSON, XML, String과 같은 응답을 받을 수 있음
 	* 단, RestTemplate은 기본적으로 connection pool을 사용하지 않기 때문에 매 요청마다 handshake 수행(∴ 중복 코드 최소화)
 	* https://a1010100z.tistory.com/entry/SpringBoot-RestTemplate-vs-Webclient%EC%9E%91%EC%84%B1%EC%A4%91
 	* https://attacomsian.com/blog/spring-boot-resttemplate-get-request-parameters-headers
+	* https://a1010100z.tistory.com/entry/Spring-RESTFul-API-GET%EC%9C%BC%EB%A1%9C-JSON-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B0%9B%EC%95%84%EC%99%80-%ED%8C%8C%EC%8B%B1%EA%B9%8C%EC%A7%80JAVA-Spring-Kakao-%EB%A1%9C%EC%BB%AC-API-%EC%A1%B8%EC%97%85%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B83
 	* https://www.baeldung.com/rest-template
 	* https://jsonobject.tistory.com/237
+	* https://stylishc.tistory.com/114
 	
 - - -
 지금까지 www 상에서 클라이언트와 서버가 HTTP 프로토콜 위에서 요청/응답한다는 것을 알아봤는데 좀 더 자세히 살펴본다.
