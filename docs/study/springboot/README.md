@@ -48,6 +48,7 @@
 ## 주차별 요약
 * [1주차 - AutoConfiguration, Embedded Tomcat(불참)](week_1.md)
 * [2주차 - 스프링부트 DI](week_2.md)
-* 3주차 - 스프링부트 MVC, REST API
+* [3주차 - 스프링부트 MVC, REST API](week_3.md)
+* 4주차
 
 ##### [목차로 이동](#목차)
