@@ -79,15 +79,40 @@
 	* ∴ 헤더 필드 중 BODY의 데이터를 설명하는 Content-Type 포함  
 		```
 		// 예
-		Content-Type : applcation/x-www-form-urlencoded		// key-value
+		Content-Type : applcation/x-www-form-urlencoded	// key-value
 		Content-Type : text/plain				// txt
-		Content-Type : multipart/form-data		// binary
+		Content-Type : multipart/form-data			// binary
 		```
 
-여기서는 요구사항 1에서 확인할 수 있듯 GET 요청 방식을 사용한다. 
+이제 요구사항에 대해 살펴보자. 추후 수정.
 
+* 요구사항 1: GET 요청 방식
+	* [검색 > 블로그](https://developers.naver.com/docs/search/blog/): 요청변수 및 출력결과 확인 가능
+	* 브라우저에서 확인: Chrome > F12 > Network > ?
+* 요구사항 2: 외부 설정을 통해 어플리케이션의 설정값 세팅
+	* [장점?](https://www.theserverside.com/video/How-applicationproperties-simplifies-Spring-config)
+	* 예: properties, YAML
+* 요구사항 4
+	* https://www.lesstif.com/pages/viewpage.action?pageId=18220309
+* 요구사항 7: Spring 4.x부터 지원하는 HTTP 통신 템플릿
+	* HTTP 요청 후 JSON, XML, String과 같은 응답을 받을 수 있음
+	* 단, RestTemplate은 기본적으로 connection pool을 사용하지 않기 때문에 매 요청마다 handshake 수행(∴ 중복 코드 최소화)
+	* https://a1010100z.tistory.com/entry/SpringBoot-RestTemplate-vs-Webclient%EC%9E%91%EC%84%B1%EC%A4%91
+	* https://attacomsian.com/blog/spring-boot-resttemplate-get-request-parameters-headers
+	* https://www.baeldung.com/rest-template
+	* https://jsonobject.tistory.com/237
+	
 - - -
+지금까지 www 상에서 클라이언트와 서버가 HTTP 프로토콜 위에서 요청/응답한다는 것을 알아봤는데 좀 더 자세히 살펴본다.
 
+<img src="img/week_1_03.png" width="600" height="400"></br>
+
+* 클라이언트는 DNS를 통해서 naver.com의 IP 주소를 알 수 있다(1).
+* 클라이언트는 애플리케이션(HTTP) 계층에서 HTTP 메시지를 작성한다(2).
+* 클라이언트는 전송(TCP) 계층에서 HTTP를 패킷으로 분해한다(3).
+* 클라이언트는 IP를 통해서 상대가 어디에 있는지 찾아 중계해 가면서 전송한다(4,5,6).
+* 서버는 전송(TCP) 계층에서 패킷을 수신하고 조립한다(7).
+* 서버는 클라이언트의 요청을 처리한다(8).
 
 ##### [목차로 이동](#목차)
 
