@@ -86,28 +86,39 @@
 		Content-Type : multipart/form-data			// binary
 		```
 
-이제 요구사항에 대해 살펴보자. 추후 수정.
+이제 요구사항에 대해 살펴보자. 추후 수정 및 삭제.
 
 * 요구사항 1: GET 요청 방식
 	* [검색 > 블로그](https://developers.naver.com/docs/search/blog/): 요청변수 및 출력결과 확인 가능
 	* 브라우저에서 확인: Chrome > F12 > Network > ?
 * 요구사항 2: 외부 설정을 통해 어플리케이션의 설정값 세팅
-	* [장점?](https://www.theserverside.com/video/How-applicationproperties-simplifies-Spring-config)
-	* 예: properties, YAML
+	* [How to use Spring Boot `application.properties` file to externalize configuration](https://www.theserverside.com/video/How-applicationproperties-simplifies-Spring-config)
+	* [A Guide to Spring Boot Configuration Metadata](https://www.baeldung.com/spring-boot-configuration-metadata)
+	* [스프링 부트 자동 설정 이해하기: @EnableAutoConfiguration](https://cornswrold.tistory.com/314)
+	* [What is the difference between @ComponentScan and @EnableAutoConfiguration in Spring Boot?](https://stackoverflow.com/questions/35005158/what-is-the-difference-between-componentscan-and-enableautoconfiguration-in-sp)
 * 요구사항 4
 	* https://www.lesstif.com/pages/viewpage.action?pageId=18220309
 * 요구사항 6
-	* https://myjamong.tistory.com/18
-	* https://m.blog.naver.com/PostView.nhn?blogId=allkanet72&logNo=221040438527&proxyReferer=https%3A%2F%2Fwww.google.com%2F
+	* DTO는 외부와 연동 시, 특히 Request엔 필수?
 * 요구사항 7: Spring 4.x부터 지원하는 HTTP 통신 템플릿
 	* HTTP 요청 후 JSON, XML, String과 같은 응답을 받을 수 있음
 	* 단, RestTemplate은 기본적으로 connection pool을 사용하지 않기 때문에 매 요청마다 handshake 수행(∴ 중복 코드 최소화)
-	* https://a1010100z.tistory.com/entry/SpringBoot-RestTemplate-vs-Webclient%EC%9E%91%EC%84%B1%EC%A4%91
-	* https://attacomsian.com/blog/spring-boot-resttemplate-get-request-parameters-headers
-	* https://a1010100z.tistory.com/entry/Spring-RESTFul-API-GET%EC%9C%BC%EB%A1%9C-JSON-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B0%9B%EC%95%84%EC%99%80-%ED%8C%8C%EC%8B%B1%EA%B9%8C%EC%A7%80JAVA-Spring-Kakao-%EB%A1%9C%EC%BB%AC-API-%EC%A1%B8%EC%97%85%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B83
-	* https://www.baeldung.com/rest-template
-	* https://jsonobject.tistory.com/237
-	* https://stylishc.tistory.com/114
+	* 참고
+		* RestTemplate
+			* [RestTemplate으로 HTTP 요청 후 응답받기](https://a1010100z.tistory.com/entry/SpringBoot-RestTemplate-vs-Webclient%EC%9E%91%EC%84%B1%EC%A4%91)
+			* [RestTemplate 이용 오픈 API 연동](https://stylishc.tistory.com/114)
+			* [Spring, RestTemplate으로 REST 클라이언트 구현하기](https://jsonobject.tistory.com/237)
+			* [스프링 RestTemplate을 이용해서 GET 요청하기](http://hacks.claztec.net/2015/08/24/spring-resttemplate.html)
+			* [스프링 RestTemplate](https://blog.advenoh.pe.kr/spring/%EC%8A%A4%ED%94%84%EB%A7%81-RestTemplate/)
+			* [RestTemplate GET Request with Parameters and Headers](https://attacomsian.com/blog/spring-boot-resttemplate-get-request-parameters-headers)
+			* [The Guide to RestTemplate](https://www.baeldung.com/rest-template)
+			* [RestTemplate: How to send URL and query parameters together](https://inneka.com/programming/java/resttemplate-how-to-send-url-and-query-parameters-together/)
+		* ResponseEntity
+			* [Spring API(@RequestBody와 @ResponseEntity의 차이점)](https://dlgkstjq623.tistory.com/275)
+			* [@Controller vs @RestController](https://doublesprogramming.tistory.com/105)
+			* [Using Spring ResponseEntity to Manipulate the HTTP Response](https://www.baeldung.com/spring-response-entity)
+* 요구사항 8
+	* [실무에서 Lombok 사용법](https://cheese10yun.github.io/lombok/)
 	
 - - -
 지금까지 www 상에서 클라이언트와 서버가 HTTP 프로토콜 위에서 요청/응답한다는 것을 알아봤는데 좀 더 자세히 살펴본다.

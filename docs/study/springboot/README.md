@@ -11,7 +11,7 @@
 * 장소: 삼성역 근처 스터디룸
 * 구성원: 강의자 히어로즈님 외 7명
 * 참고
-	* 스터디 관련 Github 리포지토리
+	* [스터디 관련 Github 리포지토리](https://github.com/spring-basic-study/openapi)
 
 - - -
 개략적인 주차별 스터디 주제는 아래와 같다.
