@@ -50,7 +50,7 @@
 2. [x] OpenAPI 연동 URL,인증키 등 정보를 application 파일에 설정
 3. [x] application파일에 정의한 정보를 @ConfigurationProperties, @EnableConfigurationProperties 어노테이션을 사용해서 가져오기 
 4. [ ] "local" profile 로 애플리케이션 실행
-5. [ ] Embedded Tomcat Port, Max Thread 설정(`확인 어디서?`) 변경해보기
+5. [ ] Embedded Tomcat Port, Max Thread 설정 변경해보기
 6. [x] Service or Repository 패키지 레이어로 분리해보기
 7. [x] Open API 호출 시 RestTemplate를 사용하며, 별도의 Bean 으로 정의한다.(@Configuration, @Bean 사용)
 8. [x] Lombok 버전을 내가 원하는 버전으로 디펜던시 변경해보기
@@ -104,16 +104,16 @@
 	* https://www.lesstif.com/pages/viewpage.action?pageId=18220309
 * 요구사항 6: 3-Tier를 통한 책임 분리 및 변화 격리
 	* ReadOnly 특징을 가지는 VO(Value Object)와 달리 DTO(Data Transfer Object)는 가변(Mutable)임
-		* DTO는 값을 전달(계층간 데이터 교환)하는 객체, VO는 상태가 있는 객체가 아닌 그저 값으로 취급하는 객체([자세히](https://multifrontgarden.tistory.com/182))  
-		  ∴ 상태가 필요없기 때문에 불필요한 상태 변경 행위(setter) 구현 안함  
-		  ∴ 객체지향의 관점에서 보면 마음에 들지 않는 객체(때에 따라 VO를 Domain으로 명명하기도 함)
+		* DTO는 값을 전달(계층간 데이터 교환)하는 객체, VO는 상태가 있는 객체가 아닌 그저 값으로 취급하는 객체([자세히](https://multifrontgarden.tistory.com/182))
+			* ∴ VO는 상태가 필요없기 때문에 불필요한 상태 변경 행위(setter) 구현 안함
+			* ∴ 객체지향의 관점에서 보면 마음에 들지 않는 객체(때에 따라 VO를 Domain으로 명명하기도 함)
 		* 대표적인 VO로는 String 및 Integer, Long 등 기본형 래핑 객체 있음(Immutable)
-		* DTO만이 VO에 대해 알고 있어야 함(VO와 비슷한 JPA의 Entity?)  
-		  ∵ DTO는 출력화면의 변경에 따라 변경될 수 있지만 VO는 변경될 일이 없기 때문(VO는 DB 테이블과 직접 관계)([자세히](https://www.slipp.net/wiki/pages/viewpage.action?pageId=2031636))
-	* DTO에 데이터(Property) 설정은 우리가 setter 요청하는 것이 아니라 프레임워크 내부에서 setter 요청  
-	  ∴ 즉 멤버변수는 아무렇게나 지어도 무관하며 setter/getter에서 set/get 이후에 나오는 단어가 property라고 약속  
-	  ∵ 데이터를 받는 곳에서 일일이 처리할 필요 없이 이름과 매칭되는 프로퍼티에 자동적으로 DTO가 인스턴스화되어 값을 받음  
-	    (자바는 다양한 프레임워크에서 데이터 자동화처리를 위해 리플렉션 기법을 사용하는데 이때 가장 중요한 것이 표준규격)
+		* DTO만이 VO에 대해 알고 있어야 함(VO와 비슷한 JPA의 Entity?)
+			* ∵ DTO는 출력화면의 변경에 따라 변경될 수 있지만 VO는 변경될 일이 없기 때문(VO는 DB 테이블과 직접 관계)([자세히](https://www.slipp.net/wiki/pages/viewpage.action?pageId=2031636))
+	* DTO에 데이터(Property) 설정은 우리가 setter 요청하는 것이 아니라 프레임워크 내부에서 setter 요청
+		* ∴ 즉 멤버변수는 아무렇게나 지어도 무관하며 setter/getter에서 set/get 이후에 나오는 단어가 property라고 약속
+		* ∵ 데이터를 받는 곳에서 일일이 처리할 필요 없이 이름과 매칭되는 프로퍼티에 자동적으로 DTO가 인스턴스화되어 값을 받음  
+	      (자바는 다양한 프레임워크에서 데이터 자동화처리를 위해 리플렉션 기법을 사용하는데 이때 가장 중요한 것이 표준규격)
 	* VO vs. Map: 추후 공부
 		* https://okky.kr/article/370609
 * 요구사항 7: Spring 4.x부터 지원하는 HTTP 통신 템플릿
