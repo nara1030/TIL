@@ -1,4 +1,4 @@
-package com.eom.frispringbootstudy.step01.util.searchConfig;
+package com.eom.frispringbootstudy.step02.util.searchConfig;
 
 import lombok.Getter;
 import lombok.Setter;

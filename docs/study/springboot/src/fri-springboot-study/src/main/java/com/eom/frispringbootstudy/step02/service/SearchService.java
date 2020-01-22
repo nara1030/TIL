@@ -1,4 +1,4 @@
-package com.eom.frispringbootstudy.step01.service;
+package com.eom.frispringbootstudy.step02.service;
 
 import com.eom.frispringbootstudy.step01.repository.response.BlogResponseList;
 import org.springframework.http.HttpEntity;

@@ -1,4 +1,4 @@
-package com.eom.frispringbootstudy.step01.controller;
+package com.eom.frispringbootstudy.step02.controller;
 
 import com.eom.frispringbootstudy.step01.repository.response.BlogResponseList;
 import com.eom.frispringbootstudy.step01.service.SearchService;
