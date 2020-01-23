@@ -67,7 +67,7 @@
 
 <img src="img/week_1_04.png" width="800" height="350"></br>
 
-위 그림에도 나타나 있듯이 HTTP 프로토콜 위에서의 (서버와 클라이언트의) 요청은 HTTP (Request) Method를 통해 이루어진다([자세히](https://github.com/nara1030/TIL/blob/master/docs/book/mashup_guide_for_open_api/ch_1.md#Request%EC%99%80-Response)). HTTP Method란, GET/POST/PUT과 같이 HTTP 프로토콜 사용 시의 호출 방식을 말한다.
+위 그림에도 나타나 있듯이 HTTP 프로토콜 위에서의 클라이언트의 요청은 HTTP (Request) Method를 통해 이루어진다([자세히](https://github.com/nara1030/TIL/blob/master/docs/book/mashup_guide_for_open_api/ch_1.md#Request%EC%99%80-Response)). HTTP Method란, GET/POST/PUT과 같이 HTTP 프로토콜 사용 시의 호출 방식을 말한다.
 
 | 요청 메소드 | 설명 |
 | -- | -- |
