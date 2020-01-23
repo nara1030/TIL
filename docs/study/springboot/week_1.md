@@ -91,7 +91,7 @@
 		Content-Type : multipart/form-data			// binary
 		```
 
-한편 요구사항에 대해 언급되었던 부분과 이해한 바를 적어본다.
+그렇다면 요구사항에 대해 언급되었던 부분과 이해한 바를 적어본다.
 
 * 요구사항 1: HTTP Request Method 중 GET 방식
 	* Chrome에서 HTTP Message 확인: Chrome > F12 > Network 탭 > Name 탭
@@ -119,8 +119,8 @@
 * 요구사항 7: RestTemplate 사용 / 별도의 Bean 정의
 	* 데이터를 요청하는 경우 기존의 클라이언트 라이브러리와 사용성에 차이가 없으나, 응답 시에 다양한 메시지 컨버터를 내장하고 있다 장점
 		* 기존에도 Apache HttpClient, OKHttp와 같은 클라이언트 라이브러리 존재
-		* RestTemplate은 다양한 메시지 컨버터를 이미 내장하고 있어 JSON 응답을 Map 또는 모델 클래스로 변환 사용 수월(REST API와 연동 시에는 HTTP 요청 보내는 것뿐 아니라 응답에 JSON 데이터를 파싱하고 모델 객체와 매핑하는 것이 중요)
-	* 단, RestTemplate은 기본적으로 connection pool을 사용하지 않기 때문에 매 요청마다 handshake 수행(`더 찾아보기..`)
+		* RestTemplate은 다양한 메시지 컨버터를 이미 내장하고 있어 JSON 응답을 Map 또는 모델 클래스로 변환 사용 수월 장점(∵ REST API와 연동 시에는 HTTP 요청 보내는 것뿐 아니라 응답에 JSON 데이터를 파싱하고 모델 객체와 매핑하는 것이 중요)
+	* 단, RestTemplate은 기본적으로 connection pool을 사용하지 않기 때문에 매 요청마다 handshake 수행
 		* ∴ 중복 코드 최소화하기 위해 Bean 등록 필요
 	* [RestTemplate GET Request with Parameters and Headers](https://attacomsian.com/blog/spring-boot-resttemplate-get-request-parameters-headers)
 	* [The Guide to RestTemplate](https://www.baeldung.com/rest-template)
