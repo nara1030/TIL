@@ -20,7 +20,7 @@
 - - - -
 
 * 웹
-	1. [자바 웹 개발 워크북(2014)](https://github.com/nara1030/java-web-programming/blob/master/README.md)
+	1. [자바 웹 개발 워크북(2014)](https://github.com/nara1030/java-web-programming/blob/master/README.md): `진행중`
 	2. Head First Servlet & JSP(2005)
 	3. 쉽게 따라하는 자바웹개발(2012)
 	4. RESTful Web API(2015)
@@ -32,6 +32,7 @@
 	2. Spring in Action(2015)
 	3. 엔터프라이즈 애플리케이션 아키텍처 패턴(2015)
 	4. 자바 ORM 표준 JPA 프로그래밍(2015)
+	5. [스프링 부트로 배우는 자바 웹 개발(2018)](https://github.com/nara1030/spring-basic/blob/master/book/java_web_by_springboot_sjyoon/README.md): `진행중`
 
 - - - -
 
