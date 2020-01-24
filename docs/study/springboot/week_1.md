@@ -81,6 +81,23 @@
 	* URL에 데이터(key-value)를 붙이므로 HTTP 패킷의 헤더에 포함
 		* ∴ GET 방식에서 BODY는 빈 상태로 보내짐 
 		* ∴ 헤더의 내용 중 BODY 데이터를 설명하는 [Content-Type](https://www.geeksforgeeks.org/http-headers-content-type/) 헤더 필드 제외
+	* 요청 형식
+		1. 요청 라인(Request-Line): 요청하는 자원에 대해 웹 서버에게 내리는 명령  
+			<img src="img/week_1_05.jpg" width="200" height="100"></br>
+		2. 요청 헤더: 요청 처리 시 참고하라고 웹 서버에게 알려주는 정보  
+			<img src="img/week_1_06.jpg" width="250" height="100"></br>
+	* 응답 형식
+		1. 상태 라인(Status-Line): 응답 결과에 대한 상태 정보  
+			<img src="img/week_1_07.jpg" width="200" height="100"></br>
+		2. 응답 헤더: 응답 데이터 처리 시 참고하라고 웹 브라우저에게 알려주는 정보  
+			```txt
+			// Content-Type 헤더는 서버가 웹 브라우저에게 보내는 데이터의 형식
+			// 웹 브라우저는 이 헤더 값을 보고 데이터를 출력할지, 다운로드 창을 띄울지 아니면 외부 프로그램을 실행할지 결정
+			Content - Type: text/html; charset=UTF-8
+			// Content-Length는 웹 브라우저에게 보내는 데이터(message-body)의 크기(Byte)
+			Content - Length: 34770
+			```
+		3. 공백 라인과 응답 데이터(message-body)
 * POST 방식으로 데이터 보내기
 	* GET 방식과 다르게 URL에 붙여서 보내지 않고 BODY에 데이터를 넣어서 보냄
 	* ∴ 헤더 필드 중 BODY의 데이터를 설명하는 Content-Type 포함  
@@ -91,7 +108,22 @@
 		Content-Type : multipart/form-data			// binary
 		```
 
-그렇다면 요구사항에 대해 언급되었던 부분과 이해한 바를 적어본다.
+- - -
+지금까지 www 상에서 클라이언트와 서버가 HTTP 프로토콜 위에서 요청/응답한다는 것을 알아봤는데 좀 더 자세히 살펴본다.
+
+<img src="img/week_1_03.png" width="600" height="400"></br>
+
+* 클라이언트는 DNS를 통해서 naver.com의 IP 주소를 알 수 있다(1).
+* 클라이언트는 애플리케이션(HTTP) 계층에서 HTTP 메시지를 작성한다(2).
+* 클라이언트는 전송(TCP) 계층에서 HTTP를 패킷으로 분해한다(3).
+* 클라이언트는 IP를 통해서 상대가 어디에 있는지 찾아 중계해 가면서 전송한다(4,5,6).
+* 서버는 전송(TCP) 계층에서 패킷을 수신하고 조립한다(7).
+* 서버는 클라이언트의 요청을 처리한다(8).
+
+다음 [링크](https://github.com/nara1030/TIL/blob/master/docs/thinking_list/process_when_typing_a_url.md)를 참고한다.
+	
+- - -
+요구사항에 대해 언급되었던 부분과 이해한 바를 적어본다.
 
 * 요구사항 1: HTTP Request Method 중 GET 방식
 	* Chrome에서 HTTP Message 확인: Chrome > F12 > Network 탭 > Name 탭
@@ -117,7 +149,7 @@
 	* VO vs. Map: 추후 공부
 		* https://okky.kr/article/370609
 * 요구사항 7: RestTemplate 사용 / 별도의 Bean 정의
-	* 데이터를 요청하는 경우 기존의 클라이언트 라이브러리와 사용성에 차이가 없으나, 응답 시에 다양한 메시지 컨버터를 내장하고 있다 장점
+	* 데이터를 요청하는 경우 기존의 클라이언트 라이브러리와 사용성에 차이가 없으나, 응답 시에 다양한 메시지 컨버터를 내장하고 있는 게 장점
 		* 기존에도 Apache HttpClient, OKHttp와 같은 클라이언트 라이브러리 존재
 		* RestTemplate은 다양한 메시지 컨버터를 이미 내장하고 있어 JSON 응답을 Map 또는 모델 클래스로 변환 사용 수월 장점(∵ REST API와 연동 시에는 HTTP 요청 보내는 것뿐 아니라 응답에 JSON 데이터를 파싱하고 모델 객체와 매핑하는 것이 중요)
 	* 단, RestTemplate은 기본적으로 connection pool을 사용하지 않기 때문에 매 요청마다 handshake 수행
@@ -130,20 +162,6 @@
 	* 코드(DTO) 작성시 수정 쉽고 가독성 향상(∵ 필드명 변경시 setter/getter는 일일이 변경 필요)
 	* 단, Gradle에 의존성 설정 외에 플러그인 추가 및 컴파일러 설정 필요([관련 링크](https://galid1.tistory.com/531))
 	* [실무에서 Lombok 사용법](https://cheese10yun.github.io/lombok/)
-	
-- - -
-지금까지 www 상에서 클라이언트와 서버가 HTTP 프로토콜 위에서 요청/응답한다는 것을 알아봤는데 좀 더 자세히 살펴본다.
-
-<img src="img/week_1_03.png" width="600" height="400"></br>
-
-* 클라이언트는 DNS를 통해서 naver.com의 IP 주소를 알 수 있다(1).
-* 클라이언트는 애플리케이션(HTTP) 계층에서 HTTP 메시지를 작성한다(2).
-* 클라이언트는 전송(TCP) 계층에서 HTTP를 패킷으로 분해한다(3).
-* 클라이언트는 IP를 통해서 상대가 어디에 있는지 찾아 중계해 가면서 전송한다(4,5,6).
-* 서버는 전송(TCP) 계층에서 패킷을 수신하고 조립한다(7).
-* 서버는 클라이언트의 요청을 처리한다(8).
-
-다음 [링크](https://github.com/nara1030/TIL/blob/master/docs/thinking_list/process_when_typing_a_url.md)를 참고한다.
 
 ##### [목차로 이동](#목차)
 
