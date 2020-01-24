@@ -7,7 +7,7 @@
 1. [참고](#참고)
 2. [진행](#진행)
 	* [요구사항](#요구사항)
-	* [상세설명](#상세설명)
+	* [배경설명](#배경설명)
 	* [코드리뷰](#코드리뷰)
 3. [기타](#기타)
 	* [Spring MVC vs Spring Boot](#Spring-MVC-vs-Spring-Boot)
@@ -58,7 +58,7 @@
 
 ##### [목차로 이동](#목차)
 
-### 상세설명
+### 배경설명
 요구사항에 대한 개략적인 이해를 적어본다. 먼저 우리가 작성할 애플리케이션은 이와 같은 구조를 가진다.
 
 <img src="img/week_1_01.png" width="800" height="250"></br>
@@ -106,14 +106,25 @@
 			```
 		3. 공백 라인과 응답 데이터(message-body)
 * POST 방식으로 데이터 보내기
-	* GET 방식과 다르게 URL에 붙여서 보내지 않고 BODY에 데이터를 넣어서 보냄
-	* ∴ 헤더 필드 중 BODY의 데이터를 설명하는 Content-Type 포함  
-		```
-		// 예
-		Content-Type : applcation/x-www-form-urlencoded	// key-value
-		Content-Type : text/plain				// txt
-		Content-Type : multipart/form-data			// binary
-		```
+	* GET 방식과 다르게 URL에 붙여서 보내지 않고 BODY에 데이터를 넣어서 보냄(∴ 외부 노출 방지)
+		* ∴ 헤더 필드 중 BODY의 데이터를 설명하는 Content-Type 포함  
+			```
+			// 예
+			// form 태그의 입력값은 기본적으로 application/x-www-form-urlencoded 형식으로 인코딩(POST)
+			Content-Type : applcation/x-www-form-urlencoded	// key-value
+			Content-Type : text/plain				// txt
+			```
+		* 메시지 본문에 데이터 포한 → 실행 결과 공유 불가(ex. 즐겨찾기)
+		* 바이너리 및 대용량 데이터 전송 가능
+	* 단 문자 데이터 전송의 경우와 달리, 이미지나 동영상과 같은 바이너리 데이터 전송 시 문제 발생
+		* ∵ GET 메서드와 마찬가지로 POST도 데이터 전달 시 '이름=값&이름=값' 형태를 사용하는데, 바이너리 데이터 안에 '='나 '&'의 문자 코드 포함 가능성 존재
+		* ∴ 웹 서버에 바이너리 데이터를 보내도록 멀티파트 인코딩 방법 고안  
+			```
+			// 기본 POST 전송과 멀티파트 전송의 가장 큰 차이점은 Content-Type 헤더 및 메시지 본문 형식
+			// 문자 매개변수와 같이 &를 사용해 매개변수 구분 불가능하기 때문에 특별한 구분자(boundary) 사용
+			// 이 구분자는 웹 브라우저에서 임의로 생성
+			Content-Type : multipart/form-data; boundary=----Web...PyZ	// binary
+			```
 
 - - -
 지금까지 www 상에서 클라이언트와 서버가 HTTP 프로토콜 위에서 요청/응답한다는 것을 알아봤는데 좀 더 자세히 살펴본다.
@@ -128,9 +139,14 @@
 * 서버는 클라이언트의 요청을 처리한다(8).
 
 다음 [링크](https://github.com/nara1030/TIL/blob/master/docs/thinking_list/process_when_typing_a_url.md)를 참고한다.
-	
+
+##### [목차로 이동](#목차)
+
+### 코드리뷰
+
+
 - - -
-요구사항에 대해 언급되었던 부분과 이해한 바를 적어본다.
+추가로 요구사항에 대해 언급되었던 부분과 이해한 바를 적어본다.
 
 * 요구사항 1: HTTP Request Method 중 GET 방식
 	* Chrome에서 HTTP Message 확인: Chrome > F12 > Network 탭 > Name 탭
@@ -169,11 +185,6 @@
 	* 코드(DTO) 작성시 수정 쉽고 가독성 향상(∵ 필드명 변경시 setter/getter는 일일이 변경 필요)
 	* 단, Gradle에 의존성 설정 외에 플러그인 추가 및 컴파일러 설정 필요([관련 링크](https://galid1.tistory.com/531))
 	* [실무에서 Lombok 사용법](https://cheese10yun.github.io/lombok/)
-
-##### [목차로 이동](#목차)
-
-### 코드리뷰
-
 
 ##### [목차로 이동](#목차)
 
