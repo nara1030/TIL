@@ -81,6 +81,12 @@
 	* URL에 데이터(key-value)를 붙이므로 HTTP 패킷의 헤더에 포함
 		* ∴ GET 방식에서 BODY는 빈 상태로 보내짐 
 		* ∴ 헤더의 내용 중 BODY 데이터를 설명하는 [Content-Type](https://www.geeksforgeeks.org/http-headers-content-type/) 헤더 필드 제외
+		* 바이너리 및 대용량 데이터 전송 불가(∵ 웹 서버에 따라 요청라인과 헤더 필드의 최대 크기 제한)
+			* HTTP 사양에서는 요청 라인이나 헤더 필드의 최대 크기 제한하지 않지만, 웹 서버에서 제한
+				* ∵ 대용량 URL을 사용할 때 발생할 수 있는 보안 문제
+			* 예
+				* Microsoft IIS 6.0+: 16KB
+				* Apache: 8KB
 	* 요청 형식
 		1. 요청 라인(Request-Line): 요청하는 자원에 대해 웹 서버에게 내리는 명령  
 			<img src="img/week_01_05.jpg" width="200" height="100"></br>
@@ -92,7 +98,8 @@
 		2. 응답 헤더: 응답 데이터 처리 시 참고하라고 웹 브라우저에게 알려주는 정보  
 			```txt
 			// Content-Type 헤더는 서버가 웹 브라우저에게 보내는 데이터의 형식
-			// 웹 브라우저는 이 헤더 값을 보고 데이터를 출력할지, 다운로드 창을 띄울지 아니면 외부 프로그램을 실행할지 결정
+			// 웹 브라우저는 이 헤더 값을 보고 데이터를 출력할지, 다운로드 창을 띄울지
+			// 아니면 외부 프로그램을 실행할지 결정
 			Content - Type: text/html; charset=UTF-8
 			// Content-Length는 웹 브라우저에게 보내는 데이터(message-body)의 크기(Byte)
 			Content - Length: 34770
