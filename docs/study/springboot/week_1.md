@@ -83,12 +83,12 @@
 		* ∴ 헤더의 내용 중 BODY 데이터를 설명하는 [Content-Type](https://www.geeksforgeeks.org/http-headers-content-type/) 헤더 필드 제외
 	* 요청 형식
 		1. 요청 라인(Request-Line): 요청하는 자원에 대해 웹 서버에게 내리는 명령  
-			<img src="img/week_1_05.jpg" width="200" height="100"></br>
+			<img src="img/week_01_05.jpg" width="200" height="100"></br>
 		2. 요청 헤더: 요청 처리 시 참고하라고 웹 서버에게 알려주는 정보  
-			<img src="img/week_1_06.jpg" width="250" height="100"></br>
+			<img src="img/week_01_06.jpg" width="250" height="100"></br>
 	* 응답 형식
 		1. 상태 라인(Status-Line): 응답 결과에 대한 상태 정보  
-			<img src="img/week_1_07.jpg" width="200" height="100"></br>
+			<img src="img/week_01_07.jpg" width="200" height="100"></br>
 		2. 응답 헤더: 응답 데이터 처리 시 참고하라고 웹 브라우저에게 알려주는 정보  
 			```txt
 			// Content-Type 헤더는 서버가 웹 브라우저에게 보내는 데이터의 형식
