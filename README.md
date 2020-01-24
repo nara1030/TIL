@@ -79,6 +79,7 @@ TIL
 	* [스프링 입문을 위한 자바 객체지향의 원리와 이해(2015)](https://github.com/nara1030/spring-basic/blob/master/book/oop_for_spring_jmkim/README.md)
 	* [Head First Design Pattern(2005)](https://github.com/nara1030/TIL/blob/master/docs/study/designPattern/README.md)
 * 웹
+	* [자바 웹 개발 워크북(2014)](https://github.com/nara1030/java-web-programming/blob/master/README.md)
 	* [톰캣 최종분석(2005)](./docs/book/how_tomcat_works/README.md)
 	* [스프링 부트로 배우는 자바 웹 개발(2018)](https://github.com/nara1030/spring-basic/blob/master/book/java_web_by_springboot_sjyoon/README.md)
 	* 실전 스프링 부트 워크북(2017)
