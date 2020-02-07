@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>영화 및 후기 조회하기</title>
+</head>
+<body>
+<div>
+    <h1>관련 영화 정보</h1>
+    <table border="1">
+        <tr>
+            <th>제목</th>
+            <th>이미지</th>
+            <th>제작년도</th>
+            <th>감독</th>
+        </tr>
+        <tr th:each="item : ${movieResponses}">
+            <td th:text = "${item.title}"></td>
+            <td th:text = "${item.image}"></td>
+            <td th:text = "${item.pubDate}"></td>
+            <td th:text = "${item.director}"></td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h1>관련 후기 정보</h1>
+    <table border="1">
+        <tr>
+            <th>제목</th>
+            <th>블로거명</th>
+            <th>상세</th>
+            <th>링크</th>
+        </tr>
+        <tr th:each="item : ${blogResponses}">
+            <td th:text = "${item.title}"></td>
+            <td th:text = "${item.bloggername}"></td>
+            <td th:text = "${item.description}"></td>
+            <td th:text = "${item.link}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
