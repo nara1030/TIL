@@ -7,7 +7,7 @@ TIL
 	1. [독서 목록](#독서-목록)
 	2. [스터디 및 세미나](#스터디-및-세미나)
 	3. [참고](#참고)
-2. [토이 프로젝트](#토이-프로젝트)
+2. [실습](#실습)
 
 ## 이론
 
@@ -42,8 +42,8 @@ TIL
 * [알고리즘 스터디](https://github.com/bulkwang-study/algol): 2019.05.24 ~ 2019.07.06
 * [코드스피츠 - 오브젝트](./docs/book/object/README.md): 2019.09.03 ~ 2019.10.08
 * [디자인패턴 스터디](./docs/study/designPattern): 2019.09.21 ~ 2019.12.28
-* [스프링부트 스터디](./docs/study/springboot): 2020.01.03 ~
-* [코드스피츠 - 객체지향 자바스크립트](./docs/lecture_list/code_spitz/s86_oop_javascript): 2020.01.08 ~
+* [스프링부트 스터디](./docs/study/springboot): 2020.01.03 ~ 2020.01.31
+* [코드스피츠 - 객체지향 자바스크립트](./docs/lecture_list/code_spitz/s86_oop_javascript): 2020.01.08 ~ 2020.02.05
 
 참석했던 세미나 목록을 기록합니다.
 
@@ -75,9 +75,10 @@ TIL
 
 ##### [목차로 이동](#목차)
 
-## 토이 프로젝트
+## 실습
 1. [직원관리 프로그램 - Java](https://github.com/nara1030/EmployeeManagementSystem)
-2. [게시판 - Spring](./docs/toy_project/notice_board.md)
-3. [Haxball - JavaScript](./docs/toy_project/haxball_api.md)
+2. SB
+3. [게시판 - Spring](./docs/toy_project/notice_board.md)
+4. [Haxball - JavaScript](./docs/toy_project/haxball_api.md)
 
 ##### [목차로 이동](#목차)
