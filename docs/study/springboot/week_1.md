@@ -52,8 +52,6 @@
 ##### [목차로 이동](#목차)
 
 ### 구현
-[구현](https://github.com/nara1030/TIL/tree/master/docs/study/springboot/src) 시 생각해본 점은 아래와 같다.
-
 * Layer 분리 → 변화 격리
 	* ReadOnly 특징을 가지는 VO(Value Object)와 달리 DTO(Data Transfer Object)는 가변(Mutable)임
 		* DTO는 값을 전달(계층간 데이터 교환)하는 객체, VO는 상태가 있는 객체가 아닌 그저 값으로 취급하는 객체([자세히](https://multifrontgarden.tistory.com/182))
