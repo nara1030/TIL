@@ -2,16 +2,17 @@
 =====
 * 일시: 2020.01.10(금), 11:30 ~ 13:30
 * 장소: 삼성역 스터디룸
+* [발표자료](https://docs.google.com/presentation/d/1Eb05e4tT8LqZ_szpuk69-pjwjGXHIqtCORVVo2KxYiM/edit#slide=id.p)
+* [요구사항](https://github.com/spring-basic-study/openapi)
 - - -
 ## 목차
 1. [참고](#참고)
 	* [인텔리제이 단축키](#인텔리제이-단축키)
 	* [스프링 부트 임포트 및 실행방법](#스프링-부트-임포트-및-실행방법)
-2. [진행](#진행)
-	* [요구사항](#요구사항)
-	* [설명](#설명)
+2. [Todo](#Todo)
+	* [구현](#구현)
+	* [배경](#배경)
 3. [기타](#기타)
-	* [자바](#자바)
 
 ## 참고
 * [발표 자료](https://docs.google.com/presentation/d/1Eb05e4tT8LqZ_szpuk69-pjwjGXHIqtCORVVo2KxYiM/edit#slide=id.p)
@@ -30,7 +31,17 @@
 
 ##### [목차로 이동](#목차)
 
-## 진행
+## Todo
+- [ ] STEP01 에서 진행한 블로그 연동과 유사하게, 영화 Open API 를 연동해서 간단한 검색을 제공한다.
+- [ ] 하나의 쿼리 요청에, 블로그 + 영화 정보를 함께 제공하는 API 를 만든다(Response 스펙은 자유롭게...).
+- [ ] 블로그, 영화 OpenAPI 구현시 사용한 RestTemplate 호출 구문의 중복을 최소화 해보자.
+- [ ] RestTemplate 의 쓰레드풀, TimeOut 등의 설정을 변경해보자.
+- [ ] 블로그, 또는 영화 정보 조회 시 LIMIT 로 개수를 제한해본다.
+	- (Open API 호출할때가 아니라) Open API 에서 가져온 데이터를 제한해서 제공
+
+##### [목차로 이동](#목차)
+
+### 구현
 스프링 부트를 처음 접해보기도 하고 지식이 많지 않아 들은 내용들이 파편화되어 있는데 우선 기억나는 부분들을 기록한다(틀린 부분 있을 수 있음). 추후 수정 및 삭제.
 
 * Spring Boot → JAR → 설정 정보 맞춰줄 필요 없음
@@ -54,29 +65,14 @@
 	
 ##### [목차로 이동](#목차)
 
-### 요구사항
-**STEP02**
-
-1. STEP01 에서 진행한 블로그 연동과 유사하게, 영화 Open API 를 연동해서 간단한 검색을 제공한다.
-2. 하나의 쿼리 요청에, 블로그 + 영화 정보를 함께 제공하는 API 를 만든다(Response 스펙은 자유롭게...).
-2. 블로그, 영화 OpenAPI 구현시 사용한 RestTemplate 호출 구문의 중복을 최소화 해보자.
-3. RestTemplate 의 쓰레드풀, TimeOut 등의 설정을 변경해보자.
-4. 블로그, 또는 영화 정보 조회 시 LIMIT 로 개수를 제한해본다.  
-   (Open API 호출할때가 아니라) Open API 에서 가져온 데이터를 제한해서 제공
-
-##### [목차로 이동](#목차)
-
-### 설명
+### 배경
 
 
 ##### [목차로 이동](#목차)
 
 ## 기타
-대부분 IT 회사 업무엔 API 개발이 큰 비중을 차지하고 있다고 한다. 따라서 이번 스터디도 네이버 오픈 API를 활용하는 예를 통해 진행한다.
+추후 확인 후 삭제.
 
-##### [목차로 이동](#목차)
-
-### 자바
 * HTTP 통신
 	* [Java 11: Standardized HTTP Client API - DZone](https://dzone.com/articles/java-11-standardized-http-client-api)
 	* [A Simple HTTP Server in Java - DZone](https://dzone.com/articles/simple-http-server-in-java)
