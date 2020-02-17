@@ -16,10 +16,10 @@
 	* [예제 완성 코드](#예제-완성-코드)
 		* [추가 구현 사항](#추가-구현-사항)
 	* [자바 내장 옵저버 패턴](#자바-내장-옵저버-패턴)
-2. [자바 관련]
+2. [자바 관련](#자바-관련)
 	* [POJO](#POJO)
 		* [스프링과 POJO](#스프링과-POJO)
-	* [Generics](#Generics)
+	* [Generics](https://github.com/nara1030/ThisIsJava/blob/master/docs/%EC%A0%9C%EB%84%A4%EB%A6%AD.md)
 3. [기타](#기타)
 	* +, -
 	* [참고](#참고)
@@ -145,11 +145,6 @@ OKKY에서 POJO에 대해 언급한 부분을 발췌한다.
 <img src="./img/pojo_def.png" width="500" height="400"></br>
 
 추가로 다음 [링크](https://limmmee.tistory.com/8)를 확인하면 스프링에 대해 더 잘 이해할 수 있다.
-
-##### [목차로 이동](#목차)
-
-### Generics
-[관련 자료](https://slides.com/changyong/generics#/)
 
 ##### [목차로 이동](#목차)
 
