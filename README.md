@@ -79,6 +79,5 @@ TIL
 1. [직원관리 프로그램 - Java](https://github.com/nara1030/EmployeeManagementSystem)
 2. SB
 3. [게시판 - Spring](./docs/toy_project/notice_board.md)
-4. [Haxball - JavaScript](./docs/toy_project/haxball_api.md)
 
 ##### [목차로 이동](#목차)
