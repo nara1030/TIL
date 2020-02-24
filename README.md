@@ -77,7 +77,8 @@ TIL
 
 ## 실습
 1. [직원관리 프로그램 - Java](https://github.com/nara1030/EmployeeManagementSystem)
-2. SB
-3. [게시판 - Spring](./docs/toy_project/notice_board.md)
+2. [게시판 - Spring](https://github.com/nara1030/spring-board)
+3. ~~Springboot~~
+4. ~~채팅 - Java~~
 
 ##### [목차로 이동](#목차)
