@@ -70,6 +70,7 @@ TIL
 * [남세동님의 인터뷰 질문](./docs/questions_by_namsedong.md)
 * [Tech Interview Guidelines for Beginners](https://github.com/JaeYeopHan/Interview_Question_for_Beginner)
 * [참고한 기술 블로그 및 강의 목록](https://github.com/nara1030/TIL/blob/master/docs/tech_blog_and_lecture_list.md)
+* [토비의 봄 TV](https://github.com/nara1030/study-toby_youtube)
 * 튜토리얼
 	* [자바 튜토리얼 - HowToDoInJava.com](https://howtodoinjava.com/)
 
