@@ -78,9 +78,7 @@ TIL
 
 ## 실습
 1. [직원관리 프로그램 - Java](https://github.com/nara1030/EmployeeManagementSystem)
-2. [영화/도서 리뷰 - Spring](https://github.com/nara1030/spring-board)
-3. ~~Springboot~~
-4. ~~채팅 - Java~~
-5. ~~블로그~~
+2. [영화/도서 리뷰 - Spring Boot](https://github.com/nara1030/spring-board)
+3. ~~채팅 - Java~~
 
 ##### [목차로 이동](#목차)
