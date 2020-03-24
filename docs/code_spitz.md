@@ -4,15 +4,21 @@
 - - -
 ## 목차
 1. [목록](#목록)
-2. [개요](#개요)
+2. [참고](#참고)
 
 ## 목록
-* [오브젝트](https://github.com/nara1030/portfolio/blob/master/docs/book/object.md)
-* .
+1. 프론트엔드
+	1. [자바스크립트 기초 - s69]()
+	2. 자바스크립트 함수와 객체 - s70
+	3. CSS Rendering - s76
+	4. .
+2. 백엔드
+	1. [오브젝트](https://github.com/nara1030/TIL/blob/master/docs/book/object/README.md)
+	2. .
 
 ##### [목차로 이동](#목차)
 
-## 개요
+## 참고
 
 
 ##### [목차로 이동](#목차)

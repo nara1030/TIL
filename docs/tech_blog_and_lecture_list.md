@@ -40,12 +40,9 @@
 * [우아한 테크러닝](https://edu.nextstep.camp/)
 	* [NextStep이 걸어온 길](https://brunch.co.kr/@javajigi/11)
 * 유튜브
-	* [생활코딩](https://github.com/nara1030/portfolio/blob/master/docs/living_coding.md)
-	* [승지니어](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg/videos)
 	* [코드스피츠](https://github.com/nara1030/portfolio/blob/master/docs/code_spitz.md)
 	* [제로초](https://www.zerocho.com/)
 	* [엄진영](http://blog.eomjinyoung.com/)
-	* [나동빈](https://www.youtube.com/channel/UChflhu32f5EUHlY7_SetNWw)
 * 인프런
 	* 객제지향
 		* [객체지향 프로그래밍 입문 - 최범균](./lecture_list/inflearn/oop_basic_choi.md): `수강중`
