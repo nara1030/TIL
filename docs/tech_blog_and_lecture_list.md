@@ -40,7 +40,6 @@
 * [우아한 테크러닝](https://edu.nextstep.camp/)
 	* [NextStep이 걸어온 길](https://brunch.co.kr/@javajigi/11)
 * 유튜브
-	* [코드스피츠](https://github.com/nara1030/portfolio/blob/master/docs/code_spitz.md)
 	* [제로초](https://www.zerocho.com/)
 	* [엄진영](http://blog.eomjinyoung.com/)
 * 인프런
