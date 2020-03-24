@@ -85,22 +85,23 @@
 	```
 
 - - -
-Operations  
-	```txt
-	assignment
-	  - 언어에 따라 문에 분류되기도, 식에 분류되기도 함
-	  - 자바스크립트의 경우 식에 분류되므로 하나의 값으로 귀결
-	  - ex. a = 3; → 자바스크립트에서 할당(선언: x)은 우항의 값(3)으로 귀결
-	arithmetic
-	logical
-	conditional
-	unary
-	comparison
-	bitwise
-	string
-	comma
-	relational
-	```
+Operations
+
+```txt
+assignment
+  - 언어에 따라 문에 분류되기도, 식에 분류되기도 함
+  - 자바스크립트의 경우 식에 분류되므로 하나의 값으로 귀결
+  - ex. a = 3; → 자바스크립트에서 할당(선언: x)은 우항의 값(3)으로 귀결
+arithmetic
+logical
+conditional
+unary
+comparison
+bitwise
+string
+comma
+relational
+```
 
 ##### [목차로 이동](#목차)
 

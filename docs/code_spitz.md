@@ -8,7 +8,7 @@
 
 ## 목록
 1. 프론트엔드
-	1. [자바스크립트 기초 - s69]()
+	1. [자바스크립트 기초 - s69](https://github.com/nara1030/TIL/tree/master/docs/lecture_list/code_spitz/s69)
 	2. 자바스크립트 함수와 객체 - s70
 	3. CSS Rendering - s76
 	4. .
