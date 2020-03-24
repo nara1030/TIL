@@ -112,7 +112,7 @@
 	```
 * 예제  
 	```javascript
-	1 + 1 	// 2
+	1 + 1 		// 2
 	var a = 3;	// undefined; Statements는 값 반환 x
 	a;		// 3
 	
