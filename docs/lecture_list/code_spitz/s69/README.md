@@ -85,24 +85,45 @@
 	```
 
 - - -
-Operations
-
-```txt
-assignment
-  - 언어에 따라 문에 분류되기도, 식에 분류되기도 함
-  - 자바스크립트의 경우 식에 분류되므로 하나의 값으로 귀결
-  - ex. a = 3; → 자바스크립트에서 할당(선언: x)은 우항의 값(3)으로 귀결
-arithmetic
-logical
-conditional
-unary
-comparison
-bitwise
-string
-comma
-relational
-```
-
+* Operations  
+	```txt
+	assignment
+	  - 언어에 따라 문에 분류되기도, 식에 분류되기도 함
+	  - 자바스크립트의 경우 식에 분류되므로 하나의 값으로 귀결
+	  - ex. a = 3; → 자바스크립트에서 할당(선언: x)은 우항의 값(3)으로 귀결
+	arithmetic
+	logical
+	conditional
+	unary
+	comparison
+	bitwise
+	string
+	comma
+	relational
+	```
+* ECMAScript  
+	```txt
+	ECMAScript - 자바스크립트의 공식적인 표준을 에크마스크립트라 함
+	  - 자바스크립트는 상위버전이 하위버전을 완전히 호환되도록 작성됨
+	
+	ECMAScript3.1  - IE8까지의 사용. 그 외 브라우저가 지원
+	ECMAScript5    - IE9 ~ 11까지 사용. 그 외 모든 브라우저가 지원
+	ECMAScript2015 - Edge, Chrome, Firefox 등 모던 브라우저가 지원
+	```
+* 예제  
+	```javascript
+	1 + 1 	// 2
+	var a = 3;	// undefined; Statements는 값 반환 x
+	a;		// 3
+	
+	/*
+	 * 1: 가장 안에 있는 괄호부터 해석
+	 * undefined
+	 * undefined
+	 */
+	console.log(console.log(1));
+	```
+	
 ##### [목차로 이동](#목차)
 
 ## 2강
@@ -113,7 +134,31 @@ relational
 ##### [목차로 이동](#목차)
 
 ### Data type
-컴퓨터에서 기록은 어떻게 되는가? 이를 설명하는 키워드가 `Data type`이다.
+컴퓨터에서 기록은 어떻게 되는가? 이를 설명하는 키워드가 Data type이다.
+
+* Data: 메모리에 넣을 값
+* Type: 값의 ~~종류~~크기
+
+조금 더 자세히 정리하면 아래와 같다.
+
+```txt
+- 메모리: (얼마나 오래인지는 차치하고) 내가 원하는 상태 혹은 값을 기억할 수 있는 것(→ 스위치)
+- 스위치(메모리) 하나의 단위: 1bit(0 ~ 1)
+- 1byte = 8bit ＝ 2^8(0 ~ 255)
+- 우리가 흔히 얘기하는 16bit 컴퓨터는 한 번에 메모리에 값을 쓸 때 2byte씩 쓰는 컴퓨터
+
+- 메모리의 두 가지 특성
+  1. 메모리 상태(값)
+  2. 어디에 들어있니(위치, 주소)
+- 3을 2byte에 쓰는 경우와 1byte에 쓰는 경우는 다름(스위치로 생각)
+  - 즉 같은 값이지만 메모리 블록을 몇 개 사용하는 공간에 값을 적느냐에 따라 기록 방법이 달라짐
+  
+- var a = 3; // 자바스크립트
+  - 변수 a는 메모리 주소의 별명임
+  - V-Table(Variable Table): 변수명, 주소, 데이터 타입
+```
+
+s69/2/44:40
 
 ##### [목차로 이동](#목차)
 
