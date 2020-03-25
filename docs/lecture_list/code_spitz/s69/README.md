@@ -197,6 +197,7 @@ s69/3/18:00
 ##### [목차로 이동](#목차)
 
 ## 참고
+* [메모리 저장 단위와 메모리 크기 표시 단위](https://m.blog.naver.com/PostView.nhn?blogId=tipsware&logNo=221537443580&proxyReferer=https%3A%2F%2Fwww.google.com%2F)
 * [CPU와 메모리, 그리고 성능](https://comalien.tistory.com/20)
 
 ##### [목차로 이동](#목차)
