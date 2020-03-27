@@ -61,7 +61,12 @@
 * sogoagain
 	1. [레거시 코드를 점진적으로 개선한 경험](https://sogoagain.github.io/2020/03/08/%EB%A0%88%EA%B1%B0%EC%8B%9C-%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%A0%90%EC%A7%84%EC%A0%81%EC%9C%BC%EB%A1%9C-%EA%B0%9C%EC%84%A0%ED%95%9C-%EA%B2%BD%ED%97%98/)
 	2. [캐싱된 메서드는 변경 불가능한 객체를 반환토록 하자](https://sogoagain.github.io/2019/12/06/%EC%8B%A4%EC%88%98%EB%85%B8%ED%8A%B8-%EC%BA%90%EC%8B%B1%EB%90%9C-%EB%A9%94%EC%84%9C%EB%93%9C%EB%8A%94-%EB%B3%80%EA%B2%BD-%EB%B6%88%EA%B0%80%EB%8A%A5%ED%95%9C-Immutable-%EA%B0%9D%EC%B2%B4%EB%A5%BC-%EB%B0%98%ED%99%98%ED%86%A0%EB%A1%9D-%ED%95%98%EC%9E%90/)
-* [새로 입사한 개발자가 프로젝트에 기여하는 방법 한 가지](https://helloworld.kurly.com/blog/fix-style-with-command/?fbclid=IwAR1mTdENblJvoeTV1IB_3jZaxuraIkgnPsq1F4GC-UDfYfRZY3k1K3VaFuk#%EA%B2%B0%EA%B3%BC)
+* 기계인간
+	1. [새로 입사한 개발자가 프로젝트에 기여하는 방법 한 가지](https://helloworld.kurly.com/blog/fix-style-with-command/?fbclid=IwAR1mTdENblJvoeTV1IB_3jZaxuraIkgnPsq1F4GC-UDfYfRZY3k1K3VaFuk#%EA%B2%B0%EA%B3%BC)
+* HiKa
+	1. [개발자의 효율성](https://brunch.co.kr/@hika/7?fbclid=IwAR1GzdzGQ_HLZEgQOc9KKQCtiEcm9ZESV5_kck5HwyxApnFE78G39fyz7Sw)
+	2. [계산기로 자바8 OOP 입문 #1/2](https://brunch.co.kr/@hika/8)
+	3. [계산기로 자바8 OOP 입문 #2/2](https://brunch.co.kr/@hika/9)
 * .
 
 ##### [목차로 이동](#목차)
