@@ -15,12 +15,13 @@
 2. Call by value, Call by reference에 대해 설명해보세요.
 3. Process와 Thread의 차이점에 대해 말해보세요.
 4. Pivotal(대각선이 고정인 행렬) 3×3, 4×4를 뒤집는 로직을 짜보세요(단, 재귀를 사용하세요).
+5. [함수형 프로그래밍에 대해 말해보세요(feat. Immutable).](./thinking_list/cq_general_05.md)
 
 ##### [목차로 이동](#목차)
 
 ## 자바
 1. Java에서 Singleton 패턴을 쓰는 이유를 말해보세요.
-2. Thread가 3개 생성되었을 때 t1, t2, t3의 순서가 보장되는 코드를 짜보세요.
+2. [Thread가 3개 생성되었을 때 t1, t2, t3의 순서가 보장되는 코드를 짜보세요.](./thinking_list/cq_java_02.md)
 3. 10칸짜리 배열로 스레드 세이프한 Queue를 만들어보세요.
 4. Java8에서 Stream을 사용할 경우 발생할 수 있는 문제점은 무엇일까요?
 5. Java7에서 Java8로 오면서 어떤 점이 달라졌나요?
@@ -31,6 +32,11 @@
 1. Spring을 쓰는 이유를 말해보세요.
 2. Spring에서 Sington이란 무엇일까요?
 3. Spring DI, IoC에 대해 설명해보세요.
+
+##### [목차로 이동](#목차)
+
+## 알고리즘
+
 
 ##### [목차로 이동](#목차)
 
