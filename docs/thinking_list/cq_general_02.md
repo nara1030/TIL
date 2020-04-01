@@ -27,7 +27,7 @@ Call by value, Call by reference에 대해 설명해보세요.
 - 함수 호출 방식의 차이로, 인자로 전달해주는 매개변수의 타입에 따라 구분
 - `call by value`
 	- 함수의 매개변수로 전달될 때 복사된 값이 전달되므로 매개변수의 변화가 실제 인자에 영향 미치지 못함  
-	(∵ 두 변수는 서로 다른 스택에 위치)
+	(∵ 두 변수는 서로 다른 메모리 공간(Stack?)에 위치)
 - `call by reference`
 	- 전달된 인자와 함수의 매개변수가 서로 같은 메모리 공간을 참조  
 	(∴ 함수 내부 매개변수 변경의 여파가 밖에도 미침)
@@ -36,13 +36,13 @@ Call by value, Call by reference에 대해 설명해보세요.
 
 ## 관련
 ### 자바
-자바는 call by value라고 한다. 즉 위에서 설명한대로라면 전달 인자와 함수 매개변수가 서로 다른 메모리 공간(Stack? Heap?)을 참조하는 것이다.
+자바는 `call by value`라고 한다. 즉 위에서 설명한대로라면 전달 인자와 함수 매개변수가 서로 다른 메모리 공간(Stack? Heap?)을 참조하는 것이다.
 
 * [Is Java `pass-by-reference` or `pass-by-value`? - stackoverflow](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
 * [Java가 call by value인 이유 - OKKY](https://okky.kr/article/584557)
 
 - - -
-사실 이 부분은 정확히 이해가 안 가지만 코드 자체의 동작에 대해 이해는 가기에 넘긴다. 특히 두 번째 답변 글의 예로 나오는 아래 코드는 두 변수가 서로 다른 스택에 있는 것은 알겠는데 처음 참조 대상(힙)은 같기에 왜 call by value인지 헷갈린다.
+사실 이 부분은 정확히 이해가 안 가지만 코드 자체의 동작에 대해 이해는 가기에 넘긴다. 특히 두 번째 답변 글의 예로 나오는 아래 코드는 두 변수가 서로 다른 스택에 있는 것은 알겠는데 처음 참조 대상(힙)은 같기에 왜 `call by value`인지 헷갈린다.
 
 ```java
 public void foo(Dog someDog) {
