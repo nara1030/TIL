@@ -7,11 +7,13 @@
 4. [참고](#참고)
 
 ## 답변
-> **Functional programming**(often abbreviated FP) is the process of building software by composing **pure functions**, avoiding **shared state**, **mutable data**, and **side-effects**.
+> 함수형 프로그래밍이란
 
-위에서 언급한 함수형 프로그래밍의 정의가 필요성일 수 있지만 더 명시적으로 적어본다.
+**Functional programming**(often abbreviated FP) is the process of building software by composing **pure functions**, avoiding **shared state**, **mutable data**, and **side-effects**.
 
-> The reason people say functional languages are better for parallel processing is due to the fact that they **usally** avoid mutable state.
+> 함수형 프로그래밍을 왜 사용하나
+
+The reason people say functional languages are better for parallel processing is due to the fact that they **usally** avoid mutable state.
 
 ##### [목차로 이동](#목차)
 
