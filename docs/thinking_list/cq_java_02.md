@@ -35,12 +35,21 @@ Thread가 3개 생성되었을 때 t1, t2, t3의 순서가 보장되는 코드�
 #### Runnable or Thread?
 일반적으로 아래와 같은 이유로 Thread 클래스를 확장하는 것보다 Runnable을 구현하는 것을 더 권장한다.
 
-1. Thread 클래스를 확장할 때 메소드를 재정의하지 않는다 - ?
-	* 대신 우리는 Runnable의 메소드를 재정의한다  
-	(This is a clear violation of IS-A Thread principle)
-2. Runnable의 구현을 Thread 클래스에 전달하면 상속이 아닌 컴포지션을 활용한다 - ?
+1. Thread 클래스를 확장할 때 메소드를 재정의하지 않는다  
+(Runnable을 구현할 때와 달리 mandatory하지 않다는 의미인가?)
+2. Runnable의 구현을 Thread 클래스에 전달하면 상속이 아닌 컴포지션을 활용한다  
+	```java
+	// Thread의 확장(SumThread extends Thread)
+	Thread thread = new SumThread();
+	thread.start();
+	
+	// Runnable 구현(SumThread implements Runnable)
+	Runnable runnable = new SumThread();
+	Thread thread = new Thread(runnable);
+	thread.start();
+	```
 3. Thread 클래스를 확장한 후에는 다른 클래스를 확장할 수 없다
-4. Java 8부터 Runnable은 람다식으로 표현 가능하다 - ?
+4. Java 8부터 Runnable은 람다식으로 표현 가능하다
 
 - - -
 * [예제 코드](https://github.com/eugenp/tutorials/blob/master/core-java-modules/core-java-concurrency-basic/src/test/java/com/baeldung/concurrent/runnable/RunnableVsThreadLiveTest.java)
