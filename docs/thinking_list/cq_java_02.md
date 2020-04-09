@@ -5,9 +5,9 @@ Thread가 3개 생성되었을 때 t1, t2, t3의 순서가 보장되는 코드�
 ## 목차
 1. [답변](#답변)
 2. [관련](#관련)
-	1. 스레드 구현
-	2. 스레드 생명주기
-	3. 
+	1. [스레드 구현](#스레드-구현)
+	2. [스레드 생명주기](#스레드-생명주기)
+	3. .
 3. [참고](#참고)
 
 ## 답변
@@ -24,18 +24,37 @@ Thread가 3개 생성되었을 때 t1, t2, t3의 순서가 보장되는 코드�
 ##### [목차로 이동](#목차)
 
 ## 관련
+```txt
+- 예제에서는 static 클래스로 생성하지 않네?
 
+```
 
 ### 스레드 구현
-다음 게시물([Implementing a Runnable vs Extending a Thread](https://www.baeldung.com/java-runnable-vs-extending-thread))을 보고 정리한다.
+다음 게시물([Implementing a Runnable vs Extending a Thread](https://www.baeldung.com/java-runnable-vs-extending-thread))에서 발췌한다.
 
-https://github.com/eugenp/tutorials/blob/master/core-java-modules/core-java-concurrency-basic/src/test/java/com/baeldung/concurrent/runnable/RunnableVsThreadLiveTest.java
+#### Runnable or Thread?
+일반적으로 아래와 같은 이유로 Thread 클래스를 확장하는 것보다 Runnable을 구현하는 것을 더 권장한다.
+
+1. Thread 클래스를 확장할 때 메소드를 재정의하지 않는다 - ?
+	* 대신 우리는 Runnable의 메소드를 재정의한다  
+	(This is a clear violation of IS-A Thread principle)
+2. Runnable의 구현을 Thread 클래스에 전달하면 상속이 아닌 컴포지션을 활용한다 - ?
+3. Thread 클래스를 확장한 후에는 다른 클래스를 확장할 수 없다
+4. Java 8부터 Runnable은 람다식으로 표현 가능하다 - ?
+
+- - -
+* [예제 코드](https://github.com/eugenp/tutorials/blob/master/core-java-modules/core-java-concurrency-basic/src/test/java/com/baeldung/concurrent/runnable/RunnableVsThreadLiveTest.java)
+* [예제 코드 확인](https://github.com/nara1030/TIL/blob/master/docs/thinking_list/interview/src/test/java/baeldung/concurrent/runnable/RunnableVsThreadLiveTest.java)
 
 ##### [목차로 이동](#목차)
 
 ### 스레드 생명주기
 다음 게시물([Life Cycle of a Thread in Java](https://www.baeldung.com/java-thread-lifecycle))을 보고 정리힌다.
 
+
+- - -
+* [예제 코드](https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-concurrency-basic-2/src/main/java/com/baeldung/concurrent/threadlifecycle)
+* 예제 코드 확인
 
 ##### [목차로 이동](#목차)
 
