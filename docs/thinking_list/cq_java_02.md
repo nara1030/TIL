@@ -60,10 +60,32 @@ Thread가 3개 생성되었을 때 t1, t2, t3의 순서가 보장되는 코드�
 ### 스레드 생명주기
 다음 게시물([Life Cycle of a Thread in Java](https://www.baeldung.com/java-thread-lifecycle))을 보고 정리힌다.
 
+**In the Java language, multithreading is driven by** the core concept of a Thread. During their lifecycle, threads go through various states:
+
+<img src="./img/img_java_02_01.png" width="500" height="350"></br>
+
+The java.lang.Thread class contains a static State enum[1] - which defines its potential states. During any given point of time, the thread can only be in one of these states:
+
+1. NEW: [예제 코드](https://github.com/nara1030/TIL/blob/master/docs/thinking_list/interview/src/main/java/com/baeldung/concurrent/threadlifecycle/NewState.java)
+	* newly created thread that has not yet started the execution
+2. RUNNABLE: [예제 코드](https://github.com/nara1030/TIL/blob/master/docs/thinking_list/interview/src/main/java/com/baeldung/concurrent/threadlifecycle/RunnableState.java)
+	* either running or ready for execution but it's waiting for resource allocation
+3. BLOCKED: [예제 코드](https://github.com/nara1030/TIL/blob/master/docs/thinking_list/interview/src/main/java/com/baeldung/concurrent/threadlifecycle/BlockedState.java)
+	* waiting to acquire a monitor lock to enter or re-enter a synchronized block/method
+4. WAITING: [예제 코드](https://github.com/nara1030/TIL/blob/master/docs/thinking_list/interview/src/main/java/com/baeldung/concurrent/threadlifecycle/WaitingState.java)
+	* waiting for some other thread to perform a particular action without any time limit
+5. TIME_WAITING: [예제 코드](https://github.com/nara1030/TIL/blob/master/docs/thinking_list/interview/src/main/java/com/baeldung/concurrent/threadlifecycle/TimeWaitingState.java)
+	* waiting for some other thread to perform a specific action for a specified period
+6. TERMINATED: [예제 코드](https://github.com/nara1030/TIL/blob/master/docs/thinking_list/interview/src/main/java/com/baeldung/concurrent/threadlifecycle/TerminatedState.java)
+	* has completed its execution
+
+* [예제 코드](https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-concurrency-basic-2/src/main/java/com/baeldung/concurrent/threadlifecycle)
+* 예제 코드 확인: 각 번호 링크 클릭
 
 - - -
-* [예제 코드](https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-concurrency-basic-2/src/main/java/com/baeldung/concurrent/threadlifecycle)
-* 예제 코드 확인
+* [1]
+	* .
+* [2]
 
 ##### [목차로 이동](#목차)
 
