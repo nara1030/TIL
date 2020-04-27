@@ -31,6 +31,7 @@
 * [창천향로](https://jojoldu.tistory.com/)
 * [박재성](https://github.com/slipp/jwp-slipp)
 	* [TDD 리팩토링](https://www.youtube.com/watch?v=bIeqAlmNRrA)
+	* [의식적인 연습으로 TDD, 리팩토링 연습하기](https://www.slideshare.net/OKJSP/okkycon-tdd?fbclid=IwAR3dXj6s4hp1BeOxyUu7ZX4NG-62-cxxftLRowHNOaAz4fpLRKOW32E1pwM)
 * [강대명](https://www.slideshare.net/charsyam2)
 * [김지훈](https://gist.github.com/ihoneymon?direction=desc&sort=updated)
 
@@ -67,6 +68,12 @@
 	1. [개발자의 효율성](https://brunch.co.kr/@hika/7?fbclid=IwAR1GzdzGQ_HLZEgQOc9KKQCtiEcm9ZESV5_kck5HwyxApnFE78G39fyz7Sw)
 	2. [계산기로 자바8 OOP 입문 #1/2](https://brunch.co.kr/@hika/8)
 	3. [계산기로 자바8 OOP 입문 #2/2](https://brunch.co.kr/@hika/9)
+	4. 초보 개발자가 해봄직한 프로젝트
+		1. [슬롯머신 만들기](https://www.bsidesoft.com/2580)
+		2. [타임머신 에디터 만들기](https://www.bsidesoft.com/6445)
+		3. [To Do List 프로그램 만들기](https://www.bsidesoft.com/2667)
+		4. [테트리스 만들기](https://www.bsidesoft.com/2827)
+		5. [메신저 만들기](https://www.bsidesoft.com/3166)
 * .
 
 ##### [목차로 이동](#목차)
