@@ -68,12 +68,41 @@
 	1. [개발자의 효율성](https://brunch.co.kr/@hika/7?fbclid=IwAR1GzdzGQ_HLZEgQOc9KKQCtiEcm9ZESV5_kck5HwyxApnFE78G39fyz7Sw)
 	2. [계산기로 자바8 OOP 입문 #1/2](https://brunch.co.kr/@hika/8)
 	3. [계산기로 자바8 OOP 입문 #2/2](https://brunch.co.kr/@hika/9)
-	4. 초보 개발자가 해봄직한 프로젝트
+	4. 초보 개발자가 읽을만한 좋은 글
+		1. [HTTPS 통신환경 구축하기](https://www.bsidesoft.com/3340)
+		2. [인수테스트 회고](https://www.bsidesoft.com/6296)
+	5. 초보 개발자가 해봄직한 프로젝트
 		1. [슬롯머신 만들기](https://www.bsidesoft.com/2580)
 		2. [타임머신 에디터 만들기](https://www.bsidesoft.com/6445)
 		3. [To Do List 프로그램 만들기](https://www.bsidesoft.com/2667)
-		4. [테트리스 만들기](https://www.bsidesoft.com/2827)
-		5. [메신저 만들기](https://www.bsidesoft.com/3166)
+		4. 테트리스 만들기
+			* [1편](https://www.bsidesoft.com/2736)
+			* [2편](https://www.bsidesoft.com/2827)
+		5. 메신저 만들기
+			* [1편](https://www.bsidesoft.com/3166)
+			* [2편](https://www.bsidesoft.com/3297)
+	6. 코드스피츠 요약정리
+		1. S68
+			1. [ ] [1회차](https://www.bsidesoft.com/3571)
+			2. [ ] [2회차](https://www.bsidesoft.com/3634)
+			3. [ ] [3회차](https://www.bsidesoft.com/3762)
+			4. [ ] [4회차](https://www.bsidesoft.com/3830)
+			5. [ ] [5회차](https://www.bsidesoft.com/3882)
+			6. [ ] [6회차](https://www.bsidesoft.com/3946)
+		2. S69
+			1. [ ] [1회차](https://www.bsidesoft.com/4074)
+			2. [ ] [2회차](https://www.bsidesoft.com/4154)
+			3. [ ] [3회차](https://www.bsidesoft.com/4256)
+			4. [ ] [4회차](https://www.bsidesoft.com/4331)
+			5. [ ] [5회차](https://www.bsidesoft.com/4407)
+			6. [ ] [6회차](https://www.bsidesoft.com/4468)
+		3. S70
+			1. [ ] [1회차](https://www.bsidesoft.com/4529)
+			2. [ ] [2회차](https://www.bsidesoft.com/4636)
+			3. [ ] [3회차](https://www.bsidesoft.com/5000)
+			4. [ ] [4회차](https://www.bsidesoft.com/5118)
+			5. [ ] [5회차](https://www.bsidesoft.com/5199)
+			6. [ ] [6회차](https://www.bsidesoft.com/5257)
 * .
 
 ##### [목차로 이동](#목차)
