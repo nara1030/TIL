@@ -73,7 +73,9 @@
 		2. [인수테스트 회고](https://www.bsidesoft.com/6296)
 	5. 초보 개발자가 해봄직한 프로젝트
 		1. [슬롯머신 만들기](https://www.bsidesoft.com/2580)
-		2. [타임머신 에디터 만들기](https://www.bsidesoft.com/6445)
+		2. 타임머신 에디터 만들기
+			* [1편](https://www.bsidesoft.com/6445)
+			* [2편](https://www.bsidesoft.com/2397)
 		3. [To Do List 프로그램 만들기](https://www.bsidesoft.com/2667)
 		4. 테트리스 만들기
 			* [1편](https://www.bsidesoft.com/2736)
