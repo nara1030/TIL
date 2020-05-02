@@ -40,6 +40,7 @@
 	1. 모던 웹을 위한 JavaScript + jQuery 입문(2017)
 	2. 모던 웹 디자인을 위한 HTML5 + CSS3 입문(2015)
 	3. Interactive data visualization for the web(2014)
+	4. 자바스크립트 2판(2000, TOM NEGRINO & DORI SMITH)
 
 - - - -
 
