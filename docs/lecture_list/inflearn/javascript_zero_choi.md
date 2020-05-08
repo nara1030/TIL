@@ -457,7 +457,19 @@ while(true) {
 
 * 반복문(기존 코드)을 이벤트리스너로 대체
 	* addEventListener 안에 들어가는 함수가 **콜백함수**
+	* 참고
+		1. [이벤트 리스너와 콜백](https://www.zerocho.com/category/JavaScript/post/57432d2aa48729787807c3fc)
+		2. [자바스크립트 이벤트 핸들러 알아보기](https://medium.com/@shlee1353/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%ED%95%B8%EB%93%A4%EB%9F%AC-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-19e149df4e0c)
 * 추후 살펴볼 내용으로 HTML을 생성하는 JS 코드를 `jQuery`를 사용하면 효율적
+* `textContent` vs `innerText` vs `innerHTML`
+	* [당신이 innerHTML을 쓰면 안되는 이유](https://velog.io/@raram2/%EB%8B%B9%EC%8B%A0%EC%9D%B4-innerHTML%EC%9D%84-%EC%93%B0%EB%A9%B4-%EC%95%88%EB%90%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
+* `getElementById` 대신 `getElementsByTagName` 사용 시 에러(참고: [예제 코드](#끝말잇기))  
+	<img src="../img/zerocho_js_getElements.png" width="600" height="250"></br>
+	```javascript
+	// document.getElementsByTagName("button").addEventListener('click', onClick);
+	document.getElementsByTagName("button")[0].addEventListener('click', onClick);
+	```
+* JS를 HTML에서 분리하면 좋은 이유가 가독성 외에 보안 측면도 있나?
 
 ##### [목차로 이동](#목차)
 
@@ -516,23 +528,21 @@ while(true) {
 책에서 다뤘던 예제들을 정리한다. 모든 풀이는 순서도, 코딩의 두 단계를 거친다.
 
 ### 끝말잇기
-* 순서도
-	* .
-* 코드  
-	```javascript
-	var word = '제로초'
-	while(true) {
-		var newWord = prompt(word);
-		if(word[word.length - 1] === newWord[0]) {
-			word = newWord;
-		} else {
-			alert('끝말잇기란 말이에요!')
-		}
+```javascript
+var word = '제로초'
+while(true) {
+	var newWord = prompt(word);
+	if(word[word.length - 1] === newWord[0]) {
+		word = newWord;
+	} else {
+		alert('끝말잇기란 말이에요!')
 	}
-	```
-* 기타
-	* .
-	* while문을 for문으로 변환해보기
+}
+```
+
+- - -
+* while문을 for문으로 변환해보기
+* .
 
 ##### [목차로 이동](#목차)
 
