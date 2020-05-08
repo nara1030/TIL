@@ -36,7 +36,7 @@ var answer_arr = {
     script: function () {
         answer_arr.arr.splice(0, 4);
         for(var i = 0; i < 4; i++) {
-            answer_arr.arr.push(Math.ceil(Math.random() * 9));
+            answer_arr.arr.push(Math.ceil(Math.random() * 9));  // 랜덤하지 않은 문제
         }
         console.dir(answer_arr.arr);
     }
