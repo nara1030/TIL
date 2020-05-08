@@ -19,6 +19,7 @@
 	* [객체와 배열](#객체와-배열)
 		1. 객체와 JSON
 		2. [메소드와 함수](#메소드와-함수)
+		3. [배열 내 메소드](#배열-내-메소드)
 2. [웹 화면 구현](#웹-화면-구현)
 	* [window 객체](#window-객체)
 	* [document 객체와 DOM](#document-객체와-DOM)
@@ -336,6 +337,19 @@ Array.isArray(배열)	// true
 
 ##### [목차로 이동](#목차)
 
+#### 배열 내 메소드
+1. `pop` ↔ `push`
+2. `shift` ↔ `unshift` 
+3. `splice`: 반환 타입으로 배열
+4. `split` & `join`  
+	```txt
+	문자.split(구분자) -> 배열
+	배열.join(구분자) -> 문자
+	```
+5. `indexOf`
+
+##### [목차로 이동](#목차)
+
 ## 웹 화면 구현
 ### window 객체
 브라우저 내장 객체로 가장 최상위 객체다.
@@ -503,7 +517,7 @@ while(true) {
 	* 이벤트리스너 코드 변경  
 		```javascript
 		폼.addEventListener('submit', function(이벤트) {
-			이벤트.preventDefault();	// 새로고침 방지
+			이벤트.preventDefault();	// 새로고침(submit의 기본 동작) 방지
 			if(단어.textContent[단어.textContent.length - 1] === 입력창.value[0]) {
 				결과창.textContent = '딩동댕';	// append 함수 뒤에 해줘야 하는 거 아닌가?
 				단어.textContent = 입력창.value;
@@ -546,19 +560,45 @@ while(true) {
 
 - - -
 * while문을 for문으로 변환해보기
-* [직접 코딩해보기](https://github.com/nara1030/TIL/tree/master/docs/lecture_list/inflearn/src)(클론코딩)
+* [직접 코딩해보기](https://github.com/nara1030/TIL/blob/master/docs/lecture_list/inflearn/src/word_chain.html)(클론코딩)
 
 ##### [목차로 이동](#목차)
 
 ### 구구단
-구구단 맞추기 게임을 구현해보자.
+```javascript
+while(true) {
+    var 숫자1 = Math.ceil(Math.random() * 9);
+    var 숫자2 = Math.ceil(Math.random() * 9);
+    var 결과 = 숫자1 * 숫자2;
+    var 조건 = true;
+    while (조건) {
+        var 답 = prompt(String(숫자1) + '곱하기' + String(숫자2) + '는?');
+        if(결과 === Number(답)) {
+            alert('딩동댕');
+            조건 = false;
+        } else {
+            alert('땡');
+        }
+    }
+}
+```
 
-추후 추가.
+- - -
+* 직접 코딩해보기
 
 ##### [목차로 이동](#목차)
 
 ### 숫자야구
 게임 소개 및 방식은 다음 [링크](https://namu.wiki/w/%EC%88%AB%EC%9E%90%EC%95%BC%EA%B5%AC)를 참고한다.
+
+* [직접 코딩해보기](https://github.com/nara1030/TIL/blob/master/docs/lecture_list/inflearn/src/bulls_and_cows.html)(클론코딩)
+* button의 `click`과 다르게 form의 `submit`은 페이지 리로드, 즉 새로고침된다.
+	1. 
+* 기타
+	1. 함수가 함수에 종속적이면 안 되나?
+		* 특정 함수의 반환값을 타 함수에서 사용하려고 하는 경우, 변수 관리 방법은?
+	2. 새로고침 방지
+		* https://intro0517.tistory.com/188
 
 ##### [목차로 이동](#목차)
 
