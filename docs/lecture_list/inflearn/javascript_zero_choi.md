@@ -337,7 +337,6 @@ Array.isArray(배열)	// true
 ##### [목차로 이동](#목차)
 
 ## 웹 화면 구현
-
 ### window 객체
 브라우저 내장 객체로 가장 최상위 객체다.
 
@@ -364,6 +363,10 @@ window.몸무게			// undefined
 ```
 
 `window`는 자바스크립트 문법에서 지원하는 것이 아니라 `브라우저`가 객체를 생성해서 넣어준 거다. 자바스크립트 코드를 실행시켜주는 것은 `브라우저`와 `노드`인데 `노드`에선 `window`가 없다. 그 이유는 `노드`가 `window`를 생성해서 넣어주지 않기 때문이다.
+
+- - -
+* 참고
+	1. [Window 객체와 BOM](https://www.zerocho.com/category/JavaScript/post/573b321aa54b5e8427432946)
 
 ##### [목차로 이동](#목차)
 
@@ -460,6 +463,7 @@ while(true) {
 	* 참고
 		1. [이벤트 리스너와 콜백](https://www.zerocho.com/category/JavaScript/post/57432d2aa48729787807c3fc)
 		2. [자바스크립트 이벤트 핸들러 알아보기](https://medium.com/@shlee1353/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%ED%95%B8%EB%93%A4%EB%9F%AC-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-19e149df4e0c)
+		3. [이벤트 사용 및 이벤트 모델 정리](https://doitnow-man.tistory.com/135)
 * 추후 살펴볼 내용으로 HTML을 생성하는 JS 코드를 `jQuery`를 사용하면 효율적
 * `textContent` vs `innerText` vs `innerHTML`
 	* [당신이 innerHTML을 쓰면 안되는 이유](https://velog.io/@raram2/%EB%8B%B9%EC%8B%A0%EC%9D%B4-innerHTML%EC%9D%84-%EC%93%B0%EB%A9%B4-%EC%95%88%EB%90%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
@@ -542,7 +546,7 @@ while(true) {
 
 - - -
 * while문을 for문으로 변환해보기
-* .
+* [직접 코딩해보기](https://github.com/nara1030/TIL/tree/master/docs/lecture_list/inflearn/src)(클론코딩)
 
 ##### [목차로 이동](#목차)
 
