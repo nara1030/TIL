@@ -8,8 +8,13 @@
 1. [기본](#기본)
 	* [REPL](#REPL)
 	* [자료형과 연산자](#자료형과-연산자)
+		1. 값: 숫자, 문자, 불린
+		2. 연산자
 	* [변수](#변수)
+		1. var
+		2. null, undefined
 	* [조건문과 반복문](#조건문과-반복문)
+		1. 이중 for문
 	* [함수](#함수)
 	* [객체와 배열](#객체와-배열)
 		* [메소드와 함수](#메소드와-함수)
@@ -131,9 +136,46 @@ while(값 < 5) {
 }
 ```
 
-한 마디로 프로그램의 **제어 흐름**을 결정한다고 이해할 수 있다(플로우 차트를 생각).
+한 마디로 프로그램의 **제어 흐름**을 결정한다고 이해할 수 있다(플로우 차트를 생각). 추가로 아래는 강의에서 언급한 이중 for문의 예제이다.
+
+1. 직각 삼각형 1  
+	```javascript
+	for(var star = 5; star >= 1; star = star - 1) {
+		console.log('*'.repeat(star));
+	}
+	
+	for(var star = 10; star >= 2; star = star - 2) {
+		console.log('*'.repeat(star));
+	}
+	
+	for(var star = 1; star <= 16; star = star * 2) {	// 반복문 밖에서 star 찍어보면 32가 나옴
+		console.log('*'.repeat(star));
+	}
+	```
+2. 직각 삼각형 2  
+	```javascript
+	for(var star = 5; star >= 1; star = star - 1) {
+		console.log(' '.repeat(5 - star) + '*'.repeat(star));
+	}
+	```
+3. 이등변 삼각형  
+	```javascript
+	for(var star = 9; star >= 1; star = star - 2) {
+		console.log(' '.repeat((9 - star) / 2) + '*'.repeat(star));
+	}
+	
+	for(var star = 9, gap = 0; star >= 1, gap <= 4; star = star - 2, gap += 1) {
+		console.log(' '.repeat(gap) + '*'.repeat(star));
+	}
+	```
+4. 마름모  
+	```javascript
+	// 힌트: Math.abs
+	```
+
 - - -
-앞으로 알아보겠지만 위의 예에서 언급한 `Number()` 및 `prompt()`는 함수이고, `console.log()`는 메소드이다.
+1. 앞으로 알아보겠지만 위의 예에서 언급한 `Number()` 및 `prompt()`는 함수이고, `console.log()`는 메소드이다.
+2. 무한 반복 빠져나가고 싶다면 `shift + esc` 후 프로세스 종료
 
 ##### [목차로 이동](#목차)
 
@@ -146,7 +188,7 @@ prompt("답을 입력하시오")	// 5
 Number("10")	// 5
 ```
 
-이렇게 브라우저에 내장된 함수들이 있고 아래와 같이 직접 선언해서 사용할 수도 있다.
+이렇게 브라우저**에** 내장된 함수들(`alert()`, `prompt()`, `console.log()`)이 있고 아래와 같이 직접 선언해서 사용할 수도 있다.
 
 ```javascript
 function 함수(x, y) {
@@ -167,7 +209,9 @@ function 인사(이름) {
 
 입력값과 (정해진 타입의) 결과값이 있다는 점에서 수학 시간에 배운 함수와 공통점이 있다. 하지만 코드 작성의 관점에서 보면 함수는 반복되는 로직(알고리즘)을 재사용할 수 있게 묶어준다고 볼 수 있다(어떤 범위까지 묶어주느냐 하는 문제는 남아있지만).
 - - -
-한편 return 타입이 `boolean`인 함수에서는 if문의 조건을 반환값 자체로 사용할 수 있다.
+1. return 타입이 `boolean`인 함수에서는 if문의 조건을 반환값 자체로 사용할 수 있다.
+2. `prompt()`  
+	<img src="../img/zerocho_js_prompt.png" width="250" height="300"></br>
 
 ##### [목차로 이동](#목차)
 
