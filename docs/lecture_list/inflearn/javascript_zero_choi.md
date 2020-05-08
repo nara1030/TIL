@@ -17,7 +17,8 @@
 		1. 이중 for문
 	* [함수](#함수)
 	* [객체와 배열](#객체와-배열)
-		* [메소드와 함수](#메소드와-함수)
+		1. 객체와 JSON
+		2. [메소드와 함수](#메소드와-함수)
 2. [웹 화면 구현](#웹-화면-구현)
 	* [window 객체](#window-객체)
 	* [document 객체와 DOM](#document-객체와-DOM)
@@ -274,7 +275,10 @@ var 네로 = {
 
 제로초.먹다()	// 냠냠
 
-// 참고
+/*
+ * 참고
+ * 객체의 속성을 사용할 수 있는 방법 두 가지가 있지만, 변수 사용 시에는 . 연산자는 사용할 수 없다.
+ */
 var 값 = '이름'
 네로.값		// undefined
 네로[값]	// "네로"
@@ -291,6 +295,10 @@ var 값 = '이름'
 '안녕하세요'.length()	// 5
 '*'.repeat(5)		// "*****"
 ```
+
+* 원시 래퍼 객체
+	1. [원시값](https://developer.mozilla.org/ko/docs/Glossary/Primitive)
+	2. [래퍼 객체](https://includestdio.tistory.com/26)
 
 한편 배열은 다음과 같다.
 
@@ -312,6 +320,13 @@ var 배열 = [
 // 브라우저에서 지원하는 내장 객체
 Array.isArray(배열)	// true
 ```
+
+- - -
+추가로 생각해볼만한 부분은 아래와 같다.
+
+* JavaScript 객체와 JSON
+	1. [JavaScript 객체와 JSON의 차이](https://victorydntmd.tistory.com/193)
+	2. [JavaScript와 JSON의 차이](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/JSON#JavaScript%EC%99%80_JSON%EC%9D%98_%EC%B0%A8%EC%9D%B4)
 
 ##### [목차로 이동](#목차)
 
@@ -359,11 +374,14 @@ window.몸무게			// undefined
 window.document		// document
 document		// window는 전역 객체이므로 생략 가능
 
-console.dir(document.body)	// DOM 객체 확인 가능
+console.dir(document.body)	// DOM 객체 확인 가능(객체 형식으로 확인)
 console.log(document.body)	// 태그 확인
 
 // 추후 작성
 ```
+
+- - -
+<img src="../img/zerocho_js_dir_vs_log.png" width="600" height="250"></br>
 
 ##### [목차로 이동](#목차)
 
