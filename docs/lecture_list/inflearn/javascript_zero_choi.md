@@ -35,7 +35,8 @@
 	* [구구단](#구구단)
 	* [숫자야구](#숫자야구)
 	* [틱택토](#틱택토)
-	* 로또 추첨기
+	* [로또 추첨기](#로또-추첨기)
+		1. 자바스크립트로 CSS 조작하기
 	* 가위바위보
 	* 지뢰찾기
 	* 반응속도 테스트
@@ -481,6 +482,7 @@ while(true) {
 * 추후 살펴볼 내용으로 HTML을 생성하는 JS 코드를 `jQuery`를 사용하면 효율적
 * `textContent` vs `innerText` vs `innerHTML`
 	* [당신이 innerHTML을 쓰면 안되는 이유](https://velog.io/@raram2/%EB%8B%B9%EC%8B%A0%EC%9D%B4-innerHTML%EC%9D%84-%EC%93%B0%EB%A9%B4-%EC%95%88%EB%90%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
+	* input의 값은 `value`, 이 외 태그 안 글자는 `textContent`
 * `getElementById` 대신 `getElementsByTagName` 사용 시 에러(참고: [예제 코드](#끝말잇기))  
 	<img src="../img/zerocho_js_getElements.png" width="600" height="250"></br>
 	```javascript
@@ -603,6 +605,36 @@ while(true) {
 ##### [목차로 이동](#목차)
 
 ### 틱택토
+* 강의에서는 자바스크립트로 HTML을 코딩하였고, 화면을 배열과 연결시켜 위치를 파악하였다(~~아직 이해를 못했는데 추후 확인 필요~~).
+* X는 내가, O는 자동 입력해주는 방식이라면 어려울 것으로 생각했으나 강의에서는 둘 다 사용자 입력으로 코딩했다.
+* 삼목 여부는 추후 오목 구현할 때 다시 다루기로
+* 참고
+	1. input의 값이 `value`, 이 외 태그 안 글자는 `textContent`  
+		```javascript
+		event.target.value === undefined	// true
+		event.target.textContent === ""		// true
+		```
+	2. .
+
+- - -
+* 직접 코딩해보기(클론코딩)
+	1. `textContent`, `value` 둘 다 안 먹어 추후 확인 필요  
+		```txt
+		- 현재는 innerText 이용했으나, 아래 두 케이스가 모순적인 듯 하다..
+		  - console.log(HTMLTableCellElement.innerText); // undefined
+		  - event.target.innerText !== ''
+		```
+		1. [target Event Property](https://www.w3schools.com/jsref/event_target.asp)
+		2. [What properties can I use with event.target?](https://stackoverflow.com/questions/7723188/what-properties-can-i-use-with-event-target)
+	2. 클릭 위치 매핑
+		1. [Get cell location](https://stackoverflow.com/questions/4998953/get-cell-location)
+	3. 방어 로직  
+		<img src="../img/zerocho_js_protect_logic_01.png" width="320" height="50"></br>
+	4. .
+
+##### [목차로 이동](#목차)
+
+### 로또 추첨기
 
 
 ##### [목차로 이동](#목차)
