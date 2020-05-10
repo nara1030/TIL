@@ -629,7 +629,8 @@ while(true) {
 	2. 클릭 위치 매핑
 		1. [Get cell location](https://stackoverflow.com/questions/4998953/get-cell-location)
 	3. 방어 로직  
-		<img src="../img/zerocho_js_protect_logic_01.png" width="320" height="50"></br>
+		<img src="../img/zerocho_js_protect_logic_01.png" width="350" height="50"></br>
+		* [이벤트 위임](https://ko.javascript.info/event-delegation)
 	4. .
 
 ##### [목차로 이동](#목차)
