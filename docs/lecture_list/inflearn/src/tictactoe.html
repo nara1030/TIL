@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <title>틱택토</title>
+    <style>
+        td {
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 3 * 3 -->
+    <table id="tb">
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+    </table>
+    <!-- <script>
+        var table = document.createElement('table');
+        for(var i = 1; i <= 3; i++) {
+            var row = document.createElement('tr');
+            for(var j = 1; j <= 3; j++) {
+                var cell = document.createElement('td');
+                row.appendChild(cell);
+            }
+            table.appendChild(row);
+        }
+        document.body.appendChild(table);   // append vs appendChild
+    </script> -->
+    <script src='tictactoe.js'></script>
+</body>
+</html>
