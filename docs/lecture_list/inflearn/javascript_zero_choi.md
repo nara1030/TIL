@@ -743,7 +743,11 @@ while(true) {
 	2. CSS 속성
 		1. [`background`](https://developer.mozilla.org/ko/docs/Web/CSS/background)
 		2. [`background-position`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
-	3. .
+	3. `querySelectorAll` & `forEach`
+		1. [`Document.querySelectorAll()`](https://developer.mozilla.org/ko/docs/Web/API/Document/querySelectorAll)
+		2. [`NodeList`](https://developer.mozilla.org/ko/docs/Web/API/NodeList)
+		3. [관련 에러](https://server0.tistory.com/43)
+	4. .
 
 
 ##### [목차로 이동](#목차)
