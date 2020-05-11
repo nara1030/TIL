@@ -1,8 +1,8 @@
 웹 게임을 만들며 배우는 자바스크립트
 =====
 2019, [제로초의 강의](https://www.inflearn.com/course/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EA%B2%8C%EC%9E%84-%EA%B0%9C%EB%B0%9C#)를 듣고 정리한다.  
-기초부터 심화까지 많은 예제를 접할 수 있는 강의라 기대된다.  
-강의자는 클래스, for를 쓰지 않고 함수형을 선호한다고 한다.
+강의자는 클래스, for를 쓰지 않고 함수형을 선호한다고 한다.  
+강의뿐 아니라 제로초의 블로그 게시물(예: [자바스크립트 변수, 자료형](https://www.zerocho.com/category/JavaScript/post/57271d6e5aec14515b949b4b))을 통해 복습 및 점검할 수 있다.
 - - -
 ## 목차
 1. [기본](#기본)
@@ -305,6 +305,7 @@ var 값 = '이름'
 한편 배열은 다음과 같다.
 
 ```javascript
+// 배열 생성 방법 1
 var 배열 = [
 	'사과',
 	'오렌지',
@@ -317,6 +318,17 @@ var 배열 = [
 배열[2]	// "포도"
 배열[3]	// "딸기"
 배열[4]	// undefined
+
+배열.forEach(function(element) {
+	console.log(element);
+});
+
+// 배열 생성 방법 2 - 원소가 많은 배열 생성 시
+var 배열 = Array(4);	// forEach 불가
+배열.fill();		// forEach 가능(∵ [undefined, undefined, undefined, undefined])
+배열.forEach(function(element, index) {
+	console.log(element, index);
+});
 
 // 배열 여부 확인
 // 브라우저에서 지원하는 내장 객체
@@ -348,6 +360,30 @@ Array.isArray(배열)	// true
 	배열.join(구분자) -> 문자
 	```
 5. `indexOf`
+6. `forEach`
+	* [JavaScript Array forEach() Method](https://www.w3schools.com/jsref/jsref_foreach.asp)
+	* [자바스크립트 반복문 정리](https://jsdev.kr/t/for-in-vs-for-of/2938)
+7. `fill`
+	* IE에서는 동작하지 않음
+8. `map`  
+	```javascript
+	[undefined, undefined, undefined, undefined];
+	[1, 2, 3, 4];
+	
+	var arr = [undefined, undefined, undefined].map(function(element, index) {
+		return i;
+	});
+	console.log(arr);
+	
+	var arr = Array(45).fill().map(function(element, index) {
+		return index + 1;
+	});
+	console.log(arr);
+	```
+9. .
+
+- - -
+
 
 ##### [목차로 이동](#목차)
 
@@ -617,7 +653,7 @@ while(true) {
 	2. .
 
 - - -
-* 직접 코딩해보기(클론코딩)
+* [직접 코딩해보기](https://github.com/nara1030/TIL/blob/master/docs/lecture_list/inflearn/src/tictactoe.html)(클론코딩)
 	1. `textContent`, `value` 둘 다 안 먹어 추후 확인 필요  
 		```txt
 		- 현재는 innerText 이용했으나, 아래 두 케이스가 모순적인 듯 하다..
@@ -636,6 +672,26 @@ while(true) {
 ##### [목차로 이동](#목차)
 
 ### 로또 추첨기
+* [직접 코딩해보기](https://github.com/nara1030/TIL/blob/master/docs/lecture_list/inflearn/src/lotto.html)(클론코딩)
+	1. 반복문 내 비동기 사용 시 클로저 이슈  
+		```javascript
+		for(var i = 0; i < lotto.win.length; i++) {
+			setTimeout(function() { // 1초간 간격두며 당첨번호 노출(클로저 이슈로 동작안함)
+				var ball = document.createElement('div');
+				ball.textContent = lotto.win[i];
+				result.appendChild(ball);
+			}, 1000);
+		}
+		```
+	2. JS에서 HTML 읽어오기  
+		```javascript
+		var result = document.getElementById('result');
+		var result = document.getElementsByClassName('result')[0];
+		var result = document.querySelector('#result');	// id
+		var result = document.querySelector('.result');	// class
+		```
+		* 차이: `HTMLElement` vs `NodeList`
+	3. .
 
 
 ##### [목차로 이동](#목차)
