@@ -713,11 +713,37 @@ while(true) {
 ##### [목차로 이동](#목차)
 
 ### 가위바위보
-* 직접 코딩해보기(클론코딩)
+* 직접 코딩해보기(클론코딩)  
+	```javascript
+	// HTML: 이미지의 디폴트 크기 및 위치 지정
+	<style>
+	#computer {
+		width: 150px;
+		height: 243px;
+		background: url('https://en.pimg.jp/023/182/267/1/23182267.jpg') 0 0;
+	}
+    </style>
+	
+	// JS: 이미지의 좌측 위치를 변경
+	setInterval(() => { // 화살표 함수
+		if(img.left === '0px') {
+			img.left = '-142px';
+		} else if(img.left === '-142px') {
+			img.left = '-284px';
+		} else {
+			img.left = '0px';
+		}
+		document.querySelector('#computer').style.background
+			= 'url(https://en.pimg.jp/023/182/267/1/23182267.jpg) ' + img.left + ' 0';
+	}, 100);
+	```
 	1. 이미지를 하나로 병합해서 사용
 		* 과거에는 네트워크 자원을 아끼기 위해 작은 이미지를 모아 하나로 사용
 		* 이처럼 하나의 이미지를 `background-position`으로 보여주는 것을 **이미지 스프라이트**라 함
-	2. .
+	2. CSS 속성
+		1. [`background`](https://developer.mozilla.org/ko/docs/Web/CSS/background)
+		2. [`background-position`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
+	3. .
 
 
 ##### [목차로 이동](#목차)
