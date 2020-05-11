@@ -43,7 +43,7 @@ function paint_ball(num) {
     ball.style.marginRight = '10px';
     ball.style.fontSize = '12px';
     // 참고
-    // ball.id = '공ID' + num;          // HTML: id
+    // ball.id = '공ID' + num;              // HTML: id
     // ball.className = "공CLASS" + num;    // HTML: class
 
     // 빨간(1~10), 주황(11~20), 노란(21~30), 파란(31~40), 초록(41~45)
