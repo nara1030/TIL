@@ -37,7 +37,7 @@
 	* [틱택토](#틱택토)
 	* [로또 추첨기](#로또-추첨기)
 		1. 자바스크립트로 CSS 조작하기
-	* 가위바위보
+	* [가위바위보](#가위바위보)
 	* 지뢰찾기
 	* 반응속도 테스트
 	* 틱택토 심화
@@ -108,6 +108,20 @@
 	`undefined`: 컴퓨터가 default로 넣어준 값  
 	`null`: 개발자가 넣어준 값
 * 문자열을 만드는 방법엔 세 가지가 있음(', ", `)
+* 논리연산자(`&&`, `||`, `!`)의 피연산자는 `true`, `false`가 아닌 **참인 값**과 **거짓인 값**임  
+	```javascript
+	&&	// 앞의 값이 참인 값일 때 다음 값 검사
+	||	// 앞의 값이 거짓인 값일 때 다음 값 검사
+	
+	// 아래는 거짓인 값이고, 이외에는 모두 참인 값
+	''
+	0
+	false
+	NaN
+	undefined
+	null
+	document.all
+	```
 
 참고로 제곱 연산자는 `**`이다(ex. 3`**`2 `===` 9).
 	
@@ -215,7 +229,8 @@ function 인사(이름) {
 1. return 타입이 `boolean`인 함수에서는 if문의 조건을 반환값 자체로 사용할 수 있다.
 2. `prompt()`  
 	<img src="../img/zerocho_js_prompt.png" width="250" height="300"></br>
-
+3. return이 없는 함수는 자동으로 `undefined` 반환
+	
 ##### [목차로 이동](#목차)
 
 ### 객체와 배열
@@ -691,12 +706,24 @@ while(true) {
 		var result = document.querySelector('.result');	// class
 		```
 		* 차이: `HTMLElement` vs `NodeList`
+			1. [HTMLElement 객체와 DOM Tree](https://webclub.tistory.com/341)
 	3. .
 
 
 ##### [목차로 이동](#목차)
 
-## 참고
+### 가위바위보
+* 직접 코딩해보기(클론코딩)
+	1. 이미지를 하나로 병합해서 사용
+		* 과거에는 네트워크 자원을 아끼기 위해 작은 이미지를 모아 하나로 사용
+		* 이처럼 하나의 이미지를 `background-position`으로 보여주는 것을 **이미지 스프라이트**라 함
+	2. .
 
+
+##### [목차로 이동](#목차)
+
+## 참고
+* [JavaScript](https://namu.wiki/w/JavaScript)
+* [브라우저의 역할과 스크립트의 로드 시점](https://webclub.tistory.com/630)
 
 ##### [목차로 이동](#목차)
