@@ -787,22 +787,14 @@ while(true) {
 		1. [`Document.querySelectorAll()`](https://developer.mozilla.org/ko/docs/Web/API/Document/querySelectorAll)
 		2. [`NodeList`](https://developer.mozilla.org/ko/docs/Web/API/NodeList)
 		3. [관련 에러](https://server0.tistory.com/43)
-	4. 화살표 함수  
-		```javascript
-		// 게임 재실행 코드
-		setTimeout(function() {   // 동작 O
-            game_start();
-        }, 1000);
-		
-		setTimeout(() => function() {   // 동작 X
-            game_start();
-        }, 1000);
-		```
-	5. `setTimeout`
+	4. `setTimeout`
 		1. [스케줄링: `setTimeout`과 `setInterval`](https://ko.javascript.info/settimeout-setinterval)
-	6. 승무패 판단  
+			* 자바스크립트 명세서엔 `setTimeout`과 `setInterval`가 명세되어 있지 않음
+			* 하지만 시중에 나와있는 모든 브라우저, Node.js를 포함한 자바스크립트 호스트 환경 대부분이 이와 유사한 내부 스케줄러 지원
+		2. 화살표 함수
+	5. 승무패 판단  
 		<img src="../img/zerocho_js_rsp_rule.png" width="250" height="70"></br>
-	7. .
+	6. .
 
 
 ##### [목차로 이동](#목차)
