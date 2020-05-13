@@ -824,7 +824,7 @@ while(true) {
 	1. zerocho: [문자열](https://www.zerocho.com/category/JavaScript?page=6)
 	2. 함수 심화학습: [`중첩 setTimeout`](https://ko.javascript.info/settimeout-setinterval#ref-164)
 	3. 자바스크립트 변수
-		1. [What is the scope of variables in JavaScript?](https://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript
+		1. [What is the scope of variables in JavaScript?](https://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript)
 		2. [전역변수와 지역변수](https://www.codingfactory.net/10401)
 		3. [비공개 멤버 및 특권 메소드](https://webclub.tistory.com/312)
 	4. 함수
