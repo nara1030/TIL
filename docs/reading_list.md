@@ -6,10 +6,10 @@
 * 자바
 	1. [이것이 자바다(2015)](https://github.com/nara1030/ThisIsJava/blob/master/README.md)
 	2. [Thinking in Java(2007)](https://github.com/nara1030/thinkingInJava/blob/master/README.md)
-	3. Functional Programming in Java 8(2014)
+	3. [Functional Programming in Java 8(2014)](https://github.com/nara1030/fuctional_programming_in_java8/blob/master/README.md): `진행중`
 * 객체지향
-	1. [Head First Design Pattern(2005)](https://github.com/nara1030/TIL/blob/master/docs/study/designPattern/README.md): `진행중`
-	2. [스프링 입문을 위한 자바 객체지향의 원리와 이해(2015)](https://github.com/nara1030/spring-basic/blob/master/book/oop_for_spring_jmkim/README.md): `진행중`
+	1. [Head First Design Pattern(2005)](https://github.com/nara1030/TIL/blob/master/docs/study/designPattern/README.md)
+	2. [스프링 입문을 위한 자바 객체지향의 원리와 이해(2015)](https://github.com/nara1030/spring-basic/blob/master/book/oop_for_spring_jmkim/README.md): `1회독`
 	3. JAVA 객체지향 디자인패턴(2014)
 	4. [리팩토링(2012)](https://github.com/nara1030/Refactoring/blob/master/README.md)
 	5. [오브젝트 - 코드로 이해하는 객체지향 설계(2019)](https://github.com/nara1030/TIL/blob/master/docs/book/object.md)
@@ -19,18 +19,19 @@
 - - - -
 
 * 웹
-	1. [자바 웹 개발 워크북(2014)](https://github.com/nara1030/java-web-programming/blob/master/README.md): `진행중`
+	1. [자바 웹 개발 워크북(2014)](https://github.com/nara1030/java-web-programming/blob/master/README.md)
 	2. Head First Servlet & JSP(2005)
 	3. 쉽게 따라하는 자바웹개발(2012)
 	4. RESTful Web API(2015)
-	5. [톰캣 최종분석(2005)](./book/how_tomcat_works/README.md): `진행중`
+	5. [톰캣 최종분석(2005)](./book/how_tomcat_works/README.md)
 	6. HTTP 완벽 가이드(2014)
 * 스프링 프레임워크
 	1. 실전 스프링 부트 워크북(2017)
-	2. Spring in Action(2015)
+	2. Spring in Action(2015): `진행중`
 	3. 엔터프라이즈 애플리케이션 아키텍처 패턴(2015)
 	4. 자바 ORM 표준 JPA 프로그래밍(2015)
-	5. [스프링 부트로 배우는 자바 웹 개발(2018)](https://github.com/nara1030/spring-basic/blob/master/book/java_web_by_springboot_sjyoon/README.md): `진행중`
+	5. [스프링 부트로 배우는 자바 웹 개발(2018)](https://github.com/nara1030/spring-basic/blob/master/book/java_web_by_springboot_sjyoon/README.md)
+	6. 코드로 배우는 스프링 웹 프로젝트(2015): `진행중`
 * 트랜드
 	1. 자바 기반의 마이크로서비스 이해와 아키텍처 구축하기(2018)
 	
