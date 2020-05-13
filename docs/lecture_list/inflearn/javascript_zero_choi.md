@@ -821,8 +821,18 @@ while(true) {
 
 - - -
 * 현재 공부하고 있는 부분..
-	1. zerocho: [문자열](https://www.zerocho.com/category/JavaScript?page=6)
-	2. 함수 심화학습: [`중첩 setTimeout`](https://ko.javascript.info/settimeout-setinterval#ref-164)
+	1. [zerocho](https://www.zerocho.com/category/JavaScript)
+		1. [숫자](https://www.zerocho.com/category/JavaScript/post/573877c7715202c8679b3aef)  
+			```javascript
+			new Number();	// 원시 래퍼 객체
+			Number("1");	// Number 객체 자체가 함수로 쓰임(≠ 원시 래퍼 객체)
+			```
+		2. [배열](https://www.zerocho.com/category/JavaScript/post/57387a9f715202c8679b3af0)
+	2. [모던 JavaScript 튜토리얼](https://ko.javascript.info/)
+		1. 함수 심화학습
+			1. [`중첩 setTimeout`](https://ko.javascript.info/settimeout-setinterval#ref-164)
+		2. 자료구조와 자료형
+			1. [원시값의 메서드](https://ko.javascript.info/primitives-methods)
 	3. 자바스크립트 변수
 		1. [What is the scope of variables in JavaScript?](https://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript)
 		2. [전역변수와 지역변수](https://www.codingfactory.net/10401)

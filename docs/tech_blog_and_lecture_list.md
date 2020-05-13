@@ -105,6 +105,9 @@
 			4. [ ] [4회차](https://www.bsidesoft.com/5118)
 			5. [ ] [5회차](https://www.bsidesoft.com/5199)
 			6. [ ] [6회차](https://www.bsidesoft.com/5257)
+* 우아한형제들
+	1. [우아한형제들이 재정의한 개발자의 일이란](https://brunch.co.kr/@folinfutures/68)
+	2. [Todo list 만들기는 이제 그만](https://woowabros.github.io/experience/2020/04/14/stop-making-todo-list.html)
 * .
 
 ##### [목차로 이동](#목차)
