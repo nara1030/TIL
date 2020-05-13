@@ -27,10 +27,7 @@
 	* [JS로 HTML 태그 만들기](#JS로-HTML-태그-만들기)
 		* [이벤트 리스너 맛보기](#이벤트-리스너-맛보기)
 	* [사용자 경험 반영](#사용자-경험-반영)
-3. [심화](#심화)
-	* .
-	* .
-4. [예제](#예제)
+3. [예제](#예제)
 	* [끝말잇기](#끝말잇기)
 	* [구구단](#구구단)
 	* [숫자야구](#숫자야구)
@@ -45,7 +42,7 @@
 	* 자스스톤
 	* 2048
 	* 테트리스
-5. [참고](#참고)
+4. [참고](#참고)
 	
 ## 기본
 
@@ -621,11 +618,6 @@ while(true) {
 
 ##### [목차로 이동](#목차)
 
-## 심화
-
-
-##### [목차로 이동](#목차)
-
 ## 예제
 책에서 다뤘던 예제들을 정리한다. 모든 풀이는 순서도, 코딩의 두 단계를 거친다.
 
@@ -634,7 +626,7 @@ while(true) {
 
 1. 자바스크립트 함수 내부에서 타 함수를 사용하는 것은 안 좋은가?(∵ 독립성)
 2. 두 개 이상의 함수에서 사용하는 변수의 경우 어떻게 관리하는 것이 좋은가?
-	* [내가 한 관련 질문](https://stackoverflow.com/questions/61758866/how-to-declare-variables-and-functions-well)
+	* [참고: How to declare variables and functions well](https://stackoverflow.com/questions/61758866/how-to-declare-variables-and-functions-well)
 	* 변수 대신 객체 선언해 사용하는 것은 두 번 거쳐야 하니 성능 저하를 일으키나?
 3. .
 
@@ -685,13 +677,15 @@ while(true) {
 게임 소개 및 방식은 다음 [링크](https://namu.wiki/w/%EC%88%AB%EC%9E%90%EC%95%BC%EA%B5%AC)를 참고한다.
 
 * [직접 코딩해보기](https://github.com/nara1030/TIL/blob/master/docs/lecture_list/inflearn/src/bulls_and_cows.html)(클론코딩)
-* button의 `click`과 다르게 form의 `submit`은 페이지 리로드, 즉 새로고침된다.
-	1. .
-* 기타
-	1. 함수가 함수에 종속적이면 안 되나?
-		* 특정 함수의 반환값을 타 함수에서 사용하려고 하는 경우, 변수 관리 방법은?
-	2. 새로고침 방지
-		* https://intro0517.tistory.com/188
+	1. 추가 구현
+		* [ ] 새로고침 방지
+			* button의 `click`과 다르게 form의 `submit`은 페이지 리로드, 즉 새로고침
+			* https://intro0517.tistory.com/188
+		* [ ] `prompt`에서 취소 클릭 시 게임 종료  
+		(`prompt` 취소 클릭 시 `input`이 `null`임)
+		* [ ] 중복된 숫자(예: 2254) 입력 시 에러 출력
+		* [ ] 몇 번째 시도인지 화면 출력
+	2. .
 
 ##### [목차로 이동](#목차)
 
@@ -811,13 +805,29 @@ while(true) {
 
 ### 지뢰찾기
 * http://minesweeperonline.com/
-* .
+* 직접 코딩해보기(클론코딩)
+	1. 화면과 데이터 싱크 맞추기
 
 
 ##### [목차로 이동](#목차)
 
 ## 참고
 * [JavaScript](https://namu.wiki/w/JavaScript)
+	1. [Introduction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction)
 * [브라우저의 역할과 스크립트의 로드 시점](https://webclub.tistory.com/630)
+* JAVASCRIPT.INFO
+	1. [Browser environment, specs](https://javascript.info/browser-environment)
+	2. [함수 심화학습](https://ko.javascript.info/advanced-functions)
+
+- - -
+* 현재 공부하고 있는 부분..
+	1. zerocho: [문자열](https://www.zerocho.com/category/JavaScript?page=6)
+	2. 함수 심화학습: [`중첩 setTimeout`](https://ko.javascript.info/settimeout-setinterval#ref-164)
+	3. 자바스크립트 변수
+		1. [What is the scope of variables in JavaScript?](https://stackoverflow.com/questions/500431/what-is-the-scope-of-variables-in-javascript
+		2. [전역변수와 지역변수](https://www.codingfactory.net/10401)
+		3. [비공개 멤버 및 특권 메소드](https://webclub.tistory.com/312)
+	4. 함수
+		1. [함수](https://gist.github.com/qodot/1845fd02f14807d2eee9c58270ff1b2a)
 
 ##### [목차로 이동](#목차)
