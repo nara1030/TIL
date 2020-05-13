@@ -791,6 +791,16 @@ while(true) {
 		1. [스케줄링: `setTimeout`과 `setInterval`](https://ko.javascript.info/settimeout-setinterval)
 			* 자바스크립트 명세서엔 `setTimeout`과 `setInterval`가 명세되어 있지 않음
 			* 하지만 시중에 나와있는 모든 브라우저, Node.js를 포함한 자바스크립트 호스트 환경 대부분이 이와 유사한 내부 스케줄러 지원
+			* `setTimeout`은 함수의 참조값을 받음  
+				```javascript
+				setTimeout(sayHi(), 1000);	// 잘못된 코드
+				
+				/*
+				 * sayHi()를 인수로 전달하면 함수 실행 결과가 전달
+				 * sayHi()엔 반환문이 없기 때문에 undefined
+				 * 즉, setTimeout은 스케줄링할 대상을 찾지 못해, 원하는대로 코드가 동작하지 않음
+				 */
+				```
 		2. 화살표 함수
 	5. 승무패 판단  
 		<img src="../img/zerocho_js_rsp_rule.png" width="250" height="70"></br>
