@@ -356,6 +356,24 @@ Array.isArray(배열)	// true
 * JavaScript 객체와 JSON
 	1. [JavaScript 객체와 JSON의 차이](https://victorydntmd.tistory.com/193)
 	2. [JavaScript와 JSON의 차이](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/JSON#JavaScript%EC%99%80_JSON%EC%9D%98_%EC%B0%A8%EC%9D%B4)
+	3. [Working with objects](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Working_with_Objects)
+* 자바스크립트 객체 선언 순서 주의(참고: [lotto obj](https://github.com/nara1030/TIL/blob/master/docs/lecture_list/inflearn/src/lotto.js))  
+	```javascript
+	var lotto = {
+		random: [],
+		bonus: 0,   // lotto.random[lotto.random.length - 1],
+		win: [],    // lotto.random.splice(0, 6),
+		shuffle: function() {
+			while(universe.length > 0) {
+				var choice = universe.splice(Math.floor(Math.random() * universe.length), 1)[0];
+				lotto.random.push(choice);
+			}
+			console.log(lotto.random);
+			lotto.bonus = lotto.random[lotto.random.length - 1];
+			lotto.win = lotto.random.splice(0, 6);
+		},
+	}
+	```
 
 ##### [목차로 이동](#목차)
 
@@ -395,7 +413,20 @@ Array.isArray(배열)	// true
 	});
 	console.log(arr);
 	```
-9. .
+9. `entries`  
+	```javascript
+	Object.entries(객체);		// 객체 → 배열
+	```
+10. `find`  
+	```javascript
+	// indexOf: 1차원 배열, find/findIndex: 2차원 배열
+	Object.entries(객체).find(function(v) {	// find는 반복문으로 return이 true가 되면 멈춤
+		return v === '바위';
+	});
+	```
+11. `includes`
+	* 조건식의 `||` 대체 가능
+12. .
 
 - - -
 
@@ -598,6 +629,15 @@ while(true) {
 ## 예제
 책에서 다뤘던 예제들을 정리한다. 모든 풀이는 순서도, 코딩의 두 단계를 거친다.
 
+- - -
+이하는 코드를 따라쳐보며, 든 의문들이다.
+
+1. 자바스크립트 함수 내부에서 타 함수를 사용하는 것은 안 좋은가?(∵ 독립성)
+2. 두 개 이상의 함수에서 사용하는 변수의 경우 어떻게 관리하는 것이 좋은가?
+	* [내가 한 관련 질문](https://stackoverflow.com/questions/61758866/how-to-declare-variables-and-functions-well)
+	* 변수 대신 객체 선언해 사용하는 것은 두 번 거쳐야 하니 성능 저하를 일으키나?
+3. .
+
 ### 끝말잇기
 ```javascript
 var word = '제로초'
@@ -724,7 +764,7 @@ while(true) {
 	}
     </style>
 	
-	// JS: 이미지의 좌측 위치를 변경
+	// JS: 이미지의 좌측 위치를 변경(0.1초 간격)
 	setInterval(() => { // 화살표 함수
 		if(img.left === '0px') {
 			img.left = '-142px';
@@ -747,7 +787,22 @@ while(true) {
 		1. [`Document.querySelectorAll()`](https://developer.mozilla.org/ko/docs/Web/API/Document/querySelectorAll)
 		2. [`NodeList`](https://developer.mozilla.org/ko/docs/Web/API/NodeList)
 		3. [관련 에러](https://server0.tistory.com/43)
-	4. .
+	4. 화살표 함수  
+		```javascript
+		// 게임 재실행 코드
+		setTimeout(function() {   // 동작 O
+            game_start();
+        }, 1000);
+		
+		setTimeout(() => function() {   // 동작 X
+            game_start();
+        }, 1000);
+		```
+	5. `setTimeout`
+		1. [스케줄링: `setTimeout`과 `setInterval`](https://ko.javascript.info/settimeout-setinterval)
+	6. 승무패 판단  
+		<img src="../img/zerocho_js_rsp_rule.png" width="250" height="40"></br>
+	7. .
 
 
 ##### [목차로 이동](#목차)
