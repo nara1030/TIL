@@ -16,9 +16,7 @@ document.querySelectorAll('.btn').forEach(function(button) {
         clearInterval(img.interval);    // 이미지 고정
         judge_the_winner(dictionary[this.textContent][1], inverse_dictionary(img.left)[1][1]);  // 승무패
 
-        setTimeout(function() {   // 게임 재실행
-            game_start();
-        }, 1000);
+        setTimeout(game_start, 1000); // 게임 재실행
     });
 });
 
