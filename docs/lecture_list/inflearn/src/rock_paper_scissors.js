@@ -14,7 +14,7 @@ document.querySelectorAll('.btn').forEach(function(button) {
         // console.log(this.textContent, img.left);
         console.log("man: " + this.textContent + ", " + "computer: " + inverse_dictionary(img.left)[0]);
         clearInterval(img.interval);    // 이미지 고정
-        // 승무패
+        judge_the_winner(dictionary[this.textContent][1], inverse_dictionary(img.left)[1][1]);  // 승무패
 
         setTimeout(function() {   // 게임 재실행
             game_start();
@@ -25,7 +25,7 @@ document.querySelectorAll('.btn').forEach(function(button) {
 var dictionary = {  // 좌표, 승무패
     rock: ['0px', 1],
     scissor: ['-142px', 0],
-    paper: ['-284px', -1],
+    paper: ['-284px', 2],
 }
 console.log(Object.entries(dictionary));
 function inverse_dictionary(img_left) { // 하드코딩 방지 함수
@@ -35,7 +35,13 @@ function inverse_dictionary(img_left) { // 하드코딩 방지 함수
     });
 }
 function judge_the_winner(man, computer) {
-
+    if(0 == (man - computer)) {
+        console.log('비겼습니다.');
+    } else if([1, -2].includes(man - computer)) {
+        console.log('이겼습니다.');
+    } else {
+        console.log('졌습니다.');
+    }
 }
 function game_start() { // 게임 재실행을 위한 모듈화
     img.interval = setInterval(() => { // 화살표 함수
