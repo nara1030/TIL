@@ -38,7 +38,7 @@
 	* [로또 추첨기](#로또-추첨기)
 		1. 자바스크립트로 CSS 조작하기
 	* [가위바위보](#가위바위보)
-	* 지뢰찾기
+	* [지뢰찾기](#지뢰찾기)
 	* 반응속도 테스트
 	* 틱택토 심화
 	* 카드 짝맞추기 게임
@@ -753,7 +753,7 @@ while(true) {
 ##### [목차로 이동](#목차)
 
 ### 가위바위보
-* 직접 코딩해보기(클론코딩)  
+* [직접 코딩해보기](https://github.com/nara1030/TIL/blob/master/docs/lecture_list/inflearn/src/rock_paper_scissors.html)(클론코딩)  
 	```javascript
 	// HTML: 이미지의 디폴트 크기 및 위치 지정
 	<style>
@@ -801,8 +801,15 @@ while(true) {
 	5. `setTimeout`
 		1. [스케줄링: `setTimeout`과 `setInterval`](https://ko.javascript.info/settimeout-setinterval)
 	6. 승무패 판단  
-		<img src="../img/zerocho_js_rsp_rule.png" width="250" height="40"></br>
+		<img src="../img/zerocho_js_rsp_rule.png" width="250" height="70"></br>
 	7. .
+
+
+##### [목차로 이동](#목차)
+
+### 지뢰찾기
+* http://minesweeperonline.com/
+* .
 
 
 ##### [목차로 이동](#목차)
