@@ -25,7 +25,6 @@ TIL
 	* [톰캣 최종분석(2005)](./docs/book/how_tomcat_works/README.md)
 	* [스프링 부트로 배우는 자바 웹 개발(2018)](https://github.com/nara1030/spring-basic/blob/master/book/java_web_by_springboot_sjyoon/README.md)
 	* 실전 스프링 부트 워크북(2017)
-	* [오픈 API를 활용한 매쉬업 가이드(2009)](https://github.com/nara1030/TIL/blob/master/docs/book/mashup_guide_for_open_api/README.md)
 * 프론트
 	* [모던 웹을 위한 JavaScript + jQuery 입문](https://github.com/nara1030/javascript_for_modern_web/blob/master/README.md)
 	* [모던 웹을 위한 HTML5 + CSS3 입문](https://www.youtube.com/watch?v=XMipmINnMwI)
