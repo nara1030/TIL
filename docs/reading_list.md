@@ -31,7 +31,7 @@
 * 버전 업데이트
 	1. [Functional Programming in Java 8(2014)](https://github.com/nara1030/fuctional_programming_in_java8/blob/master/README.md): `진행중`
 * 알고리즘
-	1. [자바로 배우는 핵심 자료구조와 알고리즘(2018)](https://github.com/nara1030/think_data_structures/README.md)
+	1. [자바로 배우는 핵심 자료구조와 알고리즘(2018)](https://github.com/nara1030/think_data_structures/blob/master/README.md)
 	2. [자료구조와 함께 배우는 알고리즘 입문 - 자바 편(2018)](https://github.com/nara1030/Algorithm/blob/master/doIt_AlgorithmWithDataStructure/README.md)
 * 언어 가이드
 	1. [Thinking in Java(2007)](https://github.com/nara1030/thinkingInJava/blob/master/README.md)
