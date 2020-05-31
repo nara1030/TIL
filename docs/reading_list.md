@@ -100,7 +100,7 @@
 	1. 모던 웹 디자인을 위한 HTML5 + CSS3 입문(2015)
 * 관련
 	1. DOM을 깨우치다(2013)
-	2. 부트스트랩 사용자 가이드(2014)
+	2. [부트스트랩 사용자 가이드(2014)](https://github.com/nara1030/bootstrap-practice/blob/master/README.md)
 
 ##### [목차로 이동](#목차)
 
