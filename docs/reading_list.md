@@ -81,12 +81,16 @@
 
 ## 프레임워크
 ### 스프링
-1. 실전 스프링 부트 워크북(2017)
-2. Spring in Action(2015): `진행중`
-3. 엔터프라이즈 애플리케이션 아키텍처 패턴(2015)
-4. 자바 ORM 표준 JPA 프로그래밍(2015)
-5. [스프링 부트로 배우는 자바 웹 개발(2018)](https://github.com/nara1030/spring-basic/blob/master/book/java_web_by_springboot_sjyoon/README.md)
-6. 코드로 배우는 스프링 웹 프로젝트(2015): `진행중`
+* 개념서
+	1. 실전 스프링 부트 워크북(2017)
+	2. Spring in Action(2015): `진행중`
+	3. [스프링 부트로 배우는 자바 웹 개발(2018)](https://github.com/nara1030/spring-basic/blob/master/book/java_web_by_springboot_sjyoon/README.md)
+* 코딩해보기
+	1. 코드로 배우는 스프링 웹 프로젝트(2015): `진행중`
+
+- - -
+1. 엔터프라이즈 애플리케이션 아키텍처 패턴(2015)
+2. 자바 ORM 표준 JPA 프로그래밍(2015)
 
 ##### [목차로 이동](#목차)
 
