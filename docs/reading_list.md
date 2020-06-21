@@ -41,6 +41,8 @@
 	1. [자바 웹 개발 워크북(2014)](https://github.com/nara1030/java-web-programming/blob/master/README.md)
 	2. Head First Servlet & JSP(2005)
 	3. 쉽게 따라하는 자바웹개발(2012)
+	4. 자바 성능 튜닝 이야기(2013)
+	5. 해킹방어를 위한 JAVA 시큐어코딩(2014)
 
 - - -
 1. 자바 기반의 마이크로서비스 이해와 아키텍처 구축하기(2018)
