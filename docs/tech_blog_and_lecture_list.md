@@ -116,6 +116,7 @@
 * [javaalmanac.io](https://javaalmanac.io/)
 * [내 코드를 자동으로 리뷰해준다면?(by sonarQube)](https://www.popit.kr/%EB%82%B4%EC%BD%94%EB%93%9C%EB%A5%BC-%EC%9E%90%EB%8F%99%EC%9C%BC%EB%A1%9C-%EB%A6%AC%EB%B7%B0%ED%95%B4%EC%A4%80%EB%8B%A4%EB%A9%B4-by-sonarqube/)
 * [코드 커버리지 가이드](https://javaengine.tistory.com/entry/%EC%BD%94%EB%93%9C-%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%A7%80-%EA%B0%80%EC%9D%B4%EB%93%9C)
+* [도서 추천 by epicdevs](https://epicdevs.com/14)
 * ?
 	* [Search all projects for code or files](https://cs.opensource.google/)
 	* [Search across a half million git repos](https://grep.app/)
