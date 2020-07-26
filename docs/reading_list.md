@@ -58,7 +58,7 @@
 * 버전 업데이트
 	1. 함수형 자바스크립트 프로그래밍(2017)
 * 언어 가이드
-	1. 읽기 좋은 자바스크립트 코딩 기법(2013)
+	1. [읽기 좋은 자바스크립트 코딩 기법(2013)](https://github.com/nara1030/maintainable_js/blob/master/README.md)
 
 - - -
 1. Interactive data visualization for the web(2014)
