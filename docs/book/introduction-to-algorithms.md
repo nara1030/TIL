@@ -9,7 +9,8 @@ Do it! 자료구조와 함께 배우는 알고리즘 입문(자바편)
 4. [printf](#printf)
 5. logN
 6. 숫자의 변환
-7. .
+7. static inner class
+8. .
 
 ### 배열의 복제
 
@@ -49,17 +50,29 @@ a는 난수 생성기를 새로 만들지만 b의 경우 주어진 seed, 즉 n�
 기본 중에 기본이지만, 한 번 리마인드할 겸 남겨본다.
 
 ```java
+/**
+ * 수행순서
+ *   초기화식 → (조건식 → 수행문 → 증감식) * 반복
+ * for문 내부 식들은 모두 생략 가능하다.
+ *   초기화식: 이미 이전에 값이 초기화되었을 경우
+ *   조건식: 반족 수행에 대한 조건이 수행문 내부에 있는 경우(break, continue)
+ *   증감식: 수행문 내부에 연산 결과값이 반영되는 경우
+ */
+for (int i = 0; i < 5; i++) {
+	System.out.println(i);
+}
 ```
 
-https://khr5830.tistory.com/68
-https://okky.kr/questions/1398489
-
-
+한편 if문도 마찬가지지만 한줄짜리 반복문에는 중괄호 생략이 가능하다. 가끔 일할 때도 중괄호 안 붙인 코드를 본 적 있어서..
 
 ##### [목차로 이동](#목차)
 
 ### printf
-
+```java
+for (int i = 0; i < x.length; i++) {
+	System.out.printf("%-8s%3d%5.1f\n", x[i].name, x[i].height, x[i].vision);
+}
+```
 
 ##### [목차로 이동](#목차)
 
