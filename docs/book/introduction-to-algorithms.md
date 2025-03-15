@@ -9,7 +9,7 @@ Do it! 자료구조와 함께 배우는 알고리즘 입문(자바편)
 4. [printf](#printf)
 5. logN
 6. 숫자의 변환
-7. static inner class
+7. [static inner class](#static-inner-class)
 8. .
 
 ### 배열의 복제
@@ -69,6 +69,12 @@ for (int i = 0; i < 5; i++) {
 
 ### printf
 ```java
+/**
+ * %: 뒤에 나오는 문자, 즉 출력 데이터 형식을 정의하는 데 사용
+ * %-8s: 왼쪽 정렬된 최소 너비 8의 문자열
+ * %3d: 최소 너비 3의 정수
+ * %5.1f: 최소 너비 5의 소수점 이하 자리수 1자리 실수
+ */
 for (int i = 0; i < x.length; i++) {
 	System.out.printf("%-8s%3d%5.1f\n", x[i].name, x[i].height, x[i].vision);
 }
@@ -76,3 +82,8 @@ for (int i = 0; i < x.length; i++) {
 
 ##### [목차로 이동](#목차)
 
+### static inner class
+
+
+
+##### [목차로 이동](#목차)
