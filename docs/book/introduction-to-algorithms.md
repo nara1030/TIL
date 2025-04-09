@@ -65,7 +65,7 @@ for (int i = 0; i < 5; i++) {
 
 기본 개념 외에 다음 사항을 주의해야 한다.
 
-1. if문도 마찬가지지만 한줄짜리 반복문에는 중괄호 생략이 가능하다.
+1. if문도 마찬가지지만 한줄짜리 반복문에는 중괄호 생략이 가능하다.  
    가끔 일할 때도 중괄호 안 붙인 코드를 본 적 있어서..
 2. 중첩 for문을 짤 때는 안쪽을 더 많이 돌게 짜야 한다.  
    관련 링크: [Does for-loop Nesting Order Affect Performance?](https://bytefish.medium.com/does-for-loop-nesting-order-affect-performance-dbc677217e66)
