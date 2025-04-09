@@ -67,9 +67,9 @@ for (int i = 0; i < 5; i++) {
 
 1. if문도 마찬가지지만 한줄짜리 반복문에는 중괄호 생략이 가능하다.
    가끔 일할 때도 중괄호 안 붙인 코드를 본 적 있어서..
-2. 중첩 for문을 짤 때는 안쪽을 더 많이 돌게 짜야 한다.
+2. 중첩 for문을 짤 때는 안쪽을 더 많이 돌게 짜야 한다.  
    관련 링크: [Does for-loop Nesting Order Affect Performance?](https://bytefish.medium.com/does-for-loop-nesting-order-affect-performance-dbc677217e66)
-3. 보통의 경우 for-loop가 Java Stream API보다 빠르다.
+3. 보통의 경우 for-loop가 Java Stream API보다 빠르다.  
    관련 링크: [Java Stream API는 왜 for-loop보다 느릴까?](https://sigridjin.medium.com/java-stream-api%EB%8A%94-%EC%99%9C-for-loop%EB%B3%B4%EB%8B%A4-%EB%8A%90%EB%A6%B4%EA%B9%8C-50dec4b9974b)
 4. .
 
